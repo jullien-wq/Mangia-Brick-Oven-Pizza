@@ -1,0 +1,4 @@
+# Cloudflare Pages SPA routing — serve index.html for any clean URL.
+# Real files (assets, support.js, sitemap, etc.) are served first; only
+# unmatched paths like /shrewsbury fall through to the app, which routes them.
+/*    /index.html   200

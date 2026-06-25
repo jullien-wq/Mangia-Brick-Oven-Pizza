@@ -1,0 +1,1893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ===================== SEO / META =====================
+     Default tags below describe the site as a whole. Per-page titles and
+     descriptions are swapped in by JS on navigation (see PAGE_SEO in the
+     logic class). Update the domain in og:url / canonical if it changes. -->
+<title>Mangia Brick Oven Pizza | Family-Run NY-Style Pizzeria in Toms River, Jackson &amp; Shrewsbury, NJ</title>
+<meta name="description" content="Mangia Brick Oven Pizza is a family-run, New York-style pizzeria and Italian restaurant with three New Jersey locations — Toms River, Jackson and Shrewsbury. Order online, view menus, cater your event, or book a private party.">
+<meta name="keywords" content="Mangia Brick Oven Pizza, pizza Toms River NJ, pizza Jackson NJ, pizza Shrewsbury NJ, New York style pizza New Jersey, Italian restaurant NJ, pizza catering NJ, private events pizzeria">
+<meta name="author" content="Mangia Brick Oven Pizza">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#A50000">
+<link rel="canonical" href="https://www.mangiabrickovenpizza.com/">
+
+<!-- Favicon / app icons -->
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/brand/favicon-64.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">
+
+<!-- Open Graph (Facebook, LinkedIn, iMessage) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mangia Brick Oven Pizza">
+<meta property="og:title" content="Mangia Brick Oven Pizza | Family-Run NY-Style Pizzeria in NJ">
+<meta property="og:description" content="Family-run, New York-style pizza with Sicilian roots — Toms River, Jackson &amp; Shrewsbury, NJ. Order online, view menus, catering and private events.">
+<meta property="og:url" content="https://www.mangiabrickovenpizza.com/">
+<meta property="og:image" content="https://www.mangiabrickovenpizza.com/assets/brand/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mangia Brick Oven Pizza | Family-Run NY-Style Pizzeria in NJ">
+<meta name="twitter:description" content="Family-run, New York-style pizza with Sicilian roots — Toms River, Jackson &amp; Shrewsbury, NJ.">
+<meta name="twitter:image" content="https://www.mangiabrickovenpizza.com/assets/brand/og-image.jpg">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '214535598226406');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=214535598226406&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@500;600;700;800;900&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Caveat:wght@600;700&family=Kaushan+Script&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:#FBF6EC;font-family:Roboto,system-ui,sans-serif;color:#1A1411;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+::selection{background:#A50000;color:#FFFCF8}
+@keyframes ddIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@keyframes mqScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes stampSpin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+@keyframes fadeImg{from{opacity:.35}to{opacity:1}}
+@keyframes modalIn{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:none}}
+[data-reveal]{opacity:1}
+.mq-track{display:flex;width:max-content;animation:mqScroll 32s linear infinite}
+.pdf-host::-webkit-scrollbar{width:10px}
+.pdf-host::-webkit-scrollbar-thumb{background:#6B5F52;border-radius:8px}
+h1,h2,h3,h4,h5{text-wrap:balance}
+p,li{text-wrap:pretty}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</helmet>
+<div ref="{{ rootRef }}" style="overflow-x:hidden;min-height:100vh">
+
+  <!-- ===================== HEADER ===================== -->
+  <header style="position:sticky;top:0;z-index:50;background:#FFFCF8;border-bottom:2px solid #1A1411">
+    <div style="max-width:1320px;margin:0 auto;padding:0 24px;height:74px;display:flex;align-items:center;gap:18px">
+      <a href="#home" onClick="{{ goHome }}" style="display:flex;align-items:center;flex:none;text-decoration:none">
+        <img src="assets/brand/logo.png" alt="Mangia Pizzeria" style="height:38px;display:block"/>
+      </a>
+      <nav style="display:flex;align-items:center;gap:2px;margin-left:auto" class="desk-nav">
+        <sc-for list="{{ navTop }}" as="item" hint-placeholder-count="8">
+          <div style="position:relative" onMouseEnter="{{ item.onEnter }}" onMouseLeave="{{ item.onLeave }}">
+            <a href="{{ item.href }}" onClick="{{ item.onClick }}" style="display:flex;align-items:center;gap:5px;padding:10px 11px;font-family:Archivo,sans-serif;font-weight:700;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:#1A1411;white-space:nowrap" style-hover="color:#A50000 !important">{{ item.label }}<sc-if value="{{ item.hasDD }}"><span style="font-size:9px;opacity:.6">▾</span></sc-if></a>
+            <sc-if value="{{ item.open }}">
+              <div style="position:absolute;top:100%;left:0;min-width:210px;background:#FFFCF8;border:2px solid #1A1411;border-radius:14px;padding:8px;box-shadow:0 24px 50px -22px rgba(40,20,5,.5);animation:ddIn .16s ease;z-index:60">
+                <sc-for list="{{ item.links }}" as="l" hint-placeholder-count="3">
+                  <a href="{{ l.href }}" target="{{ l.target }}" onClick="{{ l.onClick }}" style="display:block;padding:10px 12px;border-radius:9px;text-decoration:none;color:#1A1411;font-family:Archivo,sans-serif;font-weight:600;font-size:14px" style-hover="background:#F2E7D3 !important;color:#A50000 !important">{{ l.label }}</a>
+                </sc-for>
+              </div>
+            </sc-if>
+          </div>
+        </sc-for>
+      </nav>
+      <button onClick="{{ openOrder }}" class="desk-order" style="flex:none;display:inline-flex;align-items:center;gap:9px;margin-left:8px;padding:12px 20px;background:#A50000;color:#FFFCF8;border:none;border-radius:999px;font-family:Archivo,sans-serif;font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;box-shadow:0 12px 24px -12px rgba(165,0,0,.8);transition:transform .2s,background .2s" style-hover="background:#7E0000 !important;transform:translateY(-2px)">Order Online <span style="font-size:15px">→</span></button>
+      <button onClick="{{ toggleMenu }}" class="burger" style="display:none;flex:none;margin-left:auto;width:46px;height:46px;border:2px solid #A50000;background:#FFFCF8;border-radius:11px;cursor:pointer;font-size:20px;line-height:1;color:#A50000;align-items:center;justify-content:center">≡</button>
+    </div>
+  </header>
+
+  <!-- ===================== MOBILE MENU ===================== -->
+  <sc-if value="{{ menuOpen }}">
+    <div style="position:fixed;inset:0;z-index:80;background:#1A1411;color:#FFFCF8;overflow-y:auto;animation:ddIn .22s ease;background-image:radial-gradient(rgba(255,252,248,.045) 1px,transparent 1px);background-size:20px 20px">
+      <div style="position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;padding:18px 22px;background:#1A1411;border-bottom:1px solid rgba(255,252,248,.14)">
+        <img src="assets/brand/slice.png" alt="Mangia" style="height:34px;filter:brightness(0) invert(1)"/>
+        <button onClick="{{ toggleMenu }}" aria-label="Close menu" style="width:44px;height:44px;border:1px solid rgba(255,252,248,.4);background:transparent;color:#FFFCF8;border-radius:50%;font-size:19px;cursor:pointer;display:flex;align-items:center;justify-content:center">✕</button>
+      </div>
+      <div style="padding:22px 22px 40px">
+        <div style="font-family:'Kaushan Script',cursive;font-size:30px;color:#E8B4B4;line-height:1;transform:rotate(-2deg);transform-origin:left;margin:2px 0 16px">Family First &amp; Pizza Always</div>
+        <button onClick="{{ openOrder }}" style="width:100%;margin-bottom:24px;padding:18px;background:#A50000;color:#FFFCF8;border:none;border-radius:14px;font-family:Archivo,sans-serif;font-weight:800;font-size:16px;letter-spacing:.05em;text-transform:uppercase;cursor:pointer;box-shadow:0 16px 30px -14px rgba(165,0,0,.8)">Order Online →</button>
+        <nav style="display:flex;flex-direction:column">
+          <sc-for list="{{ mobileNav }}" as="m" hint-placeholder-count="9">
+            <div style="border-bottom:1px solid rgba(255,252,248,.1)">
+              <div style="display:flex;align-items:stretch">
+                <a href="{{ m.href }}" onClick="{{ m.onNav }}" style="flex:1;display:flex;align-items:center;padding:16px 2px;text-decoration:none;color:#FFFCF8;font-family:Archivo,sans-serif;font-weight:800;font-size:20px;letter-spacing:.02em;text-transform:uppercase">{{ m.label }}</a>
+                <sc-if value="{{ m.hasKids }}">
+                  <button onClick="{{ m.onToggle }}" aria-label="Expand" style="flex:none;width:52px;background:transparent;border:none;color:#E8B4B4;cursor:pointer;display:flex;align-items:center;justify-content:center">
+                    <span style="display:inline-block;font-size:15px;transition:transform .25s;transform:rotate({{ m.caret }})">▾</span>
+                  </button>
+                </sc-if>
+              </div>
+              <sc-if value="{{ m.expanded }}">
+                <div style="overflow:hidden;animation:ddIn .22s ease;padding:2px 0 14px 4px;display:flex;flex-direction:column;gap:2px">
+                  <sc-for list="{{ m.links }}" as="l" hint-placeholder-count="3">
+                    <a href="{{ l.href }}" target="{{ l.target }}" onClick="{{ l.onClick }}" style="display:flex;align-items:center;gap:10px;padding:11px 14px;border-radius:10px;text-decoration:none;color:rgba(255,252,248,.82);font-family:Roboto;font-size:15.5px;background:rgba(255,252,248,.04)" style-hover="background:#A50000 !important;color:#FFFCF8 !important"><span style="width:5px;height:5px;border-radius:50%;background:#A50000"></span>{{ l.label }}</a>
+                  </sc-for>
+                </div>
+              </sc-if>
+            </div>
+          </sc-for>
+        </nav>
+        <div style="margin-top:28px">
+          <div style="font-family:Archivo;font-weight:900;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#E8B4B4;margin-bottom:10px">Call A Location</div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <sc-for list="{{ locations }}" as="loc" hint-placeholder-count="3">
+              <a href="{{ loc.telHref }}" style="display:flex;align-items:center;justify-content:space-between;gap:12px;text-decoration:none;color:#FFFCF8;padding:14px 16px;border:1px solid rgba(255,252,248,.16);border-radius:12px;background:rgba(255,252,248,.03)" style-hover="border-color:#A50000 !important">
+                <span style="font-family:Archivo;font-weight:800;font-size:14px;letter-spacing:.04em;text-transform:uppercase">{{ loc.name }}</span>
+                <span style="display:inline-flex;align-items:center;gap:7px;color:#E8B4B4;font-family:Roboto;font-size:14px"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.3 1.1l-2.2 2.2z"></path></svg>{{ loc.phone }}</span>
+              </a>
+            </sc-for>
+          </div>
+        </div>
+        <div style="margin-top:26px;display:flex;align-items:center;gap:12px">
+          <span style="font-family:Archivo;font-weight:900;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#E8B4B4">Follow</span>
+          <div style="display:flex;gap:10px">
+            <sc-for list="{{ brandSocials }}" as="s" hint-placeholder-count="3">
+              <a href="{{ s.href }}" target="_blank" rel="noopener" aria-label="{{ s.label }}" title="{{ s.label }}" style="width:42px;height:42px;border:1px solid rgba(255,252,248,.3);border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;color:#FFFCF8;transition:all .2s" style-hover="background:#A50000 !important;border-color:#A50000">
+                <sc-if value="{{ s.isIg }}"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"></circle></svg></sc-if>
+                <sc-if value="{{ s.isFb }}"><svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor"><path d="M13.5 21v-7h2.4l.4-2.9h-2.8V9.2c0-.85.27-1.4 1.5-1.4l1.5 0V5.2C16.6 5.1 15.8 5 14.9 5c-2.2 0-3.7 1.35-3.7 3.85v2.25H8.7V14h2.5v7h2.3z"></path></svg></sc-if>
+                <sc-if value="{{ s.isTa }}"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3.5 9.5c2.2-1.7 5.2-2.5 8.5-2.5s6.3.8 8.5 2.5"></path><circle cx="7.6" cy="13.2" r="3.6"></circle><circle cx="16.4" cy="13.2" r="3.6"></circle><circle cx="7.6" cy="13.2" r="1.2" fill="currentColor" stroke="none"></circle><circle cx="16.4" cy="13.2" r="1.2" fill="currentColor" stroke="none"></circle></svg></sc-if>
+              </a>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <!-- ===================== MAIN ===================== -->
+  <main>
+    <sc-for list="{{ pageSections }}" as="sec" hint-placeholder-count="5">
+      <!-- HERO VIDEO -->
+      <sc-if value="{{ sec.is_heroVideo }}">
+        <section style="background:#F4ECDD;color:#1A1411;position:relative;overflow:hidden;border-bottom:3px solid #1A1411;background-image:radial-gradient(#E3D5BC 1.3px,transparent 1.3px);background-size:22px 22px">
+          <div style="position:absolute;inset:0;background:linear-gradient(90deg,#F4ECDD 32%,rgba(244,236,221,.55) 60%,transparent 78%);pointer-events:none"></div>
+          <div style="position:relative;max-width:1320px;margin:0 auto;display:grid;grid-template-columns:1.04fr .96fr;align-items:center;gap:40px;min-height:600px;padding:64px 40px" class="hero-grid">
+            <div style="display:flex;flex-direction:column;justify-content:center;width:100%" class="hero-copy" data-reveal="off">
+              <div style="display:inline-flex;align-items:center;gap:10px;font-family:Archivo;font-weight:800;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:#A50000;margin-bottom:20px"><span style="width:30px;height:2px;background:#A50000"></span>{{ sec.eyebrow }}</div>
+              <h1 style="margin:0;line-height:0"><img src="assets/brand/logo.png" alt="Mangia" style="width:min(100%,560px);height:auto;display:block;image-rendering:auto"/></h1>
+              <p style="font-family:Archivo;font-weight:900;font-size:clamp(19px,1.8vw,26px);letter-spacing:.01em;text-transform:uppercase;margin:30px 0 8px">{{ sec.tagline }}</p>
+              <p style="font-family:Archivo;font-weight:700;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:#7E6B5A;margin:0 0 32px">{{ sec.services }}</p>
+              <div class="cta-row" style="display:flex;flex-wrap:wrap;align-items:center;gap:14px">
+                <sc-for list="{{ sec.ctas }}" as="c" hint-placeholder-count="2">
+                  <sc-if value="{{ c.primary }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:9px;padding:16px 30px;background:#A50000;color:#FFFCF8;font-family:Archivo;font-weight:800;font-size:14px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;border-radius:999px;box-shadow:0 14px 28px -14px rgba(165,0,0,.7);transition:transform .2s,background .2s" style-hover="background:#7E0000 !important;transform:translateY(-2px)">{{ c.label }} <span style="font-size:15px">→</span></a></sc-if>
+                  <sc-if value="{{ c.ghost }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:9px;padding:14px 28px;background:transparent;color:#A50000;border:2px solid #A50000;font-family:Archivo;font-weight:800;font-size:14px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;border-radius:999px;transition:all .2s" style-hover="background:#A50000 !important;color:#FFFCF8 !important">{{ c.label }}</a></sc-if>
+                </sc-for>
+              </div>
+              <div style="display:flex;flex-wrap:nowrap;gap:7px;margin-top:30px;overflow-x:auto">
+                <sc-for list="{{ sec.badges }}" as="b" hint-placeholder-count="5">
+                  <span style="flex:none;white-space:nowrap;font-family:Archivo;font-weight:700;font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:#7E6B5A;border:1px solid #DCCDB2;border-radius:999px;padding:7px 11px;background:rgba(255,252,248,.7)">{{ b }}</span></span>
+                </sc-for>
+              </div>
+            </div>
+            <div style="position:relative;display:flex;align-items:center;justify-content:center" class="hero-media" data-reveal="off">
+              <div style="position:relative;width:100%;max-width:520px;aspect-ratio:4/5;border-radius:26px;overflow:hidden;border:3px solid #1A1411;box-shadow:0 30px 60px -26px rgba(40,20,8,.6);background:#1A1411;background-image:url('{{ sec.poster }}');background-size:cover;background-position:center">
+                <video ref="{{ heroVideoRef }}" src="{{ sec.video }}" poster="{{ sec.poster }}" autoplay muted loop playsinline preload="auto" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></video>
+                <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(20,16,12,.34),transparent 38%);pointer-events:none"></div>
+              </div>
+              <div style="position:absolute;top:-14px;right:2px;background:#A50000;color:#FFFCF8;font-family:Caveat;font-weight:700;font-size:25px;line-height:1;padding:9px 18px;border-radius:14px;transform:rotate(6deg);box-shadow:0 14px 26px -12px rgba(165,0,0,.75);z-index:3" class="hero-sticker">FRESH FROM THE OVEN!</div>
+              <div style="position:absolute;bottom:-22px;left:-8px;width:128px;height:128px;border-radius:50%;background:#1A1411;border:3px solid #1A1411;box-shadow:0 16px 30px -12px rgba(0,0,0,.6);z-index:3;display:flex;align-items:center;justify-content:center" class="hero-stamp">
+                <div style="position:absolute;inset:0;animation:stampSpin 22s linear infinite">
+                  <svg viewBox="0 0 128 128" style="width:100%;height:100%;display:block">
+                    <defs><path id="heroStampRing" d="M64,64 m-48,0 a48,48 0 1,1 96,0 a48,48 0 1,1 -96,0"></path></defs>
+                    <text style="font-family:Archivo;font-weight:800;font-size:13.5px;letter-spacing:.14em;fill:#FFFCF8;text-transform:uppercase"><textPath href="#heroStampRing" startOffset="0">Family Run ★ Sicilian Roots ★ </textPath></text>
+                  </svg>
+                </div>
+                <div style="width:74px;height:74px;border-radius:50%;background:#A50000;display:flex;align-items:center;justify-content:center;text-align:center">
+                  <span style="font-family:Anton;font-size:13px;line-height:.92;color:#FFFCF8;text-transform:uppercase">Since<br/>Day One</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- HERO LOCATION (SEO) -->
+      <sc-if value="{{ sec.is_heroLoc }}">
+        <section style="padding:64px 24px 72px;background:#FBF6EC">
+          <div style="max-width:1320px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center" class="hero-grid">
+            <div data-reveal="off">
+              <div style="display:inline-flex;align-items:center;gap:8px;font-family:Archivo;font-weight:800;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:#A50000;margin-bottom:16px"><span style="width:26px;height:2px;background:#A50000"></span>{{ sec.eyebrow }}</div>
+              <h1 style="font-family:Anton;font-weight:400;font-size:clamp(40px,5.4vw,72px);line-height:.92;text-transform:uppercase;margin:0 0 20px">{{ sec.title }}</h1>
+              <p style="max-width:520px;font-size:17px;line-height:1.65;color:#4A4038;margin:0">{{ sec.sub }}</p>
+              <div class="cta-row" style="display:flex;flex-wrap:nowrap;gap:10px;margin-top:28px">
+                <sc-for list="{{ sec.ctas }}" as="c" hint-placeholder-count="3">
+                  <sc-if value="{{ c.primary }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:7px;padding:14px 20px;white-space:nowrap;background:#A50000;color:#FFFCF8;font-family:Archivo;font-weight:800;font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border-radius:999px;box-shadow:0 14px 28px -14px rgba(165,0,0,.7);transition:transform .2s,background .2s" style-hover="background:#7E0000 !important;transform:translateY(-2px)">{{ c.label }} <span style="font-size:15px">→</span></a></sc-if>
+                  <sc-if value="{{ c.ghost }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:7px;padding:12px 18px;white-space:nowrap;background:transparent;color:#A50000;border:2px solid #A50000;font-family:Archivo;font-weight:800;font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border-radius:999px;transition:all .2s" style-hover="background:#A50000 !important;color:#FFFCF8 !important">{{ c.label }}</a></sc-if>
+                </sc-for>
+              </div>
+              <div style="display:flex;flex-wrap:nowrap;gap:8px;margin-top:26px">
+                <sc-for list="{{ sec.badges }}" as="b" hint-placeholder-count="4">
+                  <span style="font-family:Archivo;font-weight:700;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#7E6B5A;border:1px solid #E6DAC4;border-radius:999px;padding:7px 11px;background:#FFFCF8;white-space:nowrap">{{ b }}</span>
+                </sc-for>
+              </div>
+            </div>
+            <div style="position:relative" data-reveal="off">
+              <div style="position:relative;border-radius:22px;overflow:hidden;border:3px solid #1A1411;box-shadow:0 28px 56px -26px rgba(60,30,10,.55);aspect-ratio:4/5;background:#1A1411">
+                <sc-if value="{{ sec.hasSlider }}">
+                  <img src="{{ heroActiveSrc }}" alt="{{ heroActiveAlt }}" key="{{ heroActiveSrc }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;animation:fadeImg .8s ease"/>
+                  <div style="position:absolute;left:0;right:0;bottom:14px;z-index:5;display:flex;gap:8px;justify-content:center">
+                    <sc-for list="{{ heroDots }}" as="d" hint-placeholder-count="5">
+                      <button onClick="{{ d.onClick }}" aria-label="View interior photo" style="width:9px;height:9px;border-radius:50%;border:none;cursor:pointer;padding:0;background:{{ d.bg }};box-shadow:0 1px 3px rgba(0,0,0,.5);transition:background .25s"></button>
+                    </sc-for>
+                  </div>
+                </sc-if>
+                <sc-if value="{{ sec.singleImg }}">
+                  <img src="{{ sec.img }}" alt="{{ sec.title }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"/>
+                </sc-if>
+              </div>
+              <div style="position:absolute;top:-18px;right:-14px;background:#A50000;color:#FFFCF8;font-family:Caveat;font-weight:700;font-size:24px;padding:8px 18px;border-radius:14px;transform:rotate(6deg);box-shadow:0 12px 24px -12px rgba(165,0,0,.7);z-index:6">fresh from the oven!</div>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- HERO SIMPLE -->
+      <sc-if value="{{ sec.is_heroSimple }}">
+        <section style="padding:78px 24px 56px;background:#FBF6EC;border-bottom:2px solid #1A1411">
+          <div style="max-width:1100px;margin:0 auto;text-align:center" data-reveal="off">
+            <div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#A50000;margin-bottom:16px">{{ sec.eyebrow }}</div>
+            <h1 style="font-family:Anton;font-weight:400;font-size:clamp(46px,7vw,96px);line-height:.9;text-transform:uppercase;margin:0 0 18px">{{ sec.line1 }} <span style="color:#A50000">{{ sec.line2 }}</span></h1>
+            <p style="max-width:660px;margin:0 auto;font-size:17.5px;line-height:1.6;color:#4A4038">{{ sec.sub }}</p>
+            <div class="cta-row" style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px">
+              <sc-for list="{{ sec.ctas }}" as="c" hint-placeholder-count="2">
+                <sc-if value="{{ c.primary }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:9px;padding:15px 26px;background:#A50000;color:#FFFCF8;font-family:Archivo;font-weight:800;font-size:13.5px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;border-radius:999px;box-shadow:0 14px 28px -14px rgba(165,0,0,.7);transition:transform .2s,background .2s" style-hover="background:#7E0000 !important;transform:translateY(-2px)">{{ c.label }} <span style="font-size:15px">→</span></a></sc-if>
+                <sc-if value="{{ c.ghost }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:9px;padding:13px 24px;background:transparent;color:#A50000;border:2px solid #A50000;font-family:Archivo;font-weight:800;font-size:13.5px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;border-radius:999px;transition:all .2s" style-hover="background:#A50000 !important;color:#FFFCF8 !important">{{ c.label }}</a></sc-if>
+              </sc-for>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- HERO IMAGE (events / offers) -->
+      <sc-if value="{{ sec.is_heroImage }}">
+        <section style="position:relative;padding:96px 24px;background:#1A1411;color:#FFFCF8;overflow:hidden">
+          <img src="{{ sec.img }}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.4"/>
+          <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,16,12,.88),rgba(20,16,12,.5))"></div>
+          <div style="position:relative;max-width:1320px;margin:0 auto" data-reveal="off">
+            <div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#E8B4B4;margin-bottom:14px">{{ sec.eyebrow }}</div>
+            <h1 style="font-family:Anton;font-weight:400;font-size:clamp(44px,6vw,84px);line-height:.9;text-transform:uppercase;margin:0 0 18px;max-width:760px">{{ sec.title }}</h1>
+            <p style="max-width:560px;font-size:17.5px;line-height:1.6;color:rgba(255,252,248,.85);margin:0">{{ sec.sub }}</p>
+            <div class="cta-row" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:28px">
+              <sc-for list="{{ sec.ctas }}" as="c" hint-placeholder-count="3">
+                <sc-if value="{{ c.primary }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:9px;padding:15px 26px;background:#A50000;color:#FFFCF8;font-family:Archivo;font-weight:800;font-size:13.5px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;border-radius:999px;box-shadow:0 14px 28px -14px rgba(165,0,0,.9);transition:transform .2s,background .2s" style-hover="background:#7E0000 !important;transform:translateY(-2px)">{{ c.label }} <span style="font-size:15px">→</span></a></sc-if>
+                <sc-if value="{{ c.light }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:9px;padding:13px 24px;background:rgba(255,252,248,.08);color:#FFFCF8;border:2px solid rgba(255,252,248,.55);font-family:Archivo;font-weight:800;font-size:13.5px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;border-radius:999px;transition:all .2s" style-hover="background:#FFFCF8 !important;color:#1A1411 !important;border-color:#FFFCF8">{{ c.label }}</a></sc-if>
+              </sc-for>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- LOCATION CARDS -->
+      <sc-if value="{{ sec.is_locationCards }}">
+        <section style="padding:90px 24px;background:#FBF6EC">
+          <div style="max-width:1320px;margin:0 auto">
+            <div style="margin-bottom:38px;max-width:680px" data-reveal="off">
+              <div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#A50000;margin-bottom:12px">{{ sec.eyebrow }}</div>
+              <h2 style="font-family:Anton;font-weight:400;font-size:clamp(34px,4.6vw,58px);line-height:.94;text-transform:uppercase;margin:0">{{ sec.title }}</h2>
+              <p style="margin:14px 0 0;font-size:16px;color:#4A4038;line-height:1.55">{{ sec.sub }}</p>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px" class="cards-3">
+              <sc-for list="{{ sec.items }}" as="loc" hint-placeholder-count="3">
+                <div data-reveal="off" style="background:#FFFCF8;border:2px solid #1A1411;border-radius:20px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 18px 40px -26px rgba(60,30,10,.45);transition:transform .25s" style-hover="transform:translateY(-6px)">
+                  <div style="position:relative;aspect-ratio:3/2;overflow:hidden">
+                    <img src="{{ loc.img }}" alt="{{ loc.name }}" style="width:100%;height:100%;object-fit:cover;object-position:{{ loc.objPos }};display:block;transition:transform .5s" style-hover="transform:scale(1.06)"/>
+                    <span style="position:absolute;top:12px;left:12px;background:#A50000;color:#FFFCF8;font-family:Archivo;font-weight:800;font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:999px">{{ loc.promo }}</span>
+                  </div>
+                  <div style="padding:22px;display:flex;flex-direction:column;flex:1">
+                    <h3 style="font-family:Anton;font-weight:400;font-size:30px;text-transform:uppercase;margin:0 0 8px">{{ loc.name }}</h3>
+                    <div style="font-size:14px;color:#4A4038;line-height:1.5">{{ loc.address }}</div>
+                    <a href="{{ loc.telHref }}" style="font-size:14px;color:#A50000;font-weight:700;text-decoration:none;margin-top:4px;display:inline-block">{{ loc.phone }}</a>
+                    <div style="font-size:13px;color:#7E6B5A;margin-top:6px;margin-bottom:18px">{{ loc.hoursShort }}</div>
+                    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:auto">
+                      <sc-for list="{{ loc.cardCtas }}" as="c" hint-placeholder-count="2">
+                        <sc-if value="{{ c.primary }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="flex:1;text-align:center;padding:11px 14px;background:#A50000;color:#FFFCF8;font-family:Archivo;font-weight:800;font-size:12px;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;border-radius:999px;transition:background .2s" style-hover="background:#7E0000 !important">{{ c.label }}</a></sc-if>
+                        <sc-if value="{{ c.ghost }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="flex:1;text-align:center;padding:11px 14px;background:transparent;color:#A50000;border:2px solid #A50000;font-family:Archivo;font-weight:800;font-size:12px;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;border-radius:999px;transition:all .2s" style-hover="background:#A50000 !important;color:#FFFCF8 !important">{{ c.label }}</a></sc-if>
+                      </sc-for>
+                    </div>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- SPLIT ABOUT -->
+      <sc-if value="{{ sec.is_splitAbout }}">
+        <section id="{{ sec.anchor }}" style="padding:96px 24px;background:#FBF6EC;scroll-margin-top:90px">
+          <div style="max-width:1320px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start" class="hero-grid">
+            <div style="position:relative" data-reveal="off">
+              <sc-if value="{{ sec.fullImg }}">
+                <div style="border-radius:20px;overflow:hidden;border:3px solid #1A1411;box-shadow:0 26px 54px -28px rgba(60,30,10,.5)">
+                  <img src="{{ sec.img }}" alt="{{ sec.title }}" style="width:100%;height:auto;display:block"/>
+                </div>
+              </sc-if>
+              <sc-if value="{{ sec.notFullImg }}">
+                <div style="border-radius:20px;overflow:hidden;border:3px solid #1A1411;box-shadow:0 26px 54px -28px rgba(60,30,10,.5);aspect-ratio:5/4">
+                  <img src="{{ sec.img }}" alt="{{ sec.title }}" style="width:100%;height:100%;object-fit:cover;object-position:{{ sec.imgPos }};display:block"/>
+                </div>
+              </sc-if>
+              <div style="position:absolute;-bottom:0;bottom:-20px;right:-16px;background:#A50000;color:#FFFCF8;width:96px;height:96px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;transform:rotate(-8deg);border:2px dashed rgba(255,252,248,.7)"><span style="font-family:Anton;font-size:26px;line-height:1">~50</span><span style="font-family:Archivo;font-weight:800;font-size:9px;letter-spacing:.08em;text-transform:uppercase">Years</span></div>
+            </div>
+            <div data-reveal="off">
+              <div style="font-family:'Kaushan Script',cursive;font-weight:400;font-size:clamp(30px,3.2vw,44px);color:#A50000;line-height:1;margin:0 0 12px;transform:rotate(-2deg);transform-origin:left">Family First &amp; Pizza Always</div>
+              <h2 style="font-family:Anton;font-weight:400;font-size:clamp(34px,4.4vw,56px);line-height:.95;text-transform:uppercase;margin:0 0 20px">{{ sec.title }}</h2>
+              <sc-for list="{{ sec.paras }}" as="p" hint-placeholder-count="2">
+                <p style="font-size:16.5px;line-height:1.7;color:#4A4038;margin:0 0 16px">{{ p }}</p>
+              </sc-for>
+              <div class="cta-row" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:10px">
+                <sc-for list="{{ sec.ctas }}" as="c" hint-placeholder-count="2">
+                  <sc-if value="{{ c.primary }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:9px;padding:14px 24px;background:#A50000;color:#FFFCF8;font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;border-radius:999px;transition:all .2s" style-hover="background:#7E0000 !important;transform:translateY(-2px)">{{ c.label }} <span>→</span></a></sc-if>
+                  <sc-if value="{{ c.ghost }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:9px;padding:12px 22px;background:transparent;color:#A50000;border:2px solid #A50000;font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;border-radius:999px;transition:all .2s" style-hover="background:#A50000 !important;color:#FFFCF8 !important">{{ c.label }}</a></sc-if>
+                </sc-for>
+              </div>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- FOOD GRID (dark) -->
+      <sc-if value="{{ sec.is_foodGrid }}">
+        <section style="padding:90px 24px;background:#1A1411;color:#FFFCF8">
+          <div style="max-width:1320px;margin:0 auto">
+            <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:36px" data-reveal="off">
+              <div>
+                <div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#E8B4B4;margin-bottom:12px">{{ sec.eyebrow }}</div>
+                <h2 style="font-family:Anton;font-weight:400;font-size:clamp(34px,4.6vw,58px);line-height:.92;text-transform:uppercase;margin:0">{{ sec.title }}</h2>
+              </div>
+              <div class="cta-row" style="display:flex;gap:12px">
+                <sc-for list="{{ sec.ctas }}" as="c" hint-placeholder-count="2">
+                  <sc-if value="{{ c.primary }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:9px;padding:13px 22px;background:#A50000;color:#FFFCF8;font-family:Archivo;font-weight:800;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:999px" style-hover="background:#7E0000 !important">{{ c.label }} <span>→</span></a></sc-if>
+                  <sc-if value="{{ c.light }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:9px;padding:12px 20px;background:transparent;color:#FFFCF8;border:2px solid rgba(255,252,248,.5);font-family:Archivo;font-weight:800;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:999px" style-hover="background:#FFFCF8 !important;color:#1A1411 !important">{{ c.label }}</a></sc-if>
+                </sc-for>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px" class="cards-4">
+              <sc-for list="{{ sec.items }}" as="f" hint-placeholder-count="8">
+                <div data-reveal="off" style="background:#FFFCF8;border-radius:16px;overflow:hidden;color:#1A1411;box-shadow:0 16px 32px -20px rgba(0,0,0,.6);transition:transform .25s" style-hover="transform:translateY(-6px)">
+                  <div style="aspect-ratio:1/1;overflow:hidden"><img src="{{ f.img }}" alt="{{ f.title }}" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s" style-hover="transform:scale(1.07)"/></div>
+                  <div style="padding:16px 16px 18px">
+                    <h3 style="font-family:Archivo;font-weight:900;font-size:17px;text-transform:uppercase;letter-spacing:.02em;margin:0 0 5px">{{ f.title }}</h3>
+                    <p style="margin:0;font-size:13.5px;color:#6B5F52;line-height:1.45">{{ f.note }}</p>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- SIGNATURE (dark band) -->
+      <sc-if value="{{ sec.is_signature }}">
+        <section style="background:#A50000;color:#FFFCF8;padding:0;overflow:hidden">
+          <div style="width:100%;display:grid;grid-template-columns:1fr 1fr;align-items:stretch" class="hero-grid sig-grid">
+            <div style="padding:84px 48px 84px max(48px,calc((100vw - 1320px)/2 + 24px));display:flex;flex-direction:column;justify-content:center" class="sig-text" data-reveal="off">
+              <h2 style="font-family:Anton;font-weight:400;font-size:clamp(40px,5.5vw,76px);line-height:.88;text-transform:uppercase;margin:0 0 18px">{{ sec.line1 }}<br/>{{ sec.line2 }}</h2>
+              <p style="max-width:480px;font-size:17px;line-height:1.65;color:rgba(255,252,248,.9);margin:0 0 24px">{{ sec.body }}</p>
+              <div class="cta-row" style="display:flex;flex-wrap:wrap;gap:12px">
+                <sc-for list="{{ sec.ctas }}" as="c" hint-placeholder-count="2">
+                  <sc-if value="{{ c.light }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:9px;padding:14px 24px;background:#FFFCF8;color:#A50000;font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;border-radius:999px;transition:transform .2s" style-hover="transform:translateY(-2px)">{{ c.label }} <span>→</span></a></sc-if>
+                  <sc-if value="{{ c.ghost }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:9px;padding:13px 22px;background:transparent;color:#FFFCF8;border:2px solid rgba(255,252,248,.6);font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;border-radius:999px" style-hover="background:#FFFCF8 !important;color:#A50000 !important">{{ c.label }}</a></sc-if>
+                </sc-for>
+              </div>
+            </div>
+            <div class="sig-img" style="min-height:380px;position:relative"><img src="{{ sec.img }}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:80% 48%"/></div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- MARQUEE -->
+      <sc-if value="{{ sec.is_marquee }}">
+        <section style="background:#1A1411;color:#FFFCF8;padding:16px 0;overflow:hidden;border-top:2px solid #A50000;border-bottom:2px solid #A50000">
+          <div class="mq-track">
+            <sc-for list="{{ sec.words }}" as="w" hint-placeholder-count="12">
+              <span style="font-family:Anton;font-size:24px;text-transform:uppercase;letter-spacing:.04em;padding:0 26px;white-space:nowrap;color:{{ w.color }}">{{ w.text }}</span>
+            </sc-for>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- MENU CARDS -->
+      <sc-if value="{{ sec.is_menuCards }}">
+        <section id="{{ sec.anchor }}" style="padding:90px 24px;background:{{ sec.bg }};scroll-margin-top:86px">
+          <div style="max-width:1320px;margin:0 auto">
+            <div style="margin-bottom:36px;max-width:680px" data-reveal="off">
+              <div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#A50000;margin-bottom:12px">{{ sec.eyebrow }}</div>
+              <h2 style="font-family:Anton;font-weight:400;font-size:clamp(34px,4.6vw,58px);line-height:.94;text-transform:uppercase;margin:0">{{ sec.title }}</h2>
+              <p style="margin:14px 0 0;font-size:16px;color:#4A4038;line-height:1.55">{{ sec.sub }}</p>
+            </div>
+            <div style="display:grid;grid-template-columns:{{ sec.cols }};gap:24px" class="cards-3">
+              <sc-for list="{{ sec.groups }}" as="g" hint-placeholder-count="3">
+                <div data-reveal="off" style="background:#FFFCF8;border:2px solid #1A1411;border-radius:20px;padding:26px;box-shadow:0 18px 40px -28px rgba(60,30,10,.4)">
+                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
+                    <img src="assets/brand/slice.png" alt="" style="height:26px"/>
+                    <span style="font-family:Archivo;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#A50000">{{ g.tag }}</span>
+                  </div>
+                  <h3 style="font-family:Anton;font-weight:400;font-size:28px;text-transform:uppercase;margin:0 0 16px">{{ g.locName }}</h3>
+                  <div style="display:flex;flex-direction:column;gap:9px">
+                    <sc-for list="{{ g.items }}" as="m" hint-placeholder-count="3">
+                      <a href="{{ m.file }}" onClick="{{ m.open }}" style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 16px;border:1.5px solid #E6DAC4;border-radius:12px;text-decoration:none;color:#1A1411;font-family:Archivo;font-weight:700;font-size:14.5px;cursor:pointer;transition:all .2s" style-hover="background:#1A1411 !important;color:#FFFCF8 !important;border-color:#1A1411">{{ m.label }}<span style="font-size:13px;color:currentColor;opacity:.72">PDF →</span></a>
+                    </sc-for>
+                  </div>
+                  <sc-if value="{{ g.hasOrder }}">
+                    <a href="{{ g.order }}" target="_blank" style="display:block;text-align:center;margin-top:16px;padding:13px;background:#A50000;color:#FFFCF8;font-family:Archivo;font-weight:800;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:999px" style-hover="background:#7E0000 !important">Order {{ g.locName }} →</a>
+                  </sc-if>
+                </div>
+              </sc-for>
+            </div>
+            <div class="cta-row" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:30px">
+              <sc-for list="{{ sec.ctas }}" as="c" hint-placeholder-count="2">
+                <sc-if value="{{ c.primary }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:9px;padding:15px 26px;background:#A50000;color:#FFFCF8;font-family:Archivo;font-weight:800;font-size:13.5px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;border-radius:999px;transition:all .2s" style-hover="background:#7E0000 !important;transform:translateY(-2px)">{{ c.label }} <span>→</span></a></sc-if>
+                <sc-if value="{{ c.ghost }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:9px;padding:13px 24px;background:transparent;color:#A50000;border:2px solid #A50000;font-family:Archivo;font-weight:800;font-size:13.5px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;border-radius:999px;transition:all .2s" style-hover="background:#A50000 !important;color:#FFFCF8 !important">{{ c.label }}</a></sc-if>
+              </sc-for>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- PRIVATE EVENT CARDS -->
+      <sc-if value="{{ sec.is_eventCards }}">
+        <section style="padding:90px 24px;background:#FBF6EC">
+          <div style="max-width:1320px;margin:0 auto">
+            <div style="margin-bottom:36px;max-width:700px" data-reveal="off">
+              <div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#A50000;margin-bottom:12px">{{ sec.eyebrow }}</div>
+              <h2 style="font-family:Anton;font-weight:400;font-size:clamp(34px,4.6vw,58px);line-height:.94;text-transform:uppercase;margin:0">{{ sec.title }}</h2>
+              <p style="margin:14px 0 0;font-size:16px;color:#4A4038;line-height:1.55">{{ sec.sub }}</p>
+            </div>
+            <sc-if value="{{ sec.single }}">
+              <div data-reveal="off" style="background:#FFFCF8;border:2px solid #1A1411;border-radius:22px;overflow:hidden;display:grid;grid-template-columns:1.05fr 1fr;box-shadow:0 22px 50px -28px rgba(60,30,10,.5)" class="event-banner">
+                <sc-for list="{{ sec.items }}" as="e" hint-placeholder-count="1">
+                  <div style="position:relative;min-height:340px"><img src="{{ e.img }}" alt="{{ e.name }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"/></div>
+                  <div style="padding:46px 44px;display:flex;flex-direction:column;justify-content:center">
+                    <h3 style="font-family:Anton;font-weight:400;font-size:clamp(30px,3.4vw,44px);text-transform:uppercase;line-height:.96;margin:0 0 8px">{{ e.name }}</h3>
+                    <div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#A50000;margin-bottom:16px">{{ e.capacity }}</div>
+                    <p style="margin:0 0 18px;font-size:16px;color:#4A4038;line-height:1.6;max-width:46ch">{{ e.desc }}</p>
+                    <div class="cta-row" style="display:flex;flex-wrap:wrap;gap:14px">
+                      <sc-for list="{{ e.bannerCtas }}" as="c" hint-placeholder-count="2">
+                        <sc-if value="{{ c.primary }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;padding:14px 26px;background:#A50000;color:#FFFCF8;font-family:Archivo;font-weight:800;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:999px" style-hover="background:#7E0000 !important">{{ c.label }}</a></sc-if>
+                        <sc-if value="{{ c.ghost }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;padding:14px 26px;background:transparent;color:#A50000;border:2px solid #A50000;font-family:Archivo;font-weight:800;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:999px" style-hover="background:#A50000 !important;color:#FFFCF8 !important">{{ c.label }}</a></sc-if>
+                      </sc-for>
+                    </div>
+                  </div>
+                </sc-for>
+              </div>
+            </sc-if>
+            <sc-if value="{{ sec.grid }}">
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px" class="cards-3">
+              <sc-for list="{{ sec.items }}" as="e" hint-placeholder-count="3">
+                <div data-reveal="off" style="background:#FFFCF8;border:2px solid #1A1411;border-radius:20px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 18px 40px -26px rgba(60,30,10,.45);transition:transform .25s" style-hover="transform:translateY(-6px)">
+                  <div style="aspect-ratio:3/2;overflow:hidden"><img src="{{ e.img }}" alt="{{ e.name }}" style="width:100%;height:100%;object-fit:cover;transition:transform .5s" style-hover="transform:scale(1.06)"/></div>
+                  <div style="padding:22px;display:flex;flex-direction:column;flex:1">
+                    <h3 style="font-family:Anton;font-weight:400;font-size:28px;text-transform:uppercase;margin:0 0 4px">{{ e.name }}</h3>
+                    <div style="font-family:Archivo;font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#A50000;margin-bottom:10px">{{ e.capacity }}</div>
+                    <p style="margin:0 0 16px;font-size:14.5px;color:#4A4038;line-height:1.55">{{ e.desc }}</p>
+                    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:auto">
+                      <sc-for list="{{ e.cardCtas }}" as="c" hint-placeholder-count="2">
+                        <sc-if value="{{ c.primary }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="flex:1;text-align:center;padding:11px 12px;background:#A50000;color:#FFFCF8;font-family:Archivo;font-weight:800;font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border-radius:999px" style-hover="background:#7E0000 !important">{{ c.label }}</a></sc-if>
+                        <sc-if value="{{ c.ghost }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="flex:1;text-align:center;padding:11px 12px;background:transparent;color:#A50000;border:2px solid #A50000;font-family:Archivo;font-weight:800;font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border-radius:999px" style-hover="background:#A50000 !important;color:#FFFCF8 !important">{{ c.label }}</a></sc-if>
+                      </sc-for>
+                    </div>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+            </sc-if>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- EVENT TYPES -->
+      <sc-if value="{{ sec.is_eventTypes }}">
+        <section style="padding:84px 24px;background:#F2E7D3">
+          <div style="max-width:1320px;margin:0 auto">
+            <div style="text-align:center;margin-bottom:34px" data-reveal="off">
+              <div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#A50000;margin-bottom:12px">{{ sec.eyebrow }}</div>
+              <h2 style="font-family:Anton;font-weight:400;font-size:clamp(30px,4.2vw,52px);line-height:.95;text-transform:uppercase;margin:0">{{ sec.title }}</h2>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px" class="cards-4">
+              <sc-for list="{{ sec.items }}" as="t" hint-placeholder-count="8">
+                <div data-reveal="off" style="background:#FFFCF8;border:2px solid #1A1411;border-radius:14px;padding:22px 18px;text-align:center;transition:all .25s" style-hover="background:#A50000 !important;color:#FFFCF8 !important;border-color:#A50000;transform:translateY(-4px)">
+                  <div style="font-family:Archivo;font-weight:800;font-size:15px;letter-spacing:.02em">{{ t }}</div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- GALLERY -->
+      <sc-if value="{{ sec.is_gallery }}">
+        <section style="padding:90px 24px;background:#FBF6EC">
+          <div style="max-width:1320px;margin:0 auto">
+            <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:26px" data-reveal="off">
+              <div>
+                <div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#A50000;margin-bottom:12px">{{ sec.eyebrow }}</div>
+                <h2 style="font-family:Anton;font-weight:400;font-size:clamp(32px,4.4vw,56px);line-height:.94;text-transform:uppercase;margin:0">{{ sec.title }}</h2>
+              </div>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:9px;margin-bottom:26px">
+              <sc-for list="{{ sec.tabs }}" as="tab" hint-placeholder-count="6">
+                <sc-if value="{{ tab.active }}"><button onClick="{{ tab.onClick }}" style="padding:9px 18px;border:2px solid #A50000;background:#A50000;color:#FFFCF8;border-radius:999px;font-family:Archivo;font-weight:800;font-size:12px;letter-spacing:.05em;text-transform:uppercase;cursor:pointer">{{ tab.label }}</button></sc-if>
+                <sc-if value="{{ tab.inactive }}"><button onClick="{{ tab.onClick }}" style="padding:9px 18px;border:2px solid #1A1411;background:transparent;color:#1A1411;border-radius:999px;font-family:Archivo;font-weight:800;font-size:12px;letter-spacing:.05em;text-transform:uppercase;cursor:pointer;transition:all .2s" style-hover="background:#1A1411 !important;color:#FFFCF8 !important">{{ tab.label }}</button></sc-if>
+              </sc-for>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px" class="cards-4">
+              <sc-for list="{{ sec.shots }}" as="g" hint-placeholder-count="8">
+                <div data-reveal="off" style="aspect-ratio:1/1;overflow:hidden;border-radius:14px;border:2px solid #1A1411"><img src="{{ g.src }}" alt="" style="width:100%;height:100%;object-fit:cover;transition:transform .5s" style-hover="transform:scale(1.08)"/></div>
+              </sc-for>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- PHOTO STRIP (un-filtered gallery) -->
+      <sc-if value="{{ sec.is_photoStrip }}">
+        <section style="padding:88px 24px;background:{{ sec.bg }}">
+          <div style="max-width:1320px;margin:0 auto">
+            <div style="text-align:center;margin-bottom:30px" data-reveal="off">
+              <div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#A50000;margin-bottom:12px">{{ sec.eyebrow }}</div>
+              <h2 style="font-family:Anton;font-weight:400;font-size:clamp(32px,4.4vw,56px);line-height:.94;text-transform:uppercase;margin:0">{{ sec.title }}</h2>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:12px" class="strip-grid">
+              <sc-for list="{{ sec.shots }}" as="g" hint-placeholder-count="6">
+                <div data-reveal="off" style="aspect-ratio:1/1;overflow:hidden;border-radius:14px;border:2px solid #1A1411;grid-column:span {{ g.span }}"><img src="{{ g.src }}" alt="{{ g.alt }}" style="width:100%;height:100%;object-fit:cover;transition:transform .5s" style-hover="transform:scale(1.07)"/></div>
+              </sc-for>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- TESTIMONIALS SLIDER -->
+      <sc-if value="{{ sec.is_testimonials }}">
+        <section style="padding:90px 24px;background:#F2E7D3">
+          <div style="max-width:920px;margin:0 auto;text-align:center" data-reveal="off">
+            <div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#A50000;margin-bottom:12px">{{ sec.eyebrow }}</div>
+            <h2 style="font-family:Anton;font-weight:400;font-size:clamp(32px,4.4vw,56px);line-height:.94;text-transform:uppercase;margin:0 0 30px">{{ sec.title }}</h2>
+            <div style="background:#FFFCF8;border:2px solid #1A1411;border-radius:22px;padding:40px 36px;box-shadow:0 24px 50px -30px rgba(60,30,10,.5)">
+              <div style="color:#E0A400;font-size:20px;letter-spacing:3px;margin-bottom:16px">★★★★★</div>
+              <p style="font-family:Roboto;font-style:italic;font-size:20px;line-height:1.55;color:#2A211C;margin:0 0 22px">“{{ sec.active.quote }}”</p>
+              <div style="font-family:Archivo;font-weight:900;font-size:17px;text-transform:uppercase;letter-spacing:.03em">{{ sec.active.name }}</div>
+              <div style="font-size:13px;color:#7E6B5A;margin-top:3px">{{ sec.active.where }}</div>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:center;gap:18px;margin-top:24px">
+              <button onClick="{{ sec.onPrev }}" style="width:48px;height:48px;border:2px solid #1A1411;background:#FFFCF8;border-radius:50%;font-size:20px;cursor:pointer" style-hover="background:#A50000 !important;color:#FFFCF8 !important;border-color:#A50000">‹</button>
+              <div style="display:flex;gap:8px">
+                <sc-for list="{{ sec.dots }}" as="d" hint-placeholder-count="3">
+                  <sc-if value="{{ d.active }}"><button onClick="{{ d.onClick }}" style="width:30px;height:10px;border-radius:999px;border:none;background:#A50000;cursor:pointer"></button></sc-if>
+                  <sc-if value="{{ d.inactive }}"><button onClick="{{ d.onClick }}" style="width:10px;height:10px;border-radius:999px;border:none;background:#cdbfa8;cursor:pointer"></button></sc-if>
+                </sc-for>
+              </div>
+              <button onClick="{{ sec.onNext }}" style="width:48px;height:48px;border:2px solid #1A1411;background:#FFFCF8;border-radius:50%;font-size:20px;cursor:pointer" style-hover="background:#A50000 !important;color:#FFFCF8 !important;border-color:#A50000">›</button>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- TESTIMONIAL GRID -->
+      <sc-if value="{{ sec.is_testGrid }}">
+        <section style="padding:84px 24px;background:#F2E7D3">
+          <div style="max-width:1320px;margin:0 auto">
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px" class="cards-3">
+              <sc-for list="{{ sec.items }}" as="t" hint-placeholder-count="3">
+                <div data-reveal="off" style="background:#FFFCF8;border:2px solid #1A1411;border-radius:20px;padding:28px;box-shadow:0 18px 40px -28px rgba(60,30,10,.45);display:flex;flex-direction:column">
+                  <div style="color:#E0A400;font-size:17px;letter-spacing:2px;margin-bottom:14px">★★★★★</div>
+                  <p style="font-style:italic;font-size:15.5px;line-height:1.6;color:#2A211C;margin:0 0 18px;flex:1">“{{ t.quote }}”</p>
+                  <div style="font-family:Archivo;font-weight:900;font-size:15px;text-transform:uppercase">{{ t.name }}</div>
+                  <div style="font-size:12.5px;color:#7E6B5A;margin-top:2px">{{ t.where }}</div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- FAQ -->
+      <sc-if value="{{ sec.is_faq }}">
+        <section style="padding:90px 24px;background:#FBF6EC">
+          <div style="max-width:840px;margin:0 auto">
+            <div style="text-align:center;margin-bottom:34px" data-reveal="off">
+              <div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#A50000;margin-bottom:12px">{{ sec.eyebrow }}</div>
+              <h2 style="font-family:Anton;font-weight:400;font-size:clamp(32px,4.4vw,54px);line-height:.94;text-transform:uppercase;margin:0">{{ sec.title }}</h2>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <sc-for list="{{ sec.items }}" as="q" hint-placeholder-count="5">
+                <div data-reveal="off" style="background:#FFFCF8;border:2px solid #1A1411;border-radius:14px;overflow:hidden">
+                  <button onClick="{{ q.onToggle }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 22px;background:transparent;border:none;cursor:pointer;text-align:left;font-family:Archivo;font-weight:800;font-size:16px;color:#1A1411">{{ q.q }}<span style="font-size:22px;color:#A50000;flex:none">{{ q.sign }}</span></button>
+                  <sc-if value="{{ q.open }}">
+                    <div style="padding:0 22px 20px;font-size:15px;line-height:1.65;color:#4A4038">{{ q.a }}</div>
+                  </sc-if>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- OFFER DETAILS -->
+      <sc-if value="{{ sec.is_offerDetails }}">
+        <section style="padding:90px 24px;background:#FBF6EC">
+          <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center" class="hero-grid">
+            <div style="position:relative" data-reveal="off">
+              <div style="border-radius:20px;overflow:hidden;border:3px solid #1A1411;box-shadow:0 26px 54px -28px rgba(60,30,10,.5);aspect-ratio:4/3"><img src="{{ sec.img }}" alt="" style="width:100%;height:100%;object-fit:cover"/></div>
+              <div style="position:absolute;top:-22px;left:-18px;width:120px;height:120px;border-radius:50%;background:#A50000;color:#FFFCF8;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-10deg);border:2px dashed rgba(255,252,248,.7)"><span style="font-family:Anton;font-size:34px;line-height:.9">$40</span><span style="font-family:Archivo;font-weight:800;font-size:10px;letter-spacing:.06em;text-transform:uppercase">2 for</span></div>
+            </div>
+            <div data-reveal="off">
+              <div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#A50000;margin-bottom:12px">{{ sec.eyebrow }}</div>
+              <h2 style="font-family:Anton;font-weight:400;font-size:clamp(34px,4.6vw,58px);line-height:.92;text-transform:uppercase;margin:0 0 16px">{{ sec.title }}</h2>
+              <p style="font-size:16.5px;line-height:1.65;color:#4A4038;margin:0 0 18px">{{ sec.sub }}</p>
+              <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:18px">
+                <sc-for list="{{ sec.bullets }}" as="b" hint-placeholder-count="3">
+                  <div style="display:flex;align-items:flex-start;gap:10px;font-size:15px;color:#2A211C"><span style="color:#A50000;font-weight:900">✓</span>{{ b }}</div>
+                </sc-for>
+              </div>
+              <div class="cta-row" style="display:flex;flex-wrap:wrap;gap:12px">
+                <sc-for list="{{ sec.ctas }}" as="c" hint-placeholder-count="2">
+                  <sc-if value="{{ c.primary }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:9px;padding:15px 26px;background:#A50000;color:#FFFCF8;font-family:Archivo;font-weight:800;font-size:13.5px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;border-radius:999px;transition:all .2s" style-hover="background:#7E0000 !important;transform:translateY(-2px)">{{ c.label }} <span>→</span></a></sc-if>
+                  <sc-if value="{{ c.ghost }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:9px;padding:13px 24px;background:transparent;color:#A50000;border:2px solid #A50000;font-family:Archivo;font-weight:800;font-size:13.5px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;border-radius:999px;transition:all .2s" style-hover="background:#A50000 !important;color:#FFFCF8 !important">{{ c.label }}</a></sc-if>
+                </sc-for>
+              </div>
+              <p style="font-size:12px;color:#9A8B79;margin:18px 0 0">{{ sec.fine }}</p>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- APP PROMO -->
+      <sc-if value="{{ sec.is_appPromo }}">
+        <section id="{{ sec.anchor }}" style="padding:0;background:#A50000;color:#FFFCF8;overflow:visible;position:relative;scroll-margin-top:86px">
+          <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center" class="app-grid">
+            <div style="padding:30px 16px 30px 8px" data-reveal="off" class="app-text-cell">
+              <div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#E8B4B4;margin-bottom:12px">{{ sec.eyebrow }}</div>
+              <h2 style="font-family:Anton;font-weight:400;font-size:clamp(36px,5vw,68px);line-height:.9;text-transform:uppercase;margin:0 0 16px">{{ sec.title }}</h2>
+              <p style="max-width:440px;font-size:17px;line-height:1.6;color:rgba(255,252,248,.9);margin:0 0 24px">{{ sec.sub }}</p>
+              <div class="cta-row" style="display:flex;flex-wrap:wrap;gap:12px">
+                <sc-for list="{{ sec.ctas }}" as="c" hint-placeholder-count="2">
+                  <sc-if value="{{ c.light }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:9px;padding:15px 26px;background:#FFFCF8;color:#A50000;font-family:Archivo;font-weight:800;font-size:13.5px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;border-radius:999px;transition:transform .2s" style-hover="transform:translateY(-2px)">{{ c.label }} <span>→</span></a></sc-if>
+                  <sc-if value="{{ c.ghost }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:9px;padding:13px 24px;background:transparent;color:#FFFCF8;border:2px solid rgba(255,252,248,.6);font-family:Archivo;font-weight:800;font-size:13.5px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;border-radius:999px" style-hover="background:#FFFCF8 !important;color:#A50000 !important">{{ c.label }}</a></sc-if>
+                </sc-for>
+              </div>
+            </div>
+            <div style="padding:0 8px;text-align:center;align-self:stretch;position:relative;z-index:2" class="app-graphic-cell" data-reveal="off"><img src="{{ sec.img }}" alt="Download the Mangia app" style="width:auto;height:calc(100% + 56px);max-width:92%;margin:-28px auto;display:block;filter:drop-shadow(0 26px 44px rgba(0,0,0,.45))"/></div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- CTA PANEL -->
+      <sc-if value="{{ sec.is_ctaPanel }}">
+        <section style="padding:84px 24px;background:#A50000;color:#FFFCF8">
+          <div style="max-width:900px;margin:0 auto;text-align:center" data-reveal="off">
+            <h2 style="font-family:Anton;font-weight:400;font-size:clamp(40px,6vw,84px);line-height:.88;text-transform:uppercase;margin:0 0 14px">{{ sec.line1 }}<br/>{{ sec.line2 }}</h2>
+            <p style="max-width:560px;margin:0 auto 26px;font-size:17px;line-height:1.55;color:rgba(255,252,248,.9)">{{ sec.sub }}</p>
+            <div class="cta-row" style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center">
+              <sc-for list="{{ sec.ctas }}" as="c" hint-placeholder-count="3">
+                <sc-if value="{{ c.light }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:9px;padding:15px 28px;background:#FFFCF8;color:#A50000;font-family:Archivo;font-weight:800;font-size:14px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;border-radius:999px;transition:transform .2s" style-hover="transform:translateY(-2px)">{{ c.label }} <span>→</span></a></sc-if>
+                <sc-if value="{{ c.ghost }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:9px;padding:14px 26px;background:transparent;color:#FFFCF8;border:2px solid rgba(255,252,248,.65);font-family:Archivo;font-weight:800;font-size:14px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;border-radius:999px" style-hover="background:#FFFCF8 !important;color:#A50000 !important">{{ c.label }}</a></sc-if>
+              </sc-for>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- THANK YOU -->
+      <sc-if value="{{ sec.is_thankYou }}">
+        <section style="min-height:calc(100vh - 86px);display:flex;align-items:center;justify-content:center;padding:90px 24px;background:#FBF6EC">
+          <div style="max-width:760px;margin:0 auto;text-align:center" data-reveal="off">
+            <div style="width:96px;height:96px;border-radius:50%;background:#A50000;color:#FFFCF8;display:flex;align-items:center;justify-content:center;font-size:46px;margin:0 auto 28px;box-shadow:0 22px 48px -22px rgba(165,0,0,.65);animation:floatY 4s ease-in-out infinite">✓</div>
+            <div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#A50000;margin-bottom:16px">{{ sec.eyebrow }}</div>
+            <h1 style="font-family:Anton;font-weight:400;font-size:clamp(54px,8vw,108px);line-height:.9;text-transform:uppercase;margin:0 0 20px">{{ sec.line1 }} <span style="color:#A50000">{{ sec.line2 }}</span></h1>
+            <p style="max-width:560px;margin:0 auto 10px;font-size:18px;line-height:1.6;color:#4A4038">{{ sec.sub }}</p>
+            <div style="font-family:'Kaushan Script',cursive;font-size:30px;color:#A50000;transform:rotate(-2deg);margin:8px 0 30px">Grazie!</div>
+            <div class="cta-row" style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center">
+              <sc-for list="{{ sec.ctas }}" as="c" hint-placeholder-count="3">
+                <sc-if value="{{ c.primary }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:7px;padding:15px 26px;white-space:nowrap;background:#A50000;color:#FFFCF8;font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;border-radius:999px;box-shadow:0 14px 28px -14px rgba(165,0,0,.7);transition:transform .2s,background .2s" style-hover="background:#7E0000 !important;transform:translateY(-2px)">{{ c.label }} <span style="font-size:15px">→</span></a></sc-if>
+                <sc-if value="{{ c.light }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:7px;padding:15px 26px;white-space:nowrap;background:#1A1411;color:#FFFCF8;font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;border-radius:999px;transition:transform .2s" style-hover="transform:translateY(-2px)">{{ c.label }} <span style="font-size:15px">→</span></a></sc-if>
+                <sc-if value="{{ c.ghost }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:7px;padding:13px 24px;white-space:nowrap;background:transparent;color:#A50000;border:2px solid #A50000;font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;border-radius:999px;transition:all .2s" style-hover="background:#A50000 !important;color:#FFFCF8 !important">{{ c.label }}</a></sc-if>
+              </sc-for>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- STEPS -->
+      <sc-if value="{{ sec.is_steps }}">
+        <section style="padding:84px 24px;background:{{ sec.bg }}">
+          <div style="max-width:1320px;margin:0 auto">
+            <div style="text-align:center;margin-bottom:34px" data-reveal="off">
+              <div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#A50000;margin-bottom:12px">{{ sec.eyebrow }}</div>
+              <h2 style="font-family:Anton;font-weight:400;font-size:clamp(32px,4.4vw,54px);line-height:.94;text-transform:uppercase;margin:0">{{ sec.title }}</h2>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px" class="cards-4">
+              <sc-for list="{{ sec.items }}" as="s" hint-placeholder-count="4">
+                <div data-reveal="off" style="background:#FFFCF8;border:2px solid #1A1411;border-radius:16px;padding:26px 20px">
+                  <div style="font-family:Anton;font-size:40px;color:#A50000;line-height:1;margin-bottom:10px">{{ s.n }}</div>
+                  <h3 style="font-family:Archivo;font-weight:900;font-size:16px;text-transform:uppercase;margin:0 0 6px">{{ s.title }}</h3>
+                  <p style="margin:0;font-size:14px;color:#6B5F52;line-height:1.5">{{ s.text }}</p>
+                </div>
+              </sc-for>
+            </div>
+            <sc-if value="{{ sec.flow }}">
+              <div style="text-align:center;margin-top:40px" data-reveal="off">
+                <span style="display:inline-flex;align-items:center;justify-content:center;width:50px;height:50px;border-radius:50%;background:#A50000;color:#FFFCF8;font-size:22px;box-shadow:0 14px 26px -10px rgba(165,0,0,.7);animation:floatY 1.8s ease-in-out infinite">↓</span>
+              </div>
+            </sc-if>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- WHY CARDS -->
+      <sc-if value="{{ sec.is_whyCards }}">
+        <section style="padding:84px 24px;background:#1A1411;color:#FFFCF8">
+          <div style="max-width:1320px;margin:0 auto">
+            <div style="text-align:center;margin-bottom:34px" data-reveal="off">
+              <div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#E8B4B4;margin-bottom:12px">{{ sec.eyebrow }}</div>
+              <h2 style="font-family:Anton;font-weight:400;font-size:clamp(32px,4.4vw,54px);line-height:.94;text-transform:uppercase;margin:0">{{ sec.title }}</h2>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:18px" class="cards-4">
+              <sc-for list="{{ sec.items }}" as="w" hint-placeholder-count="4">
+                <div data-reveal="off" style="background:#241C17;border:1px solid rgba(255,252,248,.14);border-radius:16px;padding:26px 20px;border-top:4px solid #A50000">
+                  <h3 style="font-family:Archivo;font-weight:900;font-size:16px;text-transform:uppercase;margin:0 0 8px">{{ w.title }}</h3>
+                  <p style="margin:0;font-size:14px;color:rgba(255,252,248,.7);line-height:1.55">{{ w.text }}</p>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- OCCASIONS -->
+      <sc-if value="{{ sec.is_occasions }}">
+        <section style="padding:84px 24px;background:{{ sec.bg }}">
+          <div style="max-width:1320px;margin:0 auto">
+            <div style="text-align:center;margin-bottom:34px" data-reveal="off">
+              <div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#A50000;margin-bottom:12px">{{ sec.eyebrow }}</div>
+              <h2 style="font-family:Anton;font-weight:400;font-size:clamp(32px,4.4vw,54px);line-height:.94;text-transform:uppercase;margin:0">{{ sec.title }}</h2>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px" class="cards-4">
+              <sc-for list="{{ sec.items }}" as="o" hint-placeholder-count="8">
+                <div data-reveal="off" style="background:#FFFCF8;border:2px solid #1A1411;border-radius:14px;padding:20px 16px;display:flex;align-items:center;gap:12px;border-left:5px solid #A50000">
+                  <span style="font-family:Archivo;font-weight:900;font-size:15px;text-transform:uppercase">{{ o }}</span>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- MAP CARDS -->
+      <sc-if value="{{ sec.is_mapCards }}">
+        <section style="padding:84px 24px;background:#F2E7D3">
+          <div style="max-width:1320px;margin:0 auto">
+            <div style="margin-bottom:30px" data-reveal="off">
+              <div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#A50000;margin-bottom:12px">{{ sec.eyebrow }}</div>
+              <h2 style="font-family:Anton;font-weight:400;font-size:clamp(30px,4vw,50px);line-height:.94;text-transform:uppercase;margin:0">{{ sec.title }}</h2>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px" class="cards-3">
+              <sc-for list="{{ sec.items }}" as="m" hint-placeholder-count="3">
+                <div data-reveal="off" style="background:#FFFCF8;border:2px solid #1A1411;border-radius:18px;overflow:hidden">
+                  <div style="height:170px;border-bottom:2px solid #1A1411;position:relative;background:#E9DEC8"><iframe src="{{ m.mapSrc }}" title="Map of Mangia {{ m.name }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="width:100%;height:100%;border:0;display:block"></iframe></div>
+                  <div style="padding:20px">
+                    <h3 style="font-family:Anton;font-weight:400;font-size:24px;text-transform:uppercase;margin:0 0 6px">{{ m.name }}</h3>
+                    <div style="font-size:14px;color:#4A4038;line-height:1.5;margin-bottom:12px">{{ m.address }}</div>
+                    <a href="{{ m.href }}" onClick="{{ m.onClick }}" style="font-family:Archivo;font-weight:800;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:#A50000;text-decoration:none;border-bottom:2px solid #A50000;padding-bottom:2px">View Location →</a>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- CAPACITY HIGHLIGHT -->
+      <sc-if value="{{ sec.is_capacity }}">
+        <section style="padding:64px 24px;background:#1A1411;color:#FFFCF8">
+          <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center" class="cards-3">
+            <sc-for list="{{ sec.items }}" as="i" hint-placeholder-count="3">
+              <div data-reveal="off"><div style="font-family:Anton;font-size:clamp(40px,6vw,68px);color:#A50000;line-height:1">{{ i.big }}</div><div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-top:6px">{{ i.label }}</div></div>
+            </sc-for>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- CONTACT BLOCK -->
+      <sc-if value="{{ sec.is_contactBlock }}">
+        <section style="padding:84px 24px;background:#FBF6EC">
+          <div style="max-width:1100px;margin:0 auto">
+            <div style="margin-bottom:28px" data-reveal="off">
+              <div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#A50000;margin-bottom:12px">{{ sec.eyebrow }}</div>
+              <h2 style="font-family:Anton;font-weight:400;font-size:clamp(30px,4vw,50px);line-height:.94;text-transform:uppercase;margin:0">{{ sec.title }}</h2>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px" class="hero-grid">
+              <div data-reveal="off" style="background:#FFFCF8;border:2px solid #1A1411;border-radius:18px;padding:28px">
+                <div style="font-family:Archivo;font-weight:900;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#A50000;margin-bottom:8px">Find Us</div>
+                <div style="font-size:16px;line-height:1.6;color:#2A211C">{{ sec.loc.address }}</div>
+                <a href="{{ sec.loc.telHref }}" style="display:block;margin-top:10px;font-family:Archivo;font-weight:800;font-size:18px;color:#A50000;text-decoration:none">{{ sec.loc.phone }}</a>
+                <sc-if value="{{ sec.loc.hasEmail }}"><a href="{{ sec.loc.mailHref }}" style="display:block;margin-top:4px;font-size:14px;color:#4A4038;text-decoration:none">{{ sec.loc.email }}</a></sc-if>
+                <div style="display:flex;gap:10px;margin-top:18px">
+                  <sc-for list="{{ sec.loc.socials }}" as="s" hint-placeholder-count="2">
+                    <a href="{{ s.href }}" target="_blank" rel="noopener" aria-label="{{ s.label }}" title="{{ s.label }}" style="width:40px;height:40px;border:2px solid #1A1411;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;color:#1A1411;transition:all .2s" style-hover="background:#A50000 !important;color:#FFFCF8 !important;border-color:#A50000">
+                      <sc-if value="{{ s.isIg }}"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"></circle></svg></sc-if>
+                      <sc-if value="{{ s.isFb }}"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13.5 21v-7h2.4l.4-2.9h-2.8V9.2c0-.85.27-1.4 1.5-1.4l1.5 0V5.2C16.6 5.1 15.8 5 14.9 5c-2.2 0-3.7 1.35-3.7 3.85v2.25H8.7V14h2.5v7h2.3z"></path></svg></sc-if>
+                      <sc-if value="{{ s.isTa }}"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3.5 9.5c2.2-1.7 5.2-2.5 8.5-2.5s6.3.8 8.5 2.5"></path><circle cx="7.6" cy="13.2" r="3.6"></circle><circle cx="16.4" cy="13.2" r="3.6"></circle><circle cx="7.6" cy="13.2" r="1.2" fill="currentColor" stroke="none"></circle><circle cx="16.4" cy="13.2" r="1.2" fill="currentColor" stroke="none"></circle></svg></sc-if>
+                    </a>
+                  </sc-for>
+                </div>
+              </div>
+              <div data-reveal="off" style="background:#FFFCF8;border:2px solid #1A1411;border-radius:18px;padding:28px">
+                <div style="font-family:Archivo;font-weight:900;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#A50000;margin-bottom:12px">Hours</div>
+                <sc-for list="{{ sec.loc.hours }}" as="h" hint-placeholder-count="4">
+                  <div style="display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-bottom:1px dotted #E6DAC4;font-size:14.5px"><span style="font-family:Archivo;font-weight:700">{{ h.d }}</span><span style="color:#4A4038">{{ h.t }}</span></div>
+                </sc-for>
+                <a href="{{ sec.loc.order }}" target="_blank" style="display:block;text-align:center;margin-top:18px;padding:13px;background:#A50000;color:#FFFCF8;font-family:Archivo;font-weight:800;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:999px" style-hover="background:#7E0000 !important">Order Online →</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- FORM -->
+      <sc-if value="{{ sec.is_form }}">
+        <section id="{{ sec.anchor }}" style="padding:84px 24px;background:{{ sec.bg }};scroll-margin-top:90px">
+          <div style="max-width:760px;margin:0 auto">
+            <div style="text-align:center;margin-bottom:28px" data-reveal="off">
+              <div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#A50000;margin-bottom:12px">{{ sec.eyebrow }}</div>
+              <h2 style="font-family:Anton;font-weight:400;font-size:clamp(30px,4.2vw,52px);line-height:.94;text-transform:uppercase;margin:0 0 10px;color:{{ sec.titleColor }}">{{ sec.title }}</h2>
+              <p style="margin:0;font-size:15.5px;color:{{ sec.subColor }};line-height:1.55">{{ sec.sub }}</p>
+            </div>
+            <div data-reveal="off" style="background:#FFFCF8;border:2px solid #1A1411;border-radius:22px;padding:30px;box-shadow:0 22px 48px -30px rgba(60,30,10,.5)">
+              <sc-if value="{{ sec.submitted }}">
+                <div style="text-align:center;padding:30px 10px">
+                  <div style="width:70px;height:70px;border-radius:50%;background:#A50000;color:#FFFCF8;display:flex;align-items:center;justify-content:center;font-size:34px;margin:0 auto 18px">✓</div>
+                  <h3 style="font-family:Anton;font-weight:400;font-size:30px;text-transform:uppercase;margin:0 0 8px">Grazie!</h3>
+                  <p style="margin:0;font-size:15.5px;color:#4A4038;line-height:1.6">{{ sec.note }}</p>
+                </div>
+              </sc-if>
+              <sc-if value="{{ sec.showForm }}">
+                <form onSubmit="{{ sec.onSubmit }}">
+                  <div style="display:inline-flex;align-items:center;gap:8px;background:#F2E7D3;border:1.5px solid #E6DAC4;border-radius:999px;padding:7px 14px;margin-bottom:18px"><span style="width:8px;height:8px;border-radius:50%;background:#A50000"></span><span style="font-family:Archivo;font-weight:800;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#7E6B5A">Location: {{ sec.hidden }}</span></div>
+                  <div class="fgrid" style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+                    <sc-for list="{{ sec.fields }}" as="f" hint-placeholder-count="6">
+                      <div style="grid-column:{{ f.span }}">
+                        <label style="display:block;font-family:Archivo;font-weight:700;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:#4A4038;margin-bottom:6px">{{ f.label }}<span style="color:#A50000">{{ f.reqMark }}</span></label>
+                        <sc-if value="{{ f.isText }}"><input type="{{ f.type }}" placeholder="{{ f.ph }}" required="{{ f.required }}" style="width:100%;padding:12px 14px;border:1.5px solid #D8CBB4;border-radius:10px;font-family:Roboto;font-size:15px;background:#FBF6EC" style-focus="outline:none;border-color:#A50000"/></sc-if>
+                        <sc-if value="{{ f.isArea }}"><textarea rows="4" placeholder="{{ f.ph }}" required="{{ f.required }}" style="width:100%;padding:12px 14px;border:1.5px solid #D8CBB4;border-radius:10px;font-family:Roboto;font-size:15px;background:#FBF6EC;resize:vertical" style-focus="outline:none;border-color:#A50000"></textarea></sc-if>
+                        <sc-if value="{{ f.isSelect }}"><select required="{{ f.required }}" defaultValue="{{ f.selDefault }}" style="width:100%;padding:12px 14px;border:1.5px solid #D8CBB4;border-radius:10px;font-family:Roboto;font-size:15px;background:#FBF6EC" style-focus="outline:none;border-color:#A50000"><sc-for list="{{ f.optionObjs }}" as="o" hint-placeholder-count="3"><option value="{{ o.value }}" disabled="{{ o.disabled }}">{{ o.label }}</option></sc-for></select></sc-if>
+                        <sc-if value="{{ f.isFile }}"><input type="file" style="width:100%;padding:10px 12px;border:1.5px dashed #C9B996;border-radius:10px;font-family:Roboto;font-size:14px;background:#FBF6EC"/></sc-if>
+                      </div>
+                    </sc-for>
+                  </div>
+                  <button type="submit" disabled="{{ sec.sending }}" style="width:100%;margin-top:20px;padding:16px;background:#A50000;color:#FFFCF8;border:none;border-radius:999px;font-family:Archivo;font-weight:800;font-size:14px;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;transition:background .2s,opacity .2s" style-hover="background:#7E0000 !important">{{ sec.submitText }}</button>
+                </form>
+              </sc-if>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- PROMO / OFFER CARDS -->
+      <sc-if value="{{ sec.is_promoCards }}">
+        <section style="padding:90px 24px;background:#FBF6EC">
+          <div style="max-width:1320px;margin:0 auto">
+            <div style="margin-bottom:34px;max-width:680px" data-reveal="off">
+              <div style="font-family:Archivo;font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#A50000;margin-bottom:12px">{{ sec.eyebrow }}</div>
+              <h2 style="font-family:Anton;font-weight:400;font-size:clamp(34px,4.6vw,58px);line-height:.94;text-transform:uppercase;margin:0">{{ sec.title }}</h2>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px" class="cards-3">
+              <sc-for list="{{ sec.items }}" as="o" hint-placeholder-count="3">
+                <div data-reveal="off" style="position:relative;border:2px solid #1A1411;border-radius:20px;overflow:hidden;min-height:300px;display:flex;flex-direction:column;justify-content:flex-end;color:#FFFCF8;box-shadow:0 18px 40px -26px rgba(60,30,10,.5)">
+                  <img src="{{ o.img }}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"/>
+                  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,12,.1),rgba(20,16,12,.86))"></div>
+                  <div style="position:relative;padding:24px">
+                    <span style="display:inline-block;background:#A50000;font-family:Archivo;font-weight:800;font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:12px">{{ o.loc }}</span>
+                    <h3 style="font-family:Anton;font-weight:400;font-size:30px;text-transform:uppercase;line-height:.95;margin:0 0 8px">{{ o.label }}</h3>
+                    <p style="margin:0 0 16px;font-size:14px;color:rgba(255,252,248,.86);line-height:1.5">{{ o.desc }}</p>
+                    <sc-for list="{{ o.ctas }}" as="c" hint-placeholder-count="1">
+                      <sc-if value="{{ c.light }}"><a href="{{ c.href }}" target="{{ c.target }}" onClick="{{ c.onClick }}" style="display:inline-flex;align-items:center;gap:8px;padding:11px 20px;background:#FFFCF8;color:#A50000;font-family:Archivo;font-weight:800;font-size:12px;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;border-radius:999px" style-hover="background:#F2E7D3 !important">{{ c.label }} <span>→</span></a></sc-if>
+                    </sc-for>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!--SEC-->
+    </sc-for>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer style="background:#1A1411;color:#FFFCF8;padding:64px 24px 0">
+    <div style="max-width:1320px;margin:0 auto">
+      <div style="display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between;padding-bottom:48px;border-bottom:1px solid rgba(255,252,248,.14)">
+        <div style="max-width:300px">
+          <img src="assets/brand/logo.png" alt="Mangia Pizzeria" style="height:42px;filter:brightness(0) invert(1);margin-bottom:16px"/>
+          <p style="margin:0;font-size:15px;line-height:1.6;color:rgba(255,252,248,.78)">Family-run New York–style pizza with Sicilian roots. Quick slices, comforting Italian classics, catering & celebrations across three New Jersey neighborhoods.</p>
+          <div style="display:flex;gap:10px;margin-top:18px">
+            <sc-for list="{{ brandSocials }}" as="s" hint-placeholder-count="3">
+              <a href="{{ s.href }}" target="_blank" rel="noopener" aria-label="{{ s.label }}" title="{{ s.label }}" style="width:40px;height:40px;border:1px solid rgba(255,252,248,.3);border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;color:#FFFCF8;transition:all .2s" style-hover="background:#A50000 !important;border-color:#A50000">
+                <sc-if value="{{ s.isIg }}"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"></circle></svg></sc-if>
+                <sc-if value="{{ s.isFb }}"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13.5 21v-7h2.4l.4-2.9h-2.8V9.2c0-.85.27-1.4 1.5-1.4l1.5 0V5.2C16.6 5.1 15.8 5 14.9 5c-2.2 0-3.7 1.35-3.7 3.85v2.25H8.7V14h2.5v7h2.3z"></path></svg></sc-if>
+                <sc-if value="{{ s.isTa }}"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3.5 9.5c2.2-1.7 5.2-2.5 8.5-2.5s6.3.8 8.5 2.5"></path><circle cx="7.6" cy="13.2" r="3.6"></circle><circle cx="16.4" cy="13.2" r="3.6"></circle><circle cx="7.6" cy="13.2" r="1.2" fill="currentColor" stroke="none"></circle><circle cx="16.4" cy="13.2" r="1.2" fill="currentColor" stroke="none"></circle></svg></sc-if>
+              </a>
+            </sc-for>
+          </div>
+        </div>
+        <sc-for list="{{ locations }}" as="loc" hint-placeholder-count="3">
+          <div style="min-width:200px">
+            <div style="font-family:Archivo;font-weight:900;text-transform:uppercase;letter-spacing:.06em;font-size:15px;margin-bottom:12px;color:#FFFCF8">{{ loc.name }}</div>
+            <div style="font-size:13.5px;line-height:1.7;color:rgba(255,252,248,.72)">{{ loc.address }}</div>
+            <a href="{{ loc.telHref }}" style="display:block;margin-top:8px;font-size:13.5px;color:#E8B4B4;text-decoration:none;font-weight:700">{{ loc.phone }}</a>
+            <div style="font-size:12.5px;color:rgba(255,252,248,.55);margin-top:6px">{{ loc.hoursShort }}</div>
+            <div style="display:flex;gap:14px;margin-top:12px">
+              <a href="{{ loc.order }}" target="_blank" style="font-family:Archivo;font-weight:700;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:#FFFCF8;text-decoration:none;border-bottom:2px solid #A50000;padding-bottom:2px">Order</a>
+              <a href="{{ loc.menuHref }}" onClick="{{ loc.goMenu }}" style="font-family:Archivo;font-weight:700;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:rgba(255,252,248,.7);text-decoration:none;border-bottom:2px solid transparent;padding-bottom:2px" style-hover="color:#FFFCF8 !important;border-color:#A50000">Menus</a>
+            </div>
+          </div>
+        </sc-for>
+        <div style="min-width:150px">
+          <div style="font-family:Archivo;font-weight:900;text-transform:uppercase;letter-spacing:.06em;font-size:15px;margin-bottom:12px">Explore</div>
+          <sc-for list="{{ footerLinks }}" as="f" hint-placeholder-count="6">
+            <a href="{{ f.href }}" onClick="{{ f.onClick }}" style="display:block;padding:5px 0;font-size:14px;color:rgba(255,252,248,.72);text-decoration:none" style-hover="color:#FFFCF8 !important">{{ f.label }}</a>
+          </sc-for>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;padding:22px 0;font-size:12.5px;color:rgba(255,252,248,.5)">
+        <span>© {{ year }} Mangia Pizzeria · Mangia Brick Oven Pizza. All rights reserved. · Created by <a href="https://smartmarketingg.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">Smart Marketing</a></span>
+        <span>Good Pizza. Good People. That's Mangia.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== ORDER MODAL ===================== -->
+  <sc-if value="{{ orderOpen }}">
+    <div onClick="{{ closeOrder }}" style="position:fixed;inset:0;z-index:90;background:rgba(20,16,12,.72);display:flex;align-items:center;justify-content:center;padding:22px;animation:ddIn .2s ease">
+      <div onClick="{{ stop }}" style="background:#FBF6EC;border:2px solid #1A1411;border-radius:22px;max-width:560px;width:100%;padding:30px;animation:modalIn .28s cubic-bezier(.2,.8,.2,1);box-shadow:0 40px 80px -30px rgba(0,0,0,.6)">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
+          <div style="font-family:Archivo;font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#A50000">Order Online</div>
+          <button onClick="{{ closeOrder }}" style="width:38px;height:38px;border:2px solid #1A1411;background:transparent;border-radius:10px;font-size:17px;cursor:pointer">✕</button>
+        </div>
+        <h2 style="font-family:Anton;font-weight:400;font-size:34px;line-height:.96;margin:0 0 4px;text-transform:uppercase">Select a Location</h2>
+        <p style="margin:0 0 20px;color:#6B5F52;font-size:14.5px">Pick a location to start your pickup or delivery order.</p>
+        <sc-for list="{{ locations }}" as="loc" hint-placeholder-count="3">
+          <div style="display:flex;align-items:center;gap:14px;padding:16px;background:#FFFCF8;border:1.5px solid #E6DAC4;border-radius:14px;margin-bottom:12px">
+            <div style="flex:1;min-width:0">
+              <div style="font-family:Archivo;font-weight:800;font-size:17px">{{ loc.name }}</div>
+              <div style="font-size:13px;color:#6B5F52">{{ loc.address }}</div>
+            </div>
+            <a href="{{ loc.telHref }}" style="flex:none;padding:11px 16px;border:2px solid #A50000;color:#A50000;border-radius:999px;text-decoration:none;font-family:Archivo;font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.05em" style-hover="background:#A50000 !important;color:#FFFCF8 !important">Call</a>
+            <a href="{{ loc.order }}" target="_blank" style="flex:none;padding:11px 18px;background:#A50000;color:#FFFCF8;border-radius:999px;text-decoration:none;font-family:Archivo;font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.05em" style-hover="background:#7E0000 !important">Order →</a>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </sc-if>
+
+  <!-- ===================== PDF MENU VIEWER ===================== -->
+  <sc-if value="{{ pdfOpen }}">
+    <div onClick="{{ closePdf }}" style="position:fixed;inset:0;z-index:95;background:rgba(20,16,12,.84);display:flex;flex-direction:column;padding:16px;animation:ddIn .2s ease">
+      <div onClick="{{ stop }}" style="margin:0 auto;width:100%;max-width:940px;flex:1;min-height:0;display:flex;flex-direction:column;background:#FBF6EC;border:2px solid #1A1411;border-radius:18px;overflow:hidden;box-shadow:0 40px 90px -25px rgba(0,0,0,.65)">
+        <div style="flex:none;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 16px;border-bottom:2px solid #1A1411;background:#FFFCF8">
+          <div style="display:flex;align-items:center;gap:10px;min-width:0">
+            <img src="assets/brand/slice.png" alt="" style="height:24px;flex:none"/>
+            <span style="font-family:Anton;font-weight:400;font-size:18px;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ pdfTitle }}</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;flex:none">
+            <a href="{{ pdfUrl }}" download="{{ pdfDownloadName }}" target="_blank" style="padding:9px 16px;background:#A50000;color:#FFFCF8;border-radius:999px;text-decoration:none;font-family:Archivo;font-weight:800;font-size:12px;letter-spacing:.05em;text-transform:uppercase">Download</a>
+            <button onClick="{{ closePdf }}" style="width:38px;height:38px;border:2px solid #1A1411;background:#FBF6EC;border-radius:10px;cursor:pointer;font-size:16px;line-height:1">✕</button>
+          </div>
+        </div>
+        <div style="flex:1;min-height:0;position:relative;background:#33302C">
+          <div ref="{{ pdfHostRef }}" class="pdf-host" style="position:absolute;inset:0;overflow-y:auto;padding:18px"></div>
+          <sc-if value="{{ pdfLoading }}"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#FBF6EC;font-family:Archivo;font-weight:700;font-size:14px;letter-spacing:.04em;text-transform:uppercase;pointer-events:none">Loading menu…</div></sc-if>
+          <sc-if value="{{ pdfError }}"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:28px;color:#FBF6EC;font-family:Archivo;font-weight:600;font-size:14px;line-height:1.5;pointer-events:none">This menu couldn't be displayed here.<br/>Use the Download button above to open it.</div></sc-if>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <!-- ===================== MOBILE STICKY CTA BAR ===================== -->
+  <div class="mobile-bar" style="display:none;position:fixed;left:0;right:0;bottom:0;z-index:70;background:#1A1411;border-top:2px solid #A50000;padding:8px 8px calc(8px + env(safe-area-inset-bottom))">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px">
+      <button onClick="{{ openOrder }}" style="display:flex;flex-direction:column;align-items:center;gap:3px;padding:9px 4px;background:#A50000;color:#FFFCF8;border:none;border-radius:11px;font-family:Archivo;font-weight:800;font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;cursor:pointer">🍕<span>Order</span></button>
+      <a href="#menus" onClick="{{ goMenus }}" style="display:flex;flex-direction:column;align-items:center;gap:3px;padding:9px 4px;color:#FFFCF8;text-decoration:none;font-family:Archivo;font-weight:700;font-size:10.5px;letter-spacing:.04em;text-transform:uppercase">📋<span>Menus</span></a>
+      <a href="#locations" onClick="{{ goLocations }}" style="display:flex;flex-direction:column;align-items:center;gap:3px;padding:9px 4px;color:#FFFCF8;text-decoration:none;font-family:Archivo;font-weight:700;font-size:10.5px;letter-spacing:.04em;text-transform:uppercase">📍<span>Locations</span></a>
+    </div>
+  </div>
+
+  <style>
+    @media (max-width:1080px){ .desk-nav{display:none!important} .burger{display:flex!important} .desk-order{display:none!important} .mobile-bar{display:block!important} footer{padding-bottom:74px!important} .hero-grid{grid-template-columns:1fr!important;gap:34px!important;min-height:0!important;padding:44px 24px 56px!important} .hero-grid>*{min-width:0!important} }
+    @media (max-width:520px){ .hero-stamp{width:96px!important;height:96px!important} .hero-sticker{font-size:21px!important} }
+    @media (max-width:1080px){ .app-graphic-cell{align-self:auto!important} .app-graphic-cell img{height:auto!important;max-height:380px!important;margin:-40px auto!important} .app-grid{grid-template-columns:1fr!important;padding:0 8px} .app-grid>*{min-width:0!important} .app-text-cell{padding:44px 16px 0!important;text-align:center} }
+    @media (max-width:900px){ .cards-4{grid-template-columns:repeat(2,1fr)!important} }
+    @media (max-width:760px){ .event-banner{grid-template-columns:1fr!important} .strip-grid{grid-template-columns:repeat(2,1fr)!important} }
+    @media (max-width:680px){ .cards-3{grid-template-columns:1fr!important} .fgrid{grid-template-columns:1fr!important} }
+    @media (max-width:520px){ .cards-4{grid-template-columns:repeat(2,1fr)!important} section{padding-left:18px!important;padding-right:18px!important} }
+    @media (max-width:600px){ .cta-row{flex-direction:column!important;align-items:stretch!important;flex-wrap:nowrap!important} .cta-row>a,.cta-row>button{width:100%!important;justify-content:center!important} }
+    @media (max-width:600px){ section[style*="px 24px"]{padding-top:54px!important;padding-bottom:54px!important} .sig-grid{padding:0!important;gap:24px!important} .sig-text{padding:44px 0!important} .sig-img{margin-left:-18px!important;margin-right:-18px!important;width:calc(100% + 36px)!important;min-height:300px!important} .sig-img img{object-position:80% center!important} div[style*="min-height: 380px"]{min-height:300px!important} }
+  </style>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  /* =====================================================================
+     MANGIA PIZZERIA — central content config. Update values below.
+     ===================================================================== */
+  constructor(props){
+    super(props);
+    this.state = { page:'home', dd:null, menuOpen:false, mexp:null, orderOpen:false, gFilter:'All', tIndex:0, heroSlide:0, faqOpen:{}, forms:{}, pdf:{open:false,loading:false,url:'',title:'',error:false} };
+    this.rootRef = (el)=>{ this._root = el; };
+  }
+
+  /* ---- Interior hero slider images per location (update paths to change slides) ---- */
+  HERO_SLIDES(){
+    if(this.state.page==='loc-shrewsbury') return [
+      {src:'assets/shrews/int-dining.jpg', alt:'Mangia Shrewsbury dining room'},
+      {src:'assets/shrews/int-utensils.jpg', alt:'Fork and spoon wall art at Mangia Shrewsbury'},
+      {src:'assets/shrews/int-guests.jpg', alt:'Guests sharing pizza at Mangia Shrewsbury'}
+    ];
+    if(this.state.page==='loc-tomsriver') return [
+      {src:'assets/toms/int-9056.jpg', alt:'The dining room with string lights at Mangia Toms River'},
+      {src:'assets/toms/int-neon.jpg', alt:'You wanna pizza me neon and fresh pie at Mangia Toms River'},
+      {src:'assets/toms/int-edited-4-sm.jpg', alt:'The Mangia family with a fresh sheet pizza in Toms River'},
+      {src:'assets/toms/int-9057.jpg', alt:'The counter and pizza-making artwork at Mangia Toms River'},
+      {src:'assets/toms/int-family-2.jpg', alt:'A Mangia family at the Toms River pizzeria'},
+      {src:'assets/toms/int-neon2.jpg', alt:'You wanna pizza me neon wall at Mangia Toms River'},
+      {src:'assets/toms/int-booth-1.png', alt:'Family sharing slices in a window booth at Mangia Toms River'}
+    ];
+    return [
+      {src:'assets/jackson/int-maja-2.jpg', alt:'Mangia Jackson dining room with chandeliers and greenery'},
+      {src:'assets/jackson/int-dining-1.jpg', alt:'Mangia Jackson dining room'},
+      {src:'assets/jackson/int-chandeliers.jpg', alt:'Chandeliers and greenery at Mangia Jackson'},
+      {src:'assets/jackson/int-maja-6.jpg', alt:'Mangia Jackson dining room by the windows'},
+      {src:'assets/jackson/int-ciao.jpg', alt:'Ciao neon sign at Mangia Jackson'},
+      {src:'assets/jackson/int-liveloveeat.jpg', alt:'Live Love Eat wall art at Mangia Jackson'},
+      {src:'assets/jackson/int-patio.jpg', alt:'Outdoor patio seating at Mangia Jackson'}
+    ];
+  }
+
+  /* ---- social link flag helper (type -> isIg/isFb/isTa) ---- */
+  _soc(list){ return (list||[]).map(s=>({ href:s.href, label:s.label, isIg:s.type==='ig', isFb:s.type==='fb', isTa:s.type==='ta' })); }
+
+  /* ---- LOCATIONS (addresses, phones, emails, hours, order links) ---- */
+  LOCATIONS(){ return [
+    { key:'tomsriver', name:'Toms River', region:'Toms River, NJ',
+      address:'1 Rt. 37 West, Toms River, NJ 08753', phone:'(732) 557-5000', tel:'7325575000', email:'mangiapizzatr@gmail.com',
+      hours:[['Sun – Thu','11:00 AM – 9:00 PM'],['Fri – Sat','11:00 AM – 9:30 PM']],
+      hoursShort:'Open daily from 11 AM',
+      order:'https://mangiabrickovenpizza.hungerrush.com/',
+      promo:'2 for $40 Offer', promoKey:'offer-tomsriver', capacity:'Up to 30 guests',
+      socials:[ {type:'ig',label:'Instagram',href:'https://www.instagram.com/mangia.nj/'}, {type:'fb',label:'Facebook',href:'https://www.facebook.com/MangiaBrickOvenPizza/'}, {type:'ta',label:'TripAdvisor',href:'https://www.tripadvisor.com/Restaurant_Review-g46870-d5074986-Reviews-Mangia_Brick_Oven_Pizza-Toms_River_New_Jersey.html'} ],
+      img:'assets/loc/toms-neon-pizza-me.jpg', objPos:'center' },
+    { key:'jackson', name:'Jackson', region:'Jackson, NJ',
+      address:'10 Leesville Road, Jackson, NJ 08527', phone:'(732) 276-7200', tel:'7322767200', email:'mangiajackson10@gmail.com',
+      hours:[['Mon – Fri','11:00 AM – 10:00 PM'],['Sat – Sun','11:00 AM – 10:00 PM']],
+      hoursShort:'Open daily until 10 PM',
+      order:'https://mangiabrickovenpizza.hungerrush.com/',
+      promo:'2 for $40 Offer', promoKey:'offer-jackson', capacity:'Up to 75 guests', perPerson:'$45.95 per person',
+      socials:[ {type:'ig',label:'Instagram',href:'https://www.instagram.com/mangia.nj/'}, {type:'fb',label:'Facebook',href:'https://www.facebook.com/mangiajackson'}, {type:'ta',label:'TripAdvisor',href:'https://www.tripadvisor.com/Restaurant_Review-g46528-d7647207-Reviews-Mangia_Brick_Oven_Pizza-Jackson_New_Jersey.html'} ],
+      img:'assets/loc/jackson-counter.jpg', objPos:'center 28%' },
+    { key:'shrewsbury', name:'Shrewsbury', region:'Shrewsbury, NJ',
+      address:'1087 Broad St, Shrewsbury, NJ 07702', phone:'(732) 578-9000', tel:'7325789000', email:'mangiashrewsbury@gmail.com',
+      hours:[['Mon – Thu','10:30 AM – 9:00 PM'],['Friday','10:30 AM – 10:00 PM'],['Saturday','11:00 AM – 10:00 PM'],['Sunday','11:00 AM – 9:00 PM']],
+      hoursShort:'Open daily until 9–10 PM',
+      order:'https://mangiabrickovenpizza.hungerrush.com/Order/OrderType',
+      promo:'Download the App', promoKey:'app', capacity:'Up to 30 guests',
+      socials:[ {type:'fb',label:'Facebook',href:'https://www.facebook.com/mangiashrewsbury/'}, {type:'ig',label:'Instagram',href:'https://www.instagram.com/mangia.nj/'} ],
+      img:'assets/loc/shrewsbury-room-v2.jpg', objPos:'center' }
+  ]; }
+
+  /* ---- MENU FILES per location (swap PDFs here) ---- */
+  MENUS(){ return {
+    shrewsbury:[ {label:'Dinner Menu', file:'assets/menus/shrews-dinner.pdf'}, {label:'Take Out Menu', file:'assets/menus/shrews-takeout.pdf'}, {label:'Catering Menu', file:'assets/menus/shrews-catering.pdf'} ],
+    tomsriver:[ {label:'Dining Menu', file:'assets/menus/toms-dining.pdf'}, {label:'Take Out Menu', file:'assets/menus/toms-takeout.pdf'}, {label:'Catering Menu', file:'assets/menus/toms-catering.pdf'} ],
+    jackson:[ {label:'Dining Menu', file:'assets/menus/jackson-dining.pdf'}, {label:'Take Out Menu', file:'assets/menus/jackson-takeout.pdf'}, {label:'Catering Menu', file:'assets/menus/jackson-catering.pdf'}, {label:'Party Package', file:'assets/menus/jackson-party.pdf'} ]
+  }; }
+
+  /* ---- TESTIMONIALS (from current site) ---- */
+  TESTIMONIALS(){ return [
+    { stars:5, quote:"Great atmosphere! Courteous and friendly staff. Try the Buffalo chicken slice, it's my favorite. They have a wide variety on the menu. The food is fresh and comes out really fast. I recommend Mangia to anyone that wants to grab a quick slice or feed an army. You can't go wrong!!", name:'Laurie Beth Mandil', where:'Our Customer' },
+    { stars:5, quote:'This is the local spot I go to for pizza. Huge fan of the Godfather Pizza. Wings and appetizers are great as well. Never had an issue with pick-up either through calls or the app. Also, their Sicilian is great. If you are in the Shrewsbury / Eatontown area definitely go and pick up a slice.', name:'Annmarie Wood', where:'Shrewsbury' },
+    { stars:5, quote:'Love their pizza & Fantasia salad! They do specialty pizza like no other — round or grandma, always delicious. Favorites include eggplant spinach vodka sauce, peppers, onions, meatball & garlic, and the Brooklyn Grandma.', name:'Christine', where:'Our Customer' }
+  ]; }
+
+  /* ---- HOME FOOD PREVIEW ---- */
+  FOODS(){ return [
+    {title:'Brick Oven Pizza', note:'Blistered crust, bubbling fresh mozzarella.', img:'assets/home/food-49.jpg'},
+    {title:'Pizza by the Slice', note:'NY-style, folded and ready to go.', img:'assets/home/owners-counter.jpg'},
+    {title:'Pasta', note:'Vodka rigatoni, baked ziti & more.', img:'assets/home/food-61.jpg'},
+    {title:'Parmigiana', note:'Chicken or eggplant over spaghetti.', img:'assets/home/food-58.jpg'},
+    {title:'Salads', note:'Fresh, crunchy, piled high.', img:'assets/home/food-53.jpg'},
+    {title:'Catering', note:'Trays & party packages for any crowd.', img:'assets/jackson/food-spread.jpg'},
+    {title:'Takeout', note:'Order ahead and skip the wait.', img:'assets/home/takeout-subs.jpg'},
+    {title:'Private Events', note:'Showers, birthdays & celebrations.', img:'assets/events/pink-tablescape.jpg'}
+  ]; }
+
+  /* ---- GALLERY (filterable food + restaurant feed) ---- */
+  GALLERY(){ return [
+    {src:'assets/home/grandma-square.jpg', cat:'Pizza'},
+    {src:'assets/home/food-55.jpg', cat:'Pizza'},
+    {src:'assets/home/owners-counter.jpg', cat:'Pizza'},
+    {src:'assets/home/food-50.jpg', cat:'Pizza'},
+    {src:'assets/home/food-56.jpg', cat:'Italian Classics'},
+    {src:'assets/home/food-67.jpg', cat:'Italian Classics'},
+    {src:'assets/home/food-61.jpg', cat:'Italian Classics'},
+    {src:'assets/home/food-59.jpg', cat:'Italian Classics'},
+    {src:'assets/events/gold-dessert.jpg', cat:'Catering'},
+    {src:'assets/home/food-53.jpg', cat:'Catering'},
+    {src:'assets/home/takeout-subs.jpg', cat:'Catering'},
+    {src:'assets/events/champagne.jpg', cat:'Private Events'},
+    {src:'assets/events/pink-tablescape.jpg', cat:'Private Events'},
+    {src:'assets/events/ciao-godbless.jpg', cat:'Private Events'},
+    {src:'assets/loc/mangia-wall.jpg', cat:'Dining'},
+    {src:'assets/loc/jackson-interior.jpg', cat:'Dining'}
+  ]; }
+  GALLERY_TABS(){ return ['All','Pizza','Italian Classics','Catering','Private Events','Dining']; }
+
+  EVENT_TYPES(){ return ['Baby Showers','Birthday Parties','Wedding Showers','Corporate Events','Holiday Parties','Large Dinner Parties','Graduation Parties','Sweet 16s & Quinceañeras']; }
+
+  FAQS(){ return [
+    {q:'Do you offer online ordering?', a:'Yes. Order pickup or delivery online from any Mangia location — just tap Order Online and choose your spot.'},
+    {q:'Do you offer catering?', a:'Absolutely. We cater family parties, offices, schools, holidays and more with trays and party packages. Visit our Catering page to request a quote.'},
+    {q:'Do you host private events?', a:'Yes — each location hosts private parties for showers, birthdays, corporate events and celebrations. Jackson seats up to 75 guests.'},
+    {q:'Which Mangia location should I contact?', a:'Reach out to the location nearest you — Toms River, Jackson or Shrewsbury. Each has its own contact page and phone number.'},
+    {q:'Do you have separate menus by location?', a:'Yes. Dining, takeout and catering menus are specific to each location. Find them on the Menus page or any location page.'},
+    {q:'Do you offer takeout?', a:'Of course. Order ahead online or by phone and your food will be ready for pickup.'},
+    {q:'Do you offer delivery?', a:'Yes, delivery is available through our online ordering for participating locations.'},
+    {q:'How do I apply for a job?', a:'Head to our Careers page and submit the application form. Choose your preferred location and the position you are interested in.'},
+    {q:'How do I request a private event?', a:'Open the private events page for your location and fill out the event request form. We will follow up to confirm details.'},
+    {q:'How do I get the 2 for $40 offer?', a:'The 2 for $40 dinner-for-two offer is a dine-in special available Monday through Thursday at Toms River and Jackson. There\u2019s nothing to claim and it\u2019s not a coupon \u2014 just visit the restaurant Monday through Thursday and ask your server. It is not available for takeout, delivery or online orders.'}
+  ]; }
+
+  /* =====================================================================
+     STATE / ROUTING
+     ===================================================================== */
+  pageList(){ return ['home','locations','loc-shrewsbury','loc-tomsriver','loc-jackson','menus','events','events-shrewsbury','events-tomsriver','events-jackson','catering','catering-shrewsbury','catering-tomsriver','catering-jackson','testimonials','careers','contact','contact-shrewsbury','contact-tomsriver','contact-jackson','offer-tomsriver','offer-jackson','thankyou']; }
+
+  componentDidMount(){
+    this.routeFromPath();
+    this.applySEO(this.state.page);
+    this._pop = ()=>this.routeFromPath();
+    this._heroTimer = setInterval(()=>{ const n=this.HERO_SLIDES().length; if(n>1) this.setState(s=>({heroSlide:(s.heroSlide+1)%n})); }, 4500);
+    window.addEventListener('popstate', this._pop);
+    this.observeReveal();
+  }
+  componentWillUnmount(){ window.removeEventListener('popstate', this._pop); if(this._io) this._io.disconnect(); if(this._heroTimer) clearInterval(this._heroTimer); }
+  componentDidUpdate(){ this.observeReveal(); }
+
+  /* ===== Clean URL slugs (edit a slug here to change a page's URL) =====
+     Each page key maps to a path segment. 'home' is the root "/". These are
+     served by the Cloudflare _redirects catch-all, which rewrites every path
+     to index.html so deep links + refreshes work. ===== */
+  DOMAIN(){ return 'https://www.mangiabrickovenpizza.com'; }
+  SLUGS(){ return {
+    home:'', locations:'locations', menus:'menus', events:'private-events',
+    catering:'catering', testimonials:'testimonials', careers:'careers', contact:'contact', thankyou:'thank-you',
+    'loc-shrewsbury':'shrewsbury', 'loc-tomsriver':'toms-river', 'loc-jackson':'jackson',
+    'events-shrewsbury':'private-events-shrewsbury', 'events-tomsriver':'private-events-toms-river', 'events-jackson':'private-events-jackson',
+    'catering-shrewsbury':'catering-shrewsbury', 'catering-tomsriver':'catering-toms-river', 'catering-jackson':'catering-jackson',
+    'contact-shrewsbury':'contact-shrewsbury', 'contact-tomsriver':'contact-toms-river', 'contact-jackson':'contact-jackson',
+    'offer-tomsriver':'2-for-40-toms-river', 'offer-jackson':'2-for-40-jackson'
+  }; }
+  slugFor(page){ const m=this.SLUGS(); return (page in m)? m[page] : ''; }
+  pageFromSlug(slug){
+    slug=(slug||'').replace(/^\/+|\/+$/g,'').toLowerCase();
+    if(slug==='') return 'home';
+    const m=this.SLUGS(); for(const k in m){ if(m[k]===slug) return k; }
+    return null;
+  }
+
+  /* ===== SEO: per-page <title> + meta description (edit copy here) ===== */
+  SEO_BASE(){ return {
+    home:{t:'Family-Run NY-Style Pizzeria in Toms River, Jackson & Shrewsbury, NJ', d:'Mangia Brick Oven Pizza is a family-run, New York-style pizzeria and Italian restaurant with three NJ locations \u2014 Toms River, Jackson and Shrewsbury. Order online, view menus, catering and private events.'},
+    locations:{t:'Our Locations \u2014 Toms River, Jackson & Shrewsbury, NJ', d:'Find your nearest Mangia Brick Oven Pizza. Three family-run New Jersey locations with online ordering, menus, catering and private events.'},
+    menus:{t:'Menus \u2014 Dining, Takeout & Catering', d:'Browse Mangia Brick Oven Pizza menus by location: dining, takeout, catering and party packages for Toms River, Jackson and Shrewsbury, NJ.'},
+    events:{t:'Private Events & Party Packages in NJ', d:'Host your private event at Mangia Brick Oven Pizza. Birthdays, showers, corporate parties and more at our Toms River, Jackson and Shrewsbury, NJ locations.'},
+    catering:{t:'Pizza & Italian Catering in New Jersey', d:'Cater your next gathering with Mangia Brick Oven Pizza \u2014 fresh pizza, Italian favorites, trays and party packages across Toms River, Jackson and Shrewsbury, NJ.'},
+    testimonials:{t:'Reviews & Testimonials', d:'See what guests say about Mangia Brick Oven Pizza \u2014 fresh New York-style pizza, friendly service and Italian classics across three NJ locations.'},
+    careers:{t:'Careers \u2014 Join the Mangia Family', d:'Now hiring at Mangia Brick Oven Pizza. Apply to join our family-run team in Toms River, Jackson or Shrewsbury, NJ.'},
+    contact:{t:'Contact Us', d:'Get in touch with Mangia Brick Oven Pizza. Contact our Toms River, Jackson or Shrewsbury, NJ location for orders, catering and private events.'},
+    thankyou:{t:'Thank You', d:'Thanks for reaching out to Mangia Brick Oven Pizza. We\u2019ll be in touch soon.'}
+  }; }
+  applySEO(page){
+    const brand='Mangia Brick Oven Pizza'; const base=this.SEO_BASE();
+    let t='', d='';
+    if(base[page]){ t=base[page].t; d=base[page].d; }
+    else if(page.indexOf('loc-')===0){ const l=this.locByKey(page.slice(4)); if(l){ t='Mangia Brick Oven Pizza in '+l.name+', NJ'; d='Fresh New York-style pizza and Italian classics at Mangia '+l.name+', NJ ('+l.address+'). Order online, view menus, catering and private events.'; } }
+    else if(page.indexOf('events-')===0){ const l=this.locByKey(page.slice(7)); if(l){ t='Private Events in '+l.name+', NJ'; d='Host your private party at Mangia '+l.name+', NJ. '+l.capacity+' \u2014 birthdays, showers, corporate events, holidays and more.'; } }
+    else if(page.indexOf('catering-')===0){ const l=this.locByKey(page.slice(9)); if(l){ t='Catering in '+l.name+', NJ'; d='Pizza and Italian catering from Mangia '+l.name+', NJ. Trays, party packages and crowd-pleasers for offices, parties and gatherings.'; } }
+    else if(page.indexOf('contact-')===0){ const l=this.locByKey(page.slice(8)); if(l){ t='Contact Mangia '+l.name+', NJ'; d='Contact Mangia Brick Oven Pizza in '+l.name+', NJ \u2014 '+l.address+' \u00b7 '+l.phone+'.'; } }
+    else if(page.indexOf('offer-')===0){ const l=this.locByKey(page.slice(6)); if(l){ t='2 for $40 Dine-In Special in '+l.name+', NJ'; d='Enjoy a four-course dinner for two for just $40 at Mangia '+l.name+', NJ \u2014 dine-in only, Monday through Thursday.'; } }
+    if(!t){ t=base.home.t; d=base.home.d; }
+    const hasBrand = t.indexOf('Mangia Brick Oven Pizza')!==-1;
+    const title = (page==='home') ? (brand+' | '+t) : (hasBrand ? t : (t+' | '+brand));
+    try{
+      document.title=title;
+      this._setMeta('name','description',d);
+      this._setMeta('property','og:title', page==='home'?title:t);
+      this._setMeta('property','og:description',d);
+      this._setMeta('name','twitter:title', page==='home'?title:t);
+      this._setMeta('name','twitter:description',d);
+      const url=this.DOMAIN()+'/'+this.slugFor(page);
+      this._setMeta('property','og:url',url);
+      let can=document.head.querySelector('link[rel=canonical]'); if(can) can.setAttribute('href',url);
+    }catch(e){}
+  }
+  _setMeta(attr,key,val){ if(!val) return; let el=document.head.querySelector('meta['+attr+'="'+key+'"]'); if(!el){ el=document.createElement('meta'); el.setAttribute(attr,key); document.head.appendChild(el); } el.setAttribute('content',val); }
+
+  routeFromPath(){
+    // 1) Try the clean path slug (e.g. /shrewsbury). 2) Fall back to a legacy
+    //    hash link (e.g. /#loc-shrewsbury or #loc-shrewsbury@menus) and upgrade
+    //    it to a clean URL so old shared links keep working.
+    let page = this.pageFromSlug(location.pathname);
+    let anchor = (location.hash||'').replace('#','');
+    let legacy = false;
+    if(page===null || (location.pathname.replace(/^\/+|\/+$/g,'')==='' && anchor)){
+      const hp = anchor.split('@'); const hpage = hp[0];
+      if(this.pageList().includes(hpage)){ page=hpage; anchor=hp[1]||''; legacy=true; }
+    }
+    if(page===null) page='home';
+    const initial = !this._routed; this._routed = true;
+    if(!initial) this.trackPageView();
+    const apply=()=>{ this.applySEO(page); if(anchor) setTimeout(()=>this.scrollTo(anchor),60); else window.scrollTo(0,0); };
+    if(legacy){ try{ history.replaceState({page,anchor}, '', '/'+this.slugFor(page)+(anchor?('#'+anchor):'')); }catch(e){} }
+    if(page!==this.state.page) this.setState({page, dd:null, menuOpen:false, orderOpen:false}, apply);
+    else apply();
+  }
+  go(page,anchor){
+    this.setState({page, dd:null, menuOpen:false, mexp:null, orderOpen:false, gFilter:'All', heroSlide:0}, ()=>{
+      try{ history.pushState({page,anchor}, '', '/'+this.slugFor(page)+(anchor?('#'+anchor):'')); }catch(e){}
+      this.applySEO(page);
+      this.trackPageView();
+      if(anchor) setTimeout(()=>this.scrollTo(anchor),60); else window.scrollTo(0,0);
+    });
+  }
+  // Fire a Meta Pixel PageView for SPA route changes (initial load is covered
+  // by the inline pixel script in <head>).
+  trackPageView(){ try{ if(window.fbq) window.fbq('track','PageView'); }catch(e){} }
+  scrollTo(id){ const root=this._root||document; const el=root.querySelector('#'+id); if(el){ window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-86, behavior:'smooth'}); } }
+
+  observeReveal(){ /* scroll reveal is pure CSS (animation-timeline:view) with a visible fallback — no JS needed */ }
+
+  openOrder(){ this.setState({orderOpen:true, menuOpen:false}); }
+  closeOrder(){ this.setState({orderOpen:false}); }
+  openPdf(file,title){
+    this.setState({menuOpen:false, pdf:{open:true,loading:true,url:'',title:title||'Menu',error:false}});
+    var self=this;
+    fetch(file).then(function(r){ if(!r.ok) throw new Error(r.status); return r.blob(); }).then(function(b){
+      self._pdfUrl=URL.createObjectURL(b);
+      self.setState(function(s){ return { pdf:Object.assign({},s.pdf,{url:self._pdfUrl}) }; });
+      return b.arrayBuffer();
+    }).then(function(buf){ return self._renderPdf(buf); })
+      .catch(function(){ self.setState(function(s){ return { pdf:Object.assign({},s.pdf,{loading:false,error:true}) }; }); });
+  }
+  _renderPdf(buf){
+    var self=this;
+    return new Promise(function(resolve,reject){
+      var tries=0;
+      (function wait(){
+        var lib=window.pdfjsLib;
+        if(!lib){ if(tries++>60) return reject(new Error('pdfjs')); return setTimeout(wait,120); }
+        try{ lib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js'; }catch(e){}
+        lib.getDocument({data:buf}).promise.then(function(doc){
+          self._pdfDoc=doc;
+          self.setState(function(s){ return { pdf:Object.assign({},s.pdf,{loading:false}) }; }, function(){ self._drawPages(); });
+          resolve();
+        }).catch(reject);
+      })();
+    });
+  }
+  _drawPages(){
+    var host=this._pdfHost, doc=this._pdfDoc; if(!host||!doc) return;
+    host.innerHTML='';
+    var avail=(host.clientWidth||820)-36;
+    var dpr=Math.min(2, window.devicePixelRatio||1);
+    for(var i=1;i<=doc.numPages;i++){
+      (function(n){
+        doc.getPage(n).then(function(page){
+          var base=page.getViewport({scale:1});
+          var cssW=Math.min(900, avail);
+          var scale=(cssW/base.width)*dpr;
+          var vp=page.getViewport({scale:scale});
+          var canvas=document.createElement('canvas');
+          canvas.width=Math.floor(vp.width); canvas.height=Math.floor(vp.height);
+          canvas.style.width=cssW+'px'; canvas.style.maxWidth='100%'; canvas.style.height='auto';
+          canvas.style.display='block'; canvas.style.margin='0 auto 14px'; canvas.style.borderRadius='6px';
+          canvas.style.boxShadow='0 10px 26px -14px rgba(0,0,0,.6)'; canvas.style.background='#fff';
+          host.appendChild(canvas);
+          page.render({ canvasContext:canvas.getContext('2d'), viewport:vp });
+        });
+      })(i);
+    }
+  }
+  closePdf(){ if(this._pdfUrl){ try{URL.revokeObjectURL(this._pdfUrl);}catch(e){} this._pdfUrl=null; } if(this._pdfDoc){ try{this._pdfDoc.destroy();}catch(e){} this._pdfDoc=null; } this.setState({pdf:{open:false,loading:false,url:'',title:'',error:false}}); }
+  toggleMenu(){ this.setState({menuOpen:!this.state.menuOpen}); }
+  setDD(k){ this.setState({dd:k}); }
+  FORM_EMAILS(){ return { shrewsbury:'mangiashrewsbury@gmail.com', tomsriver:'mangiapizzatr@gmail.com', jackson:'mangiajackson10@gmail.com' }; }
+  // Paste your Google Apps Script Web App URL between the quotes to also log every
+  // submission into a Google Sheet. Leave blank to disable (emails still work).
+  SHEET_ENDPOINT(){ return 'https://script.google.com/macros/s/AKfycbxiwQBgGI_EO9C1zf539lSbzicPWeoFJH5XIsFZiuKdomV8_SOGSpO1S0_4R4kmId8PcA/exec'; }
+  postToSheet(id, fields, locLabel){ const url=this.SHEET_ENDPOINT(); if(!url) return;
+    const data={}; fields.forEach(f=>{ if(f[0]) data[f[0]]=f[1]||''; });
+    const payload={ form:this.formSubject(id), formId:id, location:locLabel||(data['Preferred Location']||data['Location']||''), submitted:new Date().toISOString(), data:data };
+    try{
+      const blob=new Blob([JSON.stringify(payload)],{type:'text/plain;charset=UTF-8'});
+      if(navigator.sendBeacon && navigator.sendBeacon(url, blob)) return; // survives navigation
+      fetch(url,{ method:'POST', mode:'no-cors', keepalive:true, headers:{'Content-Type':'text/plain;charset=UTF-8'}, body:JSON.stringify(payload) });
+    }catch(e){}
+  }
+  readForm(formEl){ const out=[]; if(!formEl) return out;
+    const wraps=formEl.querySelectorAll('.fgrid > div');
+    wraps.forEach(w=>{ const lab=w.querySelector('label'); const ctrl=w.querySelector('input,select,textarea'); if(lab&&ctrl&&ctrl.type!=='file'){ const k=lab.textContent.replace('*','').trim(); out.push([k, ctrl.value||'']); } });
+    return out; }
+  resolveFormEmail(id,fields){
+    const EM=this.FORM_EMAILS(); const key=id.split('-').pop(); if(EM[key]) return EM[key];
+    const locMap={'Jackson':'jackson','Toms River':'tomsriver','Shrewsbury':'shrewsbury'};
+    const pl=(fields.find(f=>/preferred location/i.test(f[0]))||[])[1];
+    return EM[locMap[pl]]||''; }
+  formSubject(id){ if(id.indexOf('contact-')===0) return 'Website Contact Form'; if(id.indexOf('events-')===0) return 'Private Event Request'; if(id.indexOf('offer-')===0) return '2 for $40 Offer Request'; if(id==='careers') return 'Careers Application'; if(id.indexOf('catering')===0) return 'Catering Request'; return 'Website Form Submission'; }
+  locLabelForKey(key){ const EM=this.FORM_EMAILS(); if(!EM[key]) return ''; const lc=this.locByKey?this.locByKey(key):null; return lc?lc.name:key; }
+  wrapLine(s,max){ max=max||95; s=String(s); const words=s.split(' '); const out=[]; let cur='';
+    words.forEach(w=>{ if((cur+' '+w).trim().length>max){ if(cur) out.push(cur); cur=w; } else { cur=(cur?cur+' ':'')+w; } });
+    if(cur) out.push(cur); return out.length?out:['']; }
+  buildPdf(title,lines){ const enc=new TextEncoder();
+    const esc=s=>String(s).replace(/\\/g,'\\\\').replace(/\(/g,'\\(').replace(/\)/g,'\\)').replace(/[\r\n]+/g,' ');
+    let c='BT\n/F1 18 Tf\n72 740 Td\n('+esc(title)+') Tj\nET\n';
+    c+='BT\n/F1 11 Tf\n72 712 Td\n15 TL\n';
+    lines.forEach(ln=>{ c+='('+esc(ln)+') Tj\nT*\n'; });
+    c+='ET';
+    const clen=enc.encode(c).length;
+    const objs=[ '<< /Type /Catalog /Pages 2 0 R >>', '<< /Type /Pages /Kids [3 0 R] /Count 1 >>',
+      '<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>',
+      '<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>',
+      '<< /Length '+clen+' >>\nstream\n'+c+'\nendstream' ];
+    let pdf='%PDF-1.4\n'; const offs=[];
+    objs.forEach((o,i)=>{ offs.push(enc.encode(pdf).length); pdf+=(i+1)+' 0 obj\n'+o+'\nendobj\n'; });
+    const xref=enc.encode(pdf).length;
+    pdf+='xref\n0 '+(objs.length+1)+'\n0000000000 65535 f \n';
+    offs.forEach(o=>{ pdf+=(''+o).padStart(10,'0')+' 00000 n \n'; });
+    pdf+='trailer\n<< /Size '+(objs.length+1)+' /Root 1 0 R >>\nstartxref\n'+xref+'\n%%EOF';
+    return new Blob([enc.encode(pdf)],{type:'application/pdf'}); }
+  submitForm(id,e,note){ if(e&&e.preventDefault) e.preventDefault();
+    if(this.state.sending) return;
+    const formEl=e&&e.target; const fields=this.readForm(formEl); const to=this.resolveFormEmail(id,fields);
+    const finish=()=>{ const f=Object.assign({},this.state.forms); f[id]=true; this.setState({forms:f, thankNote:note||'', sending:false}, ()=>this.go('thankyou')); };
+    const isCareers=(id==='careers');
+    const subject=isCareers?'Mangia Careers Inquiry':'Mangia Lead';
+    const locLabel=this.locLabelForKey(id.split('-').pop());
+    const endpoint=this.SHEET_ENDPOINT();
+
+    // Build the attachment: the real resume for careers, otherwise a PDF summary.
+    let attBlob=null, attName='';
+    const realFile=formEl?formEl.querySelector('input[type=file]'):null;
+    if(isCareers && realFile && realFile.files && realFile.files[0]){
+      attBlob=realFile.files[0]; attName=realFile.files[0].name||'resume.pdf';
+    } else {
+      const lines=[]; if(locLabel) lines.push('Location: '+locLabel);
+      lines.push('Form: '+this.formSubject(id)); lines.push('Submitted: '+new Date().toLocaleString()); lines.push('');
+      fields.forEach(f=>{ if(f[1]) this.wrapLine(f[0]+': '+f[1]).forEach(l=>lines.push(l)); });
+      attBlob=this.buildPdf(subject, lines); attName=subject.replace(/\s+/g,'-')+'.pdf';
+    }
+
+    // PRIMARY PATH — send through the Google Apps Script. It logs the row to the
+    // sheet AND emails the correct inbox from your Google account (Gmail), so there
+    // is NO FormSubmit activation step to click. Attachment travels as base64.
+    if(endpoint && to){
+      this.setState({sending:true});
+      const send=(b64,type)=>{
+        const data={}; fields.forEach(f=>{ if(f[0]) data[f[0]]=f[1]||''; });
+        const replyTo=(fields.find(f=>/^email$/i.test(f[0]))||[])[1]||'';
+        const payload={ form:this.formSubject(id), formId:id,
+          location:locLabel||(data['Preferred Location']||data['Location']||''),
+          submitted:new Date().toISOString(), data:data,
+          mail:{ to:to, subject:subject, replyTo:replyTo },
+          attachment: b64?{ name:attName, mimeType:(type||'application/octet-stream'), dataB64:b64 }:null };
+        // SPA navigation (go) doesn't unload the page, so this fetch completes fine.
+        fetch(endpoint,{ method:'POST', mode:'no-cors', headers:{'Content-Type':'text/plain;charset=UTF-8'}, body:JSON.stringify(payload) })
+          .then(finish, finish);
+      };
+      if(attBlob){
+        const r=new FileReader();
+        r.onload=()=>{ const s=String(r.result||''); send(s.indexOf(',')>=0?s.slice(s.indexOf(',')+1):s, attBlob.type); };
+        r.onerror=()=>send('','');
+        r.readAsDataURL(attBlob);
+      } else { send('',''); }
+      return;
+    }
+
+    // FALLBACK — no Apps Script endpoint set: use FormSubmit (needs one-time email
+    // activation per inbox). Attachments only survive a genuine navigating form post.
+    if(!to){ finish(); return; }
+    this.postToSheet(id, fields, locLabel);
+    const hf=document.createElement('form');
+    hf.method='POST'; hf.action='https://formsubmit.co/'+to; hf.enctype='multipart/form-data';
+    hf.acceptCharset='UTF-8'; hf.style.display='none';
+    const add=(n,v)=>{ const i=document.createElement('input'); i.type='hidden'; i.name=n; i.value=(v==null?'':String(v)); hf.appendChild(i); };
+    add('_subject',subject); add('_template','table'); add('_captcha','false');
+    add('_next', location.origin+'/thank-you');
+    add('Form', this.formSubject(id));
+    if(locLabel) add('Location', locLabel);
+    fields.forEach(f=>{ if(f[1]) add(f[0], f[1]); });
+    if(isCareers && realFile && realFile.files && realFile.files[0]){
+      realFile.name='attachment';
+      hf.appendChild(realFile); // move the real input — its selected file rides along
+    } else {
+      const fileEl=document.createElement('input'); fileEl.type='file'; fileEl.name='attachment'; fileEl.style.display='none'; hf.appendChild(fileEl);
+      try{ const dt=new DataTransfer(); dt.items.add(new File([attBlob], attName, {type:'application/pdf'})); fileEl.files=dt.files; }catch(err){}
+    }
+    document.body.appendChild(hf);
+    hf.submit(); // navigates to FormSubmit, which redirects back to #thankyou
+  }
+  toggleFaq(q){ const o=Object.assign({},this.state.faqOpen); o[q]=!o[q]; this.setState({faqOpen:o}); }
+
+  /* ---- CTA + NAV builders ---- */
+  mkCta(label,kind,act){
+    const o={label, primary:false, ghost:false, light:false, href:'#', target:'', onClick:undefined};
+    o[kind]=true;
+    if(act.order){ o.href='#order'; o.onClick=(e)=>{ if(e&&e.preventDefault)e.preventDefault(); this.openOrder(); }; }
+    else if(act.go){ o.href='#'+act.go; o.onClick=(e)=>{ if(e&&e.preventDefault)e.preventDefault(); this.go(act.go, act.anchor); }; }
+    else if(act.href){ o.href=act.href; o.target='_blank'; }
+    else if(act.tel){ o.href='tel:'+act.tel; }
+    return o;
+  }
+  navLink(label,page,anchor){ return {label, href:'#'+page, target:'', onClick:(e)=>{ if(e&&e.preventDefault)e.preventDefault(); this.go(page,anchor); }}; }
+  extLink(label,href){ return {label, href, target:'_blank', onClick:undefined}; }
+
+  buildNav(){
+    const L=this.LOCATIONS();
+    const locLinks=L.map(l=>this.navLink(l.name,'loc-'+l.key));
+    const menuLinks=L.map(l=>this.navLink(l.name+' Menus','loc-'+l.key,'menus'));
+    const eventLinks=L.map(l=>this.navLink(l.name,'events-'+l.key));
+    const cateringLinks=L.map(l=>this.navLink(l.name,'catering-'+l.key));
+    const contactLinks=L.map(l=>this.navLink(l.name,'contact-'+l.key));
+    const top=[
+      {label:'Home', key:'home', page:'home'},
+      {label:'About', key:'about', page:'home', anchor:'about'},
+      {label:'Locations', key:'locations', page:'locations', links:locLinks},
+      {label:'Menus', key:'menus', page:'menus', links:menuLinks},
+      {label:'Catering', key:'catering', page:'catering', links:cateringLinks},
+      {label:'Private Events', key:'events', page:'events', links:eventLinks},
+      {label:'Testimonials', key:'testimonials', page:'testimonials'},
+      {label:'Careers', key:'careers', page:'careers'},
+      {label:'Contact', key:'contact', page:'contact', links:contactLinks}
+    ];
+    return top.map(t=>({
+      label:t.label, hasDD:!!t.links, open:this.state.dd===t.key,
+      href:'#'+t.page, target:'',
+      onClick:(e)=>{ if(e&&e.preventDefault)e.preventDefault(); this.go(t.page, t.anchor); },
+      onEnter:t.links?(()=>this.setDD(t.key)):(()=>this.setDD(null)),
+      onLeave:()=>this.setDD(null),
+      links:t.links||[]
+    }));
+  }
+  buildMobileNav(){
+    const L=this.LOCATIONS();
+    const k=(label,page,anchor)=>this.navLink(label,page,anchor);
+    const groups=[
+      {key:'home', label:'Home', page:'home', kids:[]},
+      {key:'about', label:'About Us', page:'home', anchor:'about', kids:[]},
+      {key:'locations', label:'Locations', page:'locations', kids:L.map(l=>k(l.name,'loc-'+l.key))},
+      {key:'menus', label:'Menus', page:'menus', kids:L.map(l=>k(l.name+' Menus','loc-'+l.key,'menus'))},
+      {key:'catering', label:'Catering', page:'catering', kids:L.map(l=>k(l.name,'catering-'+l.key))},
+      {key:'events', label:'Private Events', page:'events', kids:L.map(l=>k(l.name,'events-'+l.key))},
+      {key:'testimonials', label:'Testimonials', page:'testimonials', kids:[]},
+      {key:'careers', label:'Careers', page:'careers', kids:[]},
+      {key:'contact', label:'Contact', page:'contact', kids:L.map(l=>k(l.name,'contact-'+l.key))}
+    ];
+    return groups.map(g=>({
+      label:g.label, href:'#'+g.page, hasKids:g.kids.length>0,
+      expanded:this.state.mexp===g.key, caret:(this.state.mexp===g.key?'180deg':'0deg'), links:g.kids,
+      onNav:(e)=>{ if(e&&e.preventDefault)e.preventDefault(); this.go(g.page, g.anchor); },
+      onToggle:(e)=>{ if(e&&e.preventDefault)e.preventDefault(); if(e&&e.stopPropagation)e.stopPropagation(); this.setState(s=>({mexp:s.mexp===g.key?null:g.key})); }
+    }));
+  }
+
+  /* =====================================================================
+     PAGE / SECTION BUILDERS  (defined in second pass: buildPage)
+     ===================================================================== */
+  S(type,o){ const s=Object.assign({type, items:[], ctas:[], badges:[]}, o); s['is_'+type]=true;
+    if(s.bg===undefined) s.bg='#FBF6EC';
+    if(s.titleColor===undefined) s.titleColor='#1A1411';
+    if(s.subColor===undefined) s.subColor='#4A4038';
+    if(type==='splitAbout') s.notFullImg=!s.fullImg;
+    return s; }
+
+  /* ---- shared makers ---- */
+  locByKey(k){ return this.LOCATIONS().find(l=>l.key===k); }
+  _evtImg(k){ return {shrewsbury:'assets/events/shrews-room.jpg', tomsriver:'assets/events/red-roses-room.jpg', jackson:'assets/events/jackson-patio.jpg'}[k]; }
+
+  locCard(loc, ctas){ return Object.assign({}, loc, { telHref:'tel:'+loc.tel, cardCtas: ctas || [ this.mkCta('View Location','primary',{go:'loc-'+loc.key}), this.mkCta('Order Online','ghost',{href:loc.order}) ] }); }
+
+  eventCardItem(loc){
+    const cap = loc.key==='jackson' ? 'Up to 75 guests · $45.95/person' : 'Up to 30 guests';
+    return { name:loc.name, capacity:cap, img:this._evtImg(loc.key),
+      desc:'The perfect venue to host your private event — delicious food, attentive service and a warm room for your celebration.',
+      cardCtas:[ this.mkCta('View Events','primary',{go:'events-'+loc.key}), this.mkCta('Request Info','ghost',{go:'events-'+loc.key, anchor:'eventform'}) ],
+      bannerCtas:[ this.mkCta('View Private Events','primary',{go:'events-'+loc.key}), this.mkCta('Request Info','ghost',{go:'events-'+loc.key, anchor:'eventform'}) ] };
+  }
+
+  menuGroup(loc, withOrder){ return { tag:'Menus', locName:loc.name, items:this.MENUS()[loc.key].map((m)=>({ label:m.label, file:m.file, open:(e)=>{ if(e&&e.preventDefault)e.preventDefault(); this.openPdf(m.file, loc.name+' · '+m.label); } })), hasOrder:!!withOrder, order:loc.order }; }
+
+  testSlider(eyebrow,title){
+    const T=this.TESTIMONIALS(); const n=T.length; const idx=((this.state.tIndex%n)+n)%n;
+    return this.S('testimonials',{ eyebrow, title, active:T[idx],
+      onPrev:()=>this.setState({tIndex:(idx-1+n)%n}), onNext:()=>this.setState({tIndex:(idx+1)%n}),
+      dots:T.map((t,j)=>({active:j===idx, inactive:j!==idx, onClick:()=>this.setState({tIndex:j})})) });
+  }
+  galleryFull(eyebrow,title){
+    const tabsL=this.GALLERY_TABS(); const cur=this.state.gFilter;
+    const tabs=tabsL.map(t=>({label:t, active:t===cur, inactive:t!==cur, onClick:()=>this.setState({gFilter:t})}));
+    const all=this.GALLERY(); const shots=(cur==='All'?all:all.filter(g=>g.cat===cur));
+    return this.S('gallery',{eyebrow,title,tabs,shots});
+  }
+  eventGallery(){
+    const srcs=['assets/events/champagne.jpg','assets/events/pink-tablescape.jpg','assets/events/gold-dessert.jpg','assets/events/ciao-godbless.jpg','assets/events/godbless-table.jpg','assets/events/red-roses-room.jpg','assets/events/future-stajeks.jpg','assets/events/baby-shower-brick.jpg'];
+    return this.S('gallery',{ eyebrow:'The Gallery', title:'Celebrations at Mangia', tabs:[{label:'Event Gallery',active:true,inactive:false,onClick:()=>{}}], shots:srcs.map(s=>({src:s})) });
+  }
+  faqSec(){ const items=this.FAQS().map(f=>({q:f.q,a:f.a,open:!!this.state.faqOpen[f.q],sign:this.state.faqOpen[f.q]?'–':'+',onToggle:()=>this.toggleFaq(f.q)})); return this.S('faq',{eyebrow:'Good To Know',title:'Frequently Asked Questions',items}); }
+
+  F(label,type,opts){ opts=opts||{}; const raw=opts.options||[];
+    const optionObjs=raw.map(o=>{ const ph=/^choose\b/i.test(o); return {label:o, value:ph?'':o, disabled:ph}; });
+    const hasPh=optionObjs.some(o=>o.disabled);
+    const f={label,type,ph:opts.ph||'',span:opts.full?'1 / -1':'auto',options:raw,optionObjs:optionObjs,
+      selDefault:hasPh?'':(raw[0]||''),required:!!opts.required,reqMark:opts.required?' *':'',
+      isText:false,isArea:false,isSelect:false,isFile:false};
+    if(type==='textarea')f.isArea=true; else if(type==='select')f.isSelect=true; else if(type==='file')f.isFile=true; else f.isText=true; return f; }
+  formSec(opts){ const id=opts.id; const done=!!this.state.forms[id];
+    const note=opts.note||'Thanks for reaching out — the Mangia team will follow up with you shortly.';
+    return this.S('form',{ anchor:opts.anchor||'', eyebrow:opts.eyebrow, title:opts.title, sub:opts.sub, hidden:opts.hidden, fields:opts.fields, bg:opts.bg, titleColor:opts.titleColor, subColor:opts.subColor,
+      submitLabel:opts.submitLabel||'Submit', note:note,
+      sending:this.state.sending, submitText:(this.state.sending?'Sending\u2026':(opts.submitLabel||'Submit')),
+      submitted:done, showForm:!done, onSubmit:(e)=>this.submitForm(id,e,note) }); }
+
+  contactFields(){ return [ this.F('First Name','text',{required:true}), this.F('Last Name','text',{required:true}), this.F('Email','email',{required:true}), this.F('Phone','tel'), this.F('Subject','text',{full:true}), this.F('Message','textarea',{full:true}), this.F('Preferred Contact Method','select',{full:true,options:['Email','Phone','Either']}) ]; }
+  eventFields(){ return [ this.F('First Name','text',{required:true}), this.F('Last Name','text',{required:true}), this.F('Email','email',{required:true}), this.F('Phone','tel',{required:true}), this.F('Event Type','select',{required:true,options:['Choose event type'].concat(this.EVENT_TYPES())}), this.F('Estimated Guest Count','text',{required:true}), this.F('Desired Date','date',{required:true}), this.F('Desired Time','time',{required:true}), this.F('Message','textarea',{full:true}) ]; }
+
+  ctaPanel(line1,line2,sub,extra){ return this.S('ctaPanel',{line1,line2,sub,ctas:[ this.mkCta('Order Online','light',{order:true}) ].concat(extra||[]) }); }
+
+  /* =====================================================================
+     PAGE DEFINITIONS
+     ===================================================================== */
+  buildPage(page){
+    const m=this; const L=this.LOCATIONS(); const S=(t,o)=>this.S(t,o);
+    const loc = page.indexOf('-')>0 ? this.locByKey(page.split('-').pop()) : null;
+
+    if(page==='home') return this.pgHome();
+    if(page==='locations') return this.pgLocations();
+    if(page==='menus') return this.pgMenus();
+    if(page==='events') return this.pgEvents();
+    if(page==='catering') return this.pgCatering();
+    if(page==='testimonials') return this.pgTestimonials();
+    if(page==='careers') return this.pgCareers();
+    if(page==='contact') return this.pgContact();
+    if(page==='thankyou') return this.pgThankYou();
+    if(page.indexOf('loc-')===0) return this.pgLocation(this.locByKey(page.slice(4)));
+    if(page.indexOf('events-')===0) return this.pgEventLoc(this.locByKey(page.slice(7)));
+    if(page.indexOf('catering-')===0) return this.pgCateringLoc(this.locByKey(page.slice(9)));
+    if(page.indexOf('contact-')===0) return this.pgContactLoc(this.locByKey(page.slice(8)));
+    if(page.indexOf('offer-')===0) return this.pgOffer(this.locByKey(page.slice(6)));
+    return this.pgHome();
+  }
+
+  pgHome(){
+    const L=this.LOCATIONS();
+    const offers=[
+      {loc:'Toms River', label:'2 for $40', desc:'A four-course dinner for two for $40 — dine-in only, Monday through Thursday.', img:'assets/toms/offer-2for40.jpg', ctas:[this.mkCta('See The Offer','light',{go:'offer-tomsriver'})]},
+      {loc:'Jackson', label:'2 for $40', desc:'A four-course dinner for two for $40 — dine-in only, Monday through Thursday.', img:'assets/home/food-56.jpg', ctas:[this.mkCta('See The Offer','light',{go:'offer-jackson'})]},
+      {loc:'Shrewsbury', label:'Download Our App', desc:'Order fresh Mangia anytime, right from your phone.', img:'assets/home/owners-counter.jpg', ctas:[this.mkCta('Get The App','light',{href:'http://apple.co/2ZWtbws'})]}
+    ];
+    return [
+      this.S('heroVideo',{ eyebrow:'Toms River · Jackson · Shrewsbury, NJ', kicker:"Good Pizza. Good People. That's Mangia.", line1:'NEW YORK', line2:'ATTITUDE',
+        tagline:'Welcome to the family',
+        services:'Takeout · Delivery · Catering',
+        tagLine1:'Family Run', tagLine2:'Sicilian Rooted',
+        sub:'Classic pizza, comforting Italian food, catering, takeout and private events across Toms River, Jackson and Shrewsbury, NJ.',
+        image:'assets/home/food-66.jpg', video:'assets/home/hero-video.mp4', poster:'assets/home/grandma-square.jpg',
+        ctas:[ this.mkCta('Order Online','primary',{order:true}), this.mkCta('Select a Location','ghost',{go:'locations'}) ],
+        badges:['Family-Run','New York-Style','Sicilian Roots','3 NJ Locations','Catering & Events'] }),
+      this.S('marquee',{ words:[
+        {text:'PIZZA',color:'#FFFCF8'},{text:'·',color:'#A50000'},{text:'PASTA',color:'#FFFCF8'},{text:'·',color:'#A50000'},{text:'SLICES',color:'#FFFCF8'},{text:'·',color:'#A50000'},{text:'SUBS',color:'#FFFCF8'},{text:'·',color:'#A50000'},{text:'SALADS',color:'#FFFCF8'},{text:'·',color:'#A50000'},{text:'CATERING',color:'#FFFCF8'},{text:'·',color:'#A50000'},
+        {text:'PIZZA',color:'#FFFCF8'},{text:'·',color:'#A50000'},{text:'PASTA',color:'#FFFCF8'},{text:'·',color:'#A50000'},{text:'SLICES',color:'#FFFCF8'},{text:'·',color:'#A50000'},{text:'SUBS',color:'#FFFCF8'},{text:'·',color:'#A50000'},{text:'SALADS',color:'#FFFCF8'},{text:'·',color:'#A50000'},{text:'CATERING',color:'#FFFCF8'},{text:'·',color:'#A50000'} ] }),
+      this.S('locationCards',{ eyebrow:'Choose Your Mangia', title:'Three Neighborhoods. One Family.', sub:'Fresh, specialty pizza and classic Italian food in Toms River, Jackson and Shrewsbury, NJ.', items:L.map(l=>this.locCard(l)) }),
+      this.S('splitAbout',{ anchor:'about', fullImg:true, eyebrow:'Our Story Is Family', title:'A Family Pizzeria Built On Nearly 50 Years Around The Table', img:'assets/home/owners-team.jpg', imgPos:'center',
+        paras:["Mangia is a family-owned, New York–style pizzeria and restaurant built on generations of Sicilian tradition. Our recipes have been passed down through multiple generations, bringing authentic flavors and family values to every dish we serve.",
+          "Mangia's journey began in 2013 with the opening of our first location in Toms River. As our passion for great food and community grew, we expanded to Jackson in 2015 and then to Shrewsbury in 2016.",
+          "Backed by nearly 50 years of restaurant experience, the Mangia family set out to create the kind of neighborhood restaurant people can rely on whether it's grabbing a quick slice, enjoying a family dinner, ordering takeout, hosting a celebration, or catering a special event.",
+          "Today, Mangia continues to serve the communities we call home with the same commitment to quality, hospitality, and tradition that has been at the heart of our family for generations. Every meal is made with pride, because to us, you're not just a customer — you're family."],
+        ctas:[ this.mkCta('Find Your Location','primary',{go:'locations'}), this.mkCta('View Menus','ghost',{go:'menus'}) ] }),
+      this.S('foodGrid',{ eyebrow:'Menu Shortcuts', title:'Featured Favorites', items:this.FOODS(),
+        ctas:[ this.mkCta('View Menus','primary',{go:'menus'}), this.mkCta('Order Online','light',{order:true}) ] }),
+      this.S('signature',{ line1:'Loud. Busy.', line2:'Fresh From The Oven.', img:'assets/home/oven-peel.jpg',
+        body:'Mangia brings the energy of a fast-paced New York–style pizzeria together with the comfort of classic Italian food made for everyday life.',
+        ctas:[ this.mkCta('View Menus','light',{go:'menus'}), this.mkCta('Order Online','ghost',{order:true}) ] }),
+      this.S('eventCards',{ grid:true, eyebrow:'Private Events', title:'Celebrate With Us', sub:'We offer private parties and events for any occasion — choose a location to start planning.', items:L.map(l=>this.eventCardItem(l)) }),
+      this.S('promoCards',{ eyebrow:'Local Offers', title:'Deals Worth The Drive', items:offers }),
+      this.S('occasions',{ eyebrow:'Catering', title:'Catering For Every Occasion', items:['Family Parties','Offices','School Events','Holidays','Birthdays','Game Days','Corporate Lunches','Community Gatherings'] }),
+      this.testSlider('Words From Our Customers','They Keep Coming Back'),
+      this.galleryFull('The Feed','Straight From The Counter'),
+      this.faqSec(),
+      this.ctaPanel('Ready For','Your Next Slice?','Order online, find your location, or browse the menus — Mangia is ready when you are.', [ this.mkCta('Find Your Location','ghost',{go:'locations'}) ])
+    ];
+  }
+
+  pgLocations(){
+    const L=this.LOCATIONS();
+    return [
+      this.S('heroSimple',{ eyebrow:'Three NJ Locations', line1:'Choose Your', line2:'Mangia Location', sub:'Fresh, specialty pizza and classic Italian food in Toms River, Jackson and Shrewsbury, NJ.', ctas:[ this.mkCta('Order Online','primary',{order:true}), this.mkCta('View Menus','ghost',{go:'menus'}) ] }),
+      this.S('locationCards',{ eyebrow:'Find Your Mangia', title:'Pick The Spot Nearest You', items:L.map(l=>this.locCard(l)) }),
+      this.S('mapCards',{ eyebrow:'On The Map', title:'Where To Find Us', items:L.map(l=>({ name:l.name, address:l.address, mapSrc:'https://maps.google.com/maps?q='+encodeURIComponent(l.address)+'&z=15&output=embed', href:'#loc-'+l.key, onClick:(e)=>{ if(e&&e.preventDefault)e.preventDefault(); this.go('loc-'+l.key); } })) }),
+      this.ctaPanel('Hungry','Already?','Order online from any location or browse the full menus.', [ this.mkCta('View Menus','ghost',{go:'menus'}) ])
+    ];
+  }
+
+  pgMenus(){
+    const L=this.LOCATIONS();
+    return [
+      this.S('heroSimple',{ eyebrow:'Dining · Takeout · Catering', line1:'Mangia', line2:'Menus', sub:'Choose your location to view dining, takeout, catering and party menus.', ctas:[ this.mkCta('Order Online','primary',{order:true}), this.mkCta('Request Catering','ghost',{go:'catering'}) ] }),
+      this.S('menuCards',{ eyebrow:'Menus By Location', title:'Find Your Menu', cols:'repeat(3,1fr)', groups:L.map(l=>this.menuGroup(l,true)) }),
+      this.ctaPanel('Feeding','A Crowd?','Catering trays and party packages are available at every Mangia location.', [ this.mkCta('View Catering','ghost',{go:'catering'}) ])
+    ];
+  }
+
+  pgEvents(){
+    const L=this.LOCATIONS();
+    return [
+      this.S('heroSimple',{ eyebrow:'Private Events', line1:'Private Events', line2:'At Mangia', sub:'We offer private parties and events for any occasion — showers, birthdays, corporate gatherings and more.', ctas:[ this.mkCta('Plan Your Event','primary',{go:'events-jackson',anchor:'eventform'}) ] }),
+      this.S('eventCards',{ grid:true, eyebrow:'Choose A Location', title:'Where Will You Celebrate?', items:L.map(l=>this.eventCardItem(l)) }),
+      this.S('eventTypes',{ eyebrow:'Any Occasion', title:'Events We Host', items:this.EVENT_TYPES() }),
+      this.ctaPanel('Let\u2019s Plan','Your Event','Pick your location and send us the details — we\u2019ll handle the rest.', [ this.mkCta('Contact Us','ghost',{go:'contact'}) ])
+    ];
+  }
+
+  _catImg(k){ return {shrewsbury:'assets/shrews/food-spread.jpg', tomsriver:'assets/toms/food-spread.jpg', jackson:'assets/jackson/food-spread.jpg'}[k]; }
+
+  cateringCardItem(loc){
+    const cap = loc.key==='jackson' ? 'Trays · Party packages · Up to 75 guests' : 'Trays · Party packages';
+    return { name:loc.name, capacity:cap, img:this._catImg(loc.key),
+      desc:'Fresh pizza, Italian favorites, trays and party packages catered from Mangia '+loc.name+'.',
+      cardCtas:[ this.mkCta('View Catering','primary',{go:'catering-'+loc.key}), this.mkCta('Request Quote','ghost',{go:'catering-'+loc.key, anchor:'cateringform'}) ],
+      bannerCtas:[ this.mkCta('View Catering','primary',{go:'catering-'+loc.key}), this.mkCta('Request Quote','ghost',{go:'catering-'+loc.key, anchor:'cateringform'}) ] };
+  }
+
+  cateringFields(locName){
+    return [ this.F('First Name','text',{required:true}), this.F('Last Name','text',{required:true}), this.F('Email','email',{required:true}), this.F('Phone','tel'), this.F('Event Date','date'), this.F('Event Time','time'), this.F('Guest Count','text'), this.F('Catering Type','select',{options:['Choose type','Trays','Party Package','Pizza Only','Full Spread']}), this.F('Pickup or Delivery','select',{full:true,options:['Pickup','Delivery']}), this.F('Order Details / Message','textarea',{full:true}) ];
+  }
+
+  pgCatering(){
+    const L=this.LOCATIONS();
+    return [
+      this.S('heroSimple',{ eyebrow:'Pizza Catering In New Jersey', line1:'Mangia', line2:'Catering', sub:'Bring Mangia to your next gathering with fresh pizza, Italian favorites, trays, party packages and crowd-pleasing catering options.', ctas:[ this.mkCta('Order Online','primary',{order:true}) ] }),
+      this.S('eventCards',{ grid:true, eyebrow:'Choose A Location', title:'Cater From Your Mangia', sub:'Pick the location nearest your event to view catering menus and request a quote.', items:L.map(l=>this.cateringCardItem(l)) }),
+      this.S('occasions',{ eyebrow:'For Every Occasion', title:'We Cater It All', items:['Office Lunches','Family Parties','School Events','Holidays','Birthdays','Game Days','Corporate Events','Community Gatherings'] }),
+      this.S('steps',{ eyebrow:'How It Works', title:'Catering Made Easy', bg:'#F2E7D3', flow:true, items:[ {n:'1',title:'Choose Your Location',text:'Pick the Mangia nearest your event.'}, {n:'2',title:'View The Menu',text:'Browse trays, packages and favorites.'}, {n:'3',title:'Submit A Request',text:'Send us your details and headcount.'}, {n:'4',title:'We Confirm',text:'Mangia follows up to lock in the details.'} ] }),
+      this.ctaPanel('Bring Mangia','To The Party','Choose your location above to view catering menus and send your request.', [ this.mkCta('Order Online','ghost',{order:true}) ])
+    ];
+  }
+
+  pgCateringLoc(loc){
+    const groups=[{ tag:'Catering', locName:loc.name, items:this.MENUS()[loc.key].filter(x=>/Catering/.test(x.label)).map((m)=>({ label:m.label, file:m.file, open:(e)=>{ if(e&&e.preventDefault)e.preventDefault(); this.openPdf(m.file, loc.name+' · '+m.label); } })), hasOrder:true, order:loc.order }];
+    const cap = loc.key==='jackson' ? 'Up to 75 guests' : 'Trays & party packages';
+    return [
+      this.S('heroImage',{ eyebrow:'Catering In '+loc.name+', NJ', title:'Mangia '+loc.name+' Catering', img:this._catImg(loc.key), sub:'Bring Mangia '+loc.name+' to your next gathering — fresh pizza, Italian favorites, trays and party packages for any crowd.', ctas:[ this.mkCta('Request Catering','primary',{go:'catering-'+loc.key,anchor:'cateringform'}), this.mkCta('Order Online','light',{href:loc.order}) ] }),
+      this.S('menuCards',{ eyebrow:loc.name+' Catering', title:loc.name+' Catering Menu', sub:'Tap to view the catering menu. Ready to plan? Request a quote below.', cols:'1fr', groups, bg:'#F2E7D3' }),
+      this.S('occasions',{ eyebrow:'For Every Occasion', title:'We Cater It All', items:['Office Lunches','Family Parties','School Events','Holidays','Birthdays','Game Days','Corporate Events','Community Gatherings'] }),
+      this.S('steps',{ eyebrow:'How It Works', title:'Catering Made Easy', bg:'#F2E7D3', flow:true, items:[ {n:'1',title:'View The Menu',text:'Browse '+loc.name+' trays and packages.'}, {n:'2',title:'Pick Your Spread',text:'Choose what works for your crowd.'}, {n:'3',title:'Submit A Request',text:'Send us your details and headcount.'}, {n:'4',title:'We Confirm',text:'The '+loc.name+' team follows up to lock it in.'} ] }),
+      this.formSec({ id:'catering-'+loc.key, anchor:'cateringform', eyebrow:'Request Catering', title:'Cater With Mangia '+loc.name, sub:'Fill out the form and the Mangia '+loc.name+' team will follow up to confirm details.', hidden:loc.name+' Catering', bg:'#1A1411', titleColor:'#FFFCF8', subColor:'rgba(255,252,248,.82)',
+        submitLabel:'Request Catering', note:'Thanks! Your catering request is in — the Mangia '+loc.name+' team will be in touch to confirm the details.',
+        fields:this.cateringFields(loc.name) }),
+      this.ctaPanel('Bring Mangia','To The Party','View the '+loc.name+' catering menu or send your request and we\u2019ll take it from there.', [ this.mkCta('Order Online','ghost',{href:loc.order}) ])
+    ];
+  }
+
+  pgTestimonials(){
+    return [
+      this.S('heroSimple',{ eyebrow:'Reviews', line1:'Words From', line2:'Our Customers', sub:'From quick slices to family dinners, our customers make Mangia part of their everyday lives.', ctas:[ this.mkCta('Find Your Location','primary',{go:'locations'}), this.mkCta('Order Online','ghost',{order:true}) ] }),
+      this.S('testGrid',{ items:this.TESTIMONIALS() }),
+      this.ctaPanel('Come Taste','For Yourself','Visit your nearest Mangia or order online — we think you\u2019ll be a regular too.', [ this.mkCta('Find Your Location','ghost',{go:'locations'}) ])
+    ];
+  }
+
+  pgCareers(){
+    return [
+      this.S('heroSimple',{ eyebrow:'Join Our Talent Community', line1:'Career', line2:'Opportunities', sub:'We are looking for individuals who are passionate about food, have a strong work ethic and are proud of where they work. Join the Mangia family today.', ctas:[ this.mkCta('Apply Today','primary',{go:'careers',anchor:'careerform'}) ] }),
+      this.S('whyCards',{ eyebrow:'Why Mangia', title:'Why Work With Us', items:[ {title:'Family Team',text:'Work alongside a tight-knit crew that feels like family.'}, {title:'Fast-Paced',text:'Bring the energy — our counters move and so do you.'}, {title:'Growth',text:'Real opportunity to grow with a multi-location brand.'}, {title:'Pride In The Food',text:'Be proud of the slices and plates you send out.'} ] }),
+      this.formSec({ id:'careers', anchor:'careerform', eyebrow:'Apply Now', title:'Join The Mangia Family', sub:'Tell us a little about you and which location you\u2019d like to work at.', hidden:'Careers',
+        submitLabel:'Apply Today', note:'Thanks for applying! We\u2019ll review your application and reach out if it\u2019s a fit.',
+        fields:[ this.F('First Name','text',{required:true}), this.F('Last Name','text',{required:true}), this.F('Email','email',{required:true}), this.F('Phone','tel',{required:true}), this.F('Preferred Location','select',{required:true,options:['Choose location','Toms River','Jackson','Shrewsbury']}), this.F('Position Interested In','select',{required:true,options:['Choose position','Counter Staff','Cashier','Pizza Maker','Kitchen Staff','Server','Delivery','Management','Other']}), this.F('Availability','text',{required:true,full:true}), this.F('Upload CV / Resume','file',{full:true}), this.F('Message (optional)','textarea',{full:true}) ] }),
+      this.ctaPanel('Ready To','Join Us?','Submit your application and become part of the Mangia family.', [])
+    ];
+  }
+
+  pgThankYou(){
+    const note=this.state.thankNote||'Thanks for reaching out \u2014 the Mangia team will follow up with you shortly.';
+    return [
+      this.S('thankYou',{ eyebrow:'Message Received', line1:'Thank', line2:'You!', sub:note,
+        ctas:[ this.mkCta('Back To Home','primary',{go:'home'}), this.mkCta('View Menus','light',{go:'menus'}), this.mkCta('Order Online','ghost',{order:true}) ] })
+    ];
+  }
+
+  pgContact(){
+    const L=this.LOCATIONS();
+    const cards=L.map(l=>this.locCard(l, [ this.mkCta('Contact','primary',{go:'contact-'+l.key}), this.mkCta('Order Online','ghost',{href:l.order}) ]));
+    return [
+      this.S('heroSimple',{ eyebrow:'Get In Touch', line1:'Contact', line2:'Mangia', sub:'Choose the location you would like to contact.', ctas:[ this.mkCta('Order Online','primary',{order:true}) ] }),
+      this.S('locationCards',{ eyebrow:'By Location', title:'Reach The Right Mangia', items:cards }),
+      this.ctaPanel('Find Your','Location','Each Mangia has its own team ready to help — pick yours above.', [ this.mkCta('Find Your Location','ghost',{go:'locations'}) ])
+    ];
+  }
+
+  pgLocation(loc){
+    const aboutImg={shrewsbury:'assets/loc/shrews-team-1.jpg', tomsriver:'assets/toms/about-1.jpg', jackson:'assets/jackson/team-1.jpg'}[loc.key];
+    const heroImg={shrewsbury:'assets/home/food-65.jpg', tomsriver:'assets/home/food-49.jpg', jackson:'assets/home/grandma-square.jpg'}[loc.key];
+    const heroCtas=[ this.mkCta('Order Online','primary',{href:loc.order}), this.mkCta('Call Now','ghost',{tel:loc.tel}), this.mkCta('View Menus','ghost',{go:'loc-'+loc.key,anchor:'menus'}) ];
+    if(loc.promoKey && loc.promoKey.indexOf('offer')===0) heroCtas.push(this.mkCta('See 2 for $40 Deal','ghost',{go:loc.promoKey}));
+    const heroSub = loc.key==='shrewsbury'
+      ? 'Fresh, specialty pizza in Shrewsbury, NJ at Mangia Brick Oven Pizza. Family-owned and serving delicious pizzas and entrees made from cherished recipes.'
+      : 'Fresh, specialty pizza is here in '+loc.name+', NJ at Mangia Brick Oven Pizza. Our restaurant provides delicious pizza and entrees made from family recipes and served with love and care.';
+    const aboutParas = loc.key==='shrewsbury'
+      ? ['Family-owned and serving delicious pizzas and entrees made from cherished recipes, Mangia Shrewsbury brings New York–style pizza and classic Italian comfort to 1087 Broad St.','Stop in for a quick slice, gather the family for dinner, or let us cater your next celebration.']
+      : ['Our '+loc.name+' restaurant provides delicious pizza and entrees made from family recipes and served with love and care.','From everyday lunches to big family dinners, takeout, catering and private events — this is your neighborhood Mangia.'];
+    const out=[
+      this.S('heroLoc',{ eyebrow:loc.name+' · New Jersey', title:'Mangia Brick Oven Pizza in '+loc.name+', NJ', sub:heroSub, img:heroImg, hasSlider:(loc.key==='jackson'||loc.key==='shrewsbury'||loc.key==='tomsriver'), singleImg:(loc.key!=='jackson'&&loc.key!=='shrewsbury'&&loc.key!=='tomsriver'), ctas:heroCtas, badges:['Family-Owned','NY-Style Pizza','Dine-In · Takeout','Catering & Events'] }),
+      this.S('splitAbout',{ eyebrow:'About '+loc.name, title:'Fresh Pizza, Made With Care', img:aboutImg, imgPos:(loc.key==='shrewsbury'?'center top':(loc.key==='jackson'?'center 22%':(loc.key==='tomsriver'?'center 22%':'center'))), paras:aboutParas, ctas:[ this.mkCta('Order Online','primary',{href:loc.order}), this.mkCta('Call '+loc.phone,'ghost',{tel:loc.tel}) ] }),
+      this.S('menuCards',{ anchor:'menus', eyebrow:loc.name+' Menus', title:loc.name+' Menus', sub:'Tap any menu to open it. Ready to eat? Order online below.', cols:'1fr', groups:[ this.menuGroup(loc,true) ] })
+    ];
+    if(loc.key==='shrewsbury'){
+      out.push(this.S('appPromo',{ anchor:'app', eyebrow:'Order Anytime', title:'Download The Mangia App', sub:'Order fresh Mangia anytime, skip the wait, and keep your favorites a tap away.', img:'assets/home/app-graphic.png', ctas:[ this.mkCta('Download App','light',{href:'http://apple.co/2ZWtbws'}), this.mkCta('Order Online','ghost',{href:loc.order}) ] }));
+    } else {
+      out.push(this.S('offerDetails',{ eyebrow:'Dine-In Only \u00b7 Mon\u2013Thu', title:'2 for $40 Offer', sub:'Enjoy a four-course dinner for two for just $40, dine-in at Mangia '+loc.name+'. It\u2019s our standing Monday-through-Thursday offering \u2014 not a coupon, and not available for takeout, delivery or online orders.', img:(loc.key==='jackson'?'assets/jackson/offer-chandeliers.jpg':'assets/toms/offer-2for40.jpg'), bullets:['Four courses for two, chosen from the menu','Dine-in only \u2014 enjoy it at the table','Available Monday through Thursday'], fine:'Dine-in only. Not a coupon. Not valid for takeout, delivery or online orders. Available Monday through Thursday at Mangia '+loc.name+'. See restaurant for full details.', ctas:[ this.mkCta('See Offer Details','primary',{go:loc.promoKey}), this.mkCta('View Menus','ghost',{go:'loc-'+loc.key,anchor:'menus'}) ] }));
+    }
+    if(loc.key==='jackson'){
+      out.push(this.S('photoStrip',{ bg:'#FBF6EC', eyebrow:'A Taste Of Jackson', title:'Fresh From Our Kitchen', shots:[
+        {src:'assets/jackson/food-spread.jpg', alt:'Pizzas, salad and pasta spread', span:'2'},
+        {src:'assets/jackson/food-pep.jpg', alt:'Pepperoni Sicilian pizza', span:'2'},
+        {src:'assets/jackson/oven.jpg', alt:'At the brick oven counter', span:'2'},
+        {src:'assets/jackson/counter.jpg', alt:'Ordering at the Mangia counter', span:'2'},
+        {src:'assets/jackson/food-table.jpg', alt:'A full Mangia table', span:'2'},
+        {src:'assets/jackson/food-parm.jpg', alt:'Chicken parm with spaghetti', span:'2'}
+      ] }));
+    }
+    if(loc.key==='tomsriver'){
+      out.push(this.S('photoStrip',{ bg:'#FBF6EC', eyebrow:'A Taste Of Toms River', title:'Fresh From Our Kitchen', shots:[
+        {src:'assets/toms/gallery-1.jpg', alt:'Sheet pizza fresh from the oven', span:'2'},
+        {src:'assets/toms/food-spread.jpg', alt:'A full spread of Mangia plates', span:'2'},
+        {src:'assets/toms/oven.jpg', alt:'Sliding a pie into the brick oven', span:'2'},
+        {src:'assets/toms/counter.jpg', alt:'The Mangia Toms River team at the counter', span:'2'},
+        {src:'assets/toms/food-apps.jpg', alt:'Rollatini, meatballs and salad', span:'2'},
+        {src:'assets/toms/gallery-6.png', alt:'Building fresh pizzas in the kitchen', span:'2'}
+      ] }));
+    }
+    if(loc.key==='shrewsbury'){
+      out.push(this.S('photoStrip',{ bg:'#FBF6EC', eyebrow:'A Taste Of Shrewsbury', title:'Fresh From Our Kitchen', shots:[
+        {src:'assets/shrews/food-spread.jpg', alt:'Specialty pizzas fresh from the oven', span:'2'},
+        {src:'assets/shrews/oven.jpg', alt:'Sliding a pie into the brick oven', span:'2'},
+        {src:'assets/shrews/food-pep.jpg', alt:'Pepperoni brick oven pizza', span:'2'},
+        {src:'assets/shrews/dough.jpg', alt:'Hand-stretching fresh dough', span:'2'},
+        {src:'assets/shrews/food-white.jpg', alt:'Chicken pizza in the box', span:'2'},
+        {src:'assets/shrews/food-gnocchi.jpg', alt:'Gnocchi finished with parmesan', span:'2'}
+      ] }));
+    }
+    out.push(this.S('eventCards',{ single:true, eyebrow:'Private Events', title:'Celebrate At '+loc.name, sub:'Host your next private party with us — delicious food and attentive service.', items:[ this.eventCardItem(loc) ] }));
+    out.push(this.testSlider('Reviews','What People Say'));
+    const c=Object.assign({}, loc, { telHref:'tel:'+loc.tel, hasEmail:!!loc.email, mailHref:'mailto:'+loc.email, hours:loc.hours.map(h=>({d:h[0],t:h[1]})), socials:this._soc(loc.socials) });
+    out.push(this.S('contactBlock',{ eyebrow:'Visit '+loc.name, title:'Find Us In '+loc.name, loc:c }));
+    out.push(this.formSec({ id:'contact-'+loc.key, eyebrow:'Contact '+loc.name, title:'Send Us A Message', sub:'Questions for the '+loc.name+' team? Drop us a line below.', hidden:loc.name, submitLabel:'Send Message', fields:this.contactFields() }));
+    return out;
+  }
+
+  pgEventLoc(loc){
+    const cap = loc.key==='jackson' ? 'space for up to 75 guests' : 'space for up to 30 guests';
+    const eyebrow = loc.key==='jackson' ? '$45.95 Per Person · Up To 75 Guests' : 'Up To 30 Guests';
+    const out=[
+      this.S('heroImage',{ eyebrow, title:'Private Events in '+loc.name+', NJ', img:this._evtImg(loc.key), sub:'The perfect venue to host your private event. Celebrate your special occasion with delicious food, attentive service and '+cap+'.', ctas:[ this.mkCta('Request Event Info','primary',{go:'events-'+loc.key,anchor:'eventform'}), this.mkCta('View Menus','light',{go:'loc-'+loc.key,anchor:'menus'}) ] }),
+      this.S('splitAbout',{ eyebrow:'The Space', title:'The Perfect Place To Celebrate', img:this._evtImg(loc.key), imgPos:'center', paras:['Celebrate your special occasion at Mangia '+loc.name+' with delicious food, attentive service, and a warm, welcoming room.','From baby showers to milestone birthdays, our team helps make every gathering memorable.'], ctas:[ this.mkCta('Request Event Info','primary',{go:'events-'+loc.key,anchor:'eventform'}) ] })
+    ];
+    if(loc.key==='jackson') out.push(this.S('capacity',{ items:[ {big:'75',label:'Guests'}, {big:'$45.95',label:'Per Person'}, {big:'Party',label:'Package Available'} ] }));
+    out.push(this.S('eventTypes',{ eyebrow:'Any Occasion', title:'Events We Host', items:this.EVENT_TYPES() }));
+    out.push(this.eventGallery());
+    out.push(this.formSec({ id:'events-'+loc.key, anchor:'eventform', eyebrow:'Request Event Info', title:'Plan Your '+loc.name+' Event', sub:'Tell us about your celebration and the Mangia '+loc.name+' team will be in touch.', hidden:loc.name+' Private Events', submitLabel:'Request Event Info', fields:this.eventFields() }));
+    return out;
+  }
+
+  pgContactLoc(loc){
+    const c=Object.assign({}, loc, { telHref:'tel:'+loc.tel, hasEmail:!!loc.email, mailHref:'mailto:'+loc.email, hours:loc.hours.map(h=>({d:h[0],t:h[1]})), socials:this._soc(loc.socials) });
+    return [
+      this.S('heroSimple',{ eyebrow:'Contact Mangia '+loc.name, line1:'Contact', line2:loc.name, sub:'Reach the Mangia '+loc.name+' team directly — we\u2019d love to hear from you.', ctas:[ this.mkCta('Order Online','primary',{href:loc.order}), this.mkCta('Call Now','ghost',{tel:loc.tel}) ] }),
+      this.S('contactBlock',{ eyebrow:'Visit '+loc.name, title:'Find Us In '+loc.name, loc:c }),
+      this.formSec({ id:'contact-'+loc.key, eyebrow:'Message Us', title:'Send Mangia '+loc.name+' A Message', sub:'Fill out the form and we\u2019ll get back to you shortly.', hidden:loc.name, submitLabel:'Send Message', fields:this.contactFields() })
+    ];
+  }
+
+  pgOffer(loc){
+    const offerImg = loc.key==='tomsriver' ? 'assets/toms/offer-2for40.jpg' : 'assets/home/food-58.jpg';
+    const heroImg = loc.key==='tomsriver' ? 'assets/toms/offer-2for40.jpg' : 'assets/home/food-56.jpg';
+    return [
+      this.S('heroImage',{ eyebrow:'Dine-In Special \u00b7 Mon\u2013Thu', title:'2 for $40 Offer', img:heroImg, sub:'A four-course dinner for two for just $40 \u2014 dine-in at Mangia Brick Oven Pizza in '+loc.name+', NJ, Monday through Thursday. Not a coupon and not available online \u2014 just join us at the table.', ctas:[ this.mkCta('View Menus','primary',{go:'loc-'+loc.key,anchor:'menus'}), this.mkCta('Visit '+loc.name,'light',{go:'loc-'+loc.key}) ] }),
+      this.S('offerDetails',{ eyebrow:'The Offering', title:'Dinner For Two, Just $40', sub:'Two people, four courses, one great price \u2014 made from family recipes and served right at your table. This is our standing dine-in offering, not a coupon, available Monday through Thursday at Mangia '+loc.name+'.', img:offerImg, bullets:['Four courses for two, chosen from the menu','Dine-in only \u2014 enjoy it at the table','Available Monday through Thursday'], fine:'Dine-in only. Not a coupon. Not valid for takeout, delivery or online orders. Available Monday through Thursday. See restaurant for full details.', ctas:[ this.mkCta('View Menus','primary',{go:'loc-'+loc.key,anchor:'menus'}), this.mkCta('Visit '+loc.name,'ghost',{go:'loc-'+loc.key}) ] }),
+      this.ctaPanel('Dinner For','Two Awaits','Join us for dinner at Mangia '+loc.name+', Monday through Thursday \u2014 dine-in only.', [ this.mkCta('Find Us','light',{go:'loc-'+loc.key}), this.mkCta('View Menus','ghost',{go:'loc-'+loc.key,anchor:'menus'}) ])
+    ];
+  }
+
+  renderVals(){
+    const L=this.LOCATIONS().map(l=>Object.assign({}, l, {
+      telHref:'tel:'+l.tel,
+      menuHref:'#loc-'+l.key,
+      goMenu:(e)=>{ if(e&&e.preventDefault)e.preventDefault(); this.go('loc-'+l.key,'menus'); }
+    }));
+    const footerLinks=[
+      this.navLink('Menus','menus'), this.navLink('Private Events','events'),
+      this.navLink('Catering','catering'), this.navLink('Testimonials','testimonials'),
+      this.navLink('Careers','careers'), this.navLink('Contact','contact')
+    ];
+    return {
+      rootRef:this.rootRef,
+      year:new Date().getFullYear(),
+      locations:L,
+      navTop:this.buildNav(),
+      mobileNav:this.buildMobileNav(),
+      footerLinks,
+      brandSocials:this._soc([ {type:'ig',label:'Instagram',href:'https://www.instagram.com/mangia.nj/'}, {type:'fb',label:'Facebook',href:'https://www.facebook.com/MangiaBrickOvenPizza/'}, {type:'ta',label:'TripAdvisor',href:'https://www.tripadvisor.com/Restaurant_Review-g46870-d5074986-Reviews-Mangia_Brick_Oven_Pizza-Toms_River_New_Jersey.html'} ]),
+      heroSlides:this.HERO_SLIDES().map((s,i)=>({ src:s.src, alt:s.alt, op:(i===this.state.heroSlide?'1':'0'), z:(i===this.state.heroSlide?'2':'1') })),
+      heroActiveSrc:(this.HERO_SLIDES()[this.state.heroSlide%this.HERO_SLIDES().length]||{}).src,
+      heroActiveAlt:(this.HERO_SLIDES()[this.state.heroSlide%this.HERO_SLIDES().length]||{}).alt,
+      heroDots:this.HERO_SLIDES().map((s,i)=>({ bg:(i===this.state.heroSlide?'#A50000':'rgba(255,252,248,.75)'), onClick:()=>this.setState({heroSlide:i}) })),
+      pageSections:this.buildPage(this.state.page),
+      menuOpen:this.state.menuOpen,
+      orderOpen:this.state.orderOpen,
+      firstTel:'tel:'+this.LOCATIONS()[0].tel,
+      openOrder:()=>this.openOrder(),
+      closeOrder:()=>this.closeOrder(),
+      pdfOpen:this.state.pdf.open,
+      pdfLoading:this.state.pdf.loading,
+      pdfError:this.state.pdf.error,
+      pdfUrl:this.state.pdf.url,
+      pdfTitle:this.state.pdf.title,
+      pdfDownloadName:(this.state.pdf.title||'menu').replace(/[^a-z0-9]+/gi,'-').toLowerCase()+'.pdf',
+      closePdf:()=>this.closePdf(),
+      pdfHostRef:(el)=>{ this._pdfHost=el; },
+      heroVideoRef:(el)=>{ if(el){ el.muted=true; el.loop=true; el.playsInline=true; var p=el.play(); if(p&&p.catch)p.catch(()=>{}); } },
+      stop:(e)=>{ if(e&&e.stopPropagation)e.stopPropagation(); },
+      toggleMenu:()=>this.toggleMenu(),
+      goHome:(e)=>{ if(e&&e.preventDefault)e.preventDefault(); this.go('home'); },
+      goMenus:(e)=>{ if(e&&e.preventDefault)e.preventDefault(); this.go('menus'); },
+      goLocations:(e)=>{ if(e&&e.preventDefault)e.preventDefault(); this.go('locations'); }
+    };
+  }
+}
+</script>
+</body>
+</html>
