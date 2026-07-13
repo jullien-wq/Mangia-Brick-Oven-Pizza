@@ -95,7 +95,7 @@ p,li{text-wrap:pretty}
       <nav style="display:flex;align-items:center;gap:2px;margin-left:auto" class="desk-nav">
         <sc-for list="{{ navTop }}" as="item" hint-placeholder-count="8">
           <div style="position:relative" onMouseEnter="{{ item.onEnter }}" onMouseLeave="{{ item.onLeave }}">
-            <a href="{{ item.href }}" onClick="{{ item.onClick }}" style="display:flex;align-items:center;gap:5px;padding:10px 11px;font-family:Archivo,sans-serif;font-weight:700;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:#1A1411;white-space:nowrap" style-hover="color:#A50000 !important">{{ item.label }}<sc-if value="{{ item.hasDD }}"><span style="font-size:9px;opacity:.6">▾</span></sc-if></a>
+            <a href="{{ item.href }}" onClick="{{ item.onClick }}" style="display:flex;align-items:center;gap:4px;padding:10px 7px;font-family:Archivo,sans-serif;font-weight:700;font-size:11.5px;letter-spacing:.03em;text-transform:uppercase;text-decoration:none;color:#1A1411;white-space:nowrap" style-hover="color:#A50000 !important">{{ item.label }}<sc-if value="{{ item.hasDD }}"><span style="font-size:9px;opacity:.6">▾</span></sc-if></a>
             <sc-if value="{{ item.open }}">
               <div style="position:absolute;top:100%;left:0;min-width:210px;background:#FFFCF8;border:2px solid #1A1411;border-radius:14px;padding:8px;box-shadow:0 24px 50px -22px rgba(40,20,5,.5);animation:ddIn .16s ease;z-index:60">
                 <sc-for list="{{ item.links }}" as="l" hint-placeholder-count="3">
@@ -106,7 +106,7 @@ p,li{text-wrap:pretty}
           </div>
         </sc-for>
       </nav>
-      <button onClick="{{ openOrder }}" class="desk-order" style="flex:none;display:inline-flex;align-items:center;gap:9px;margin-left:8px;padding:12px 20px;background:#A50000;color:#FFFCF8;border:none;border-radius:999px;font-family:Archivo,sans-serif;font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;box-shadow:0 12px 24px -12px rgba(165,0,0,.8);transition:transform .2s,background .2s" style-hover="background:#7E0000 !important;transform:translateY(-2px)">Order Online <span style="font-size:15px">→</span></button>
+      <button onClick="{{ openOrder }}" class="desk-order" style="flex:none;display:inline-flex;align-items:center;gap:7px;margin-left:8px;padding:11px 16px;background:#A50000;color:#FFFCF8;border:none;border-radius:999px;font-family:Archivo,sans-serif;font-weight:800;font-size:12px;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;box-shadow:0 12px 24px -12px rgba(165,0,0,.8);transition:transform .2s,background .2s;white-space:nowrap" style-hover="background:#7E0000 !important;transform:translateY(-2px)">Order Online <span style="font-size:15px">→</span></button>
       <button onClick="{{ toggleMenu }}" class="burger" style="display:none;flex:none;margin-left:auto;width:46px;height:46px;border:2px solid #A50000;background:#FFFCF8;border-radius:11px;cursor:pointer;font-size:20px;line-height:1;color:#A50000;align-items:center;justify-content:center">≡</button>
     </div>
   </header>
@@ -723,6 +723,15 @@ p,li{text-wrap:pretty}
         </section>
       </sc-if>
 
+      <!-- CWC EMBED (CollabWithCreators iframe) -->
+      <sc-if value="{{ sec.is_embed }}">
+        <section style="padding:56px 24px 72px;background:#FBF6EC">
+          <div style="max-width:920px;margin:0 auto">
+            <iframe id="{{ sec.frameId }}" src="{{ sec.src }}" title="{{ sec.title }}" height="{{ sec.height }}" scrolling="no" frameBorder="0" allow="{{ sec.allow }}" style="width:1px;min-width:100%;border:0;background:transparent;display:block"></iframe>
+          </div>
+        </section>
+      </sc-if>
+
       <!-- STEPS -->
       <sc-if value="{{ sec.is_steps }}">
         <section style="padding:84px 24px;background:{{ sec.bg }}">
@@ -1030,7 +1039,7 @@ p,li{text-wrap:pretty}
   </div>
 
   <style>
-    @media (max-width:1080px){ .desk-nav{display:none!important} .burger{display:flex!important} .desk-order{display:none!important} .mobile-bar{display:block!important} footer{padding-bottom:74px!important} .hero-grid{grid-template-columns:1fr!important;gap:34px!important;min-height:0!important;padding:44px 24px 56px!important} .hero-grid>*{min-width:0!important} }
+    @media (max-width:1180px){ .desk-nav{display:none!important} .burger{display:flex!important} .desk-order{display:none!important} .mobile-bar{display:block!important} footer{padding-bottom:74px!important} .hero-grid{grid-template-columns:1fr!important;gap:34px!important;min-height:0!important;padding:44px 24px 56px!important} .hero-grid>*{min-width:0!important} }
     @media (max-width:520px){ .hero-stamp{width:96px!important;height:96px!important} .hero-sticker{font-size:21px!important} }
     @media (max-width:1080px){ .app-graphic-cell{align-self:auto!important} .app-graphic-cell img{height:auto!important;max-height:380px!important;margin:-40px auto!important} .app-grid{grid-template-columns:1fr!important;padding:0 8px} .app-grid>*{min-width:0!important} .app-text-cell{padding:44px 16px 0!important;text-align:center} }
     @media (max-width:900px){ .cards-4{grid-template-columns:repeat(2,1fr)!important} }
@@ -1178,7 +1187,7 @@ class Component extends DCLogic {
   /* =====================================================================
      STATE / ROUTING
      ===================================================================== */
-  pageList(){ return ['home','locations','loc-shrewsbury','loc-tomsriver','loc-jackson','menus','events','events-shrewsbury','events-tomsriver','events-jackson','catering','catering-shrewsbury','catering-tomsriver','catering-jackson','testimonials','careers','contact','contact-shrewsbury','contact-tomsriver','contact-jackson','offer-tomsriver','offer-jackson','thankyou']; }
+  pageList(){ return ['home','locations','loc-shrewsbury','loc-tomsriver','loc-jackson','menus','events','events-shrewsbury','events-tomsriver','events-jackson','catering','catering-shrewsbury','catering-tomsriver','catering-jackson','testimonials','careers','contact','contact-shrewsbury','contact-tomsriver','contact-jackson','offer-tomsriver','offer-jackson','thankyou','apply','thankyou-app']; }
 
   componentDidMount(){
     // Clean URLs (/toms-river) only on the real domain; in the Claude preview
@@ -1189,10 +1198,25 @@ class Component extends DCLogic {
     this.applySEO(this.state.page);
     this._nav = ()=>this.route();
     window.addEventListener(this._clean?'popstate':'hashchange', this._nav);
+    // CollabWithCreators auto-height listener (shared by both embeds).
+    this._cwcMsg = (event)=>{
+      const cfg=[{id:'cwc-apply-frame',min:300},{id:'cwc-success-frame',min:250}];
+      for(const c of cfg){
+        const frame=document.getElementById(c.id);
+        if(!frame || event.source!==frame.contentWindow) continue;
+        const data=event.data;
+        if(!data || typeof data!=='object' || data.type!=='cwc-apply-height') continue;
+        const h=Number(data.height);
+        if(!isFinite(h) || h<c.min || h>5000) return;
+        frame.style.height=Math.ceil(h)+'px';
+        return;
+      }
+    };
+    window.addEventListener('message', this._cwcMsg);
     this._heroTimer = setInterval(()=>{ const n=this.HERO_SLIDES().length; if(n>1) this.setState(s=>({heroSlide:(s.heroSlide+1)%n})); }, 4500);
     this.observeReveal();
   }
-  componentWillUnmount(){ if(this._nav){ window.removeEventListener('popstate', this._nav); window.removeEventListener('hashchange', this._nav); } if(this._io) this._io.disconnect(); if(this._heroTimer) clearInterval(this._heroTimer); }
+  componentWillUnmount(){ if(this._nav){ window.removeEventListener('popstate', this._nav); window.removeEventListener('hashchange', this._nav); } if(this._cwcMsg) window.removeEventListener('message', this._cwcMsg); if(this._io) this._io.disconnect(); if(this._heroTimer) clearInterval(this._heroTimer); }
   componentDidUpdate(){ this.observeReveal(); }
 
   // True only on the live site — enables History API clean URLs there.
@@ -1205,7 +1229,7 @@ class Component extends DCLogic {
   DOMAIN(){ return 'https://www.mangiabrickovenpizza.com'; }
   SLUGS(){ return {
     home:'', locations:'locations', menus:'menus', events:'private-events',
-    catering:'catering', testimonials:'testimonials', careers:'careers', contact:'contact', thankyou:'thank-you',
+    catering:'catering', testimonials:'testimonials', careers:'careers', contact:'contact', thankyou:'thank-you', apply:'apply', 'thankyou-app':'thank-you-application',
     'loc-shrewsbury':'shrewsbury', 'loc-tomsriver':'toms-river', 'loc-jackson':'jackson',
     'events-shrewsbury':'private-events-shrewsbury', 'events-tomsriver':'private-events-toms-river', 'events-jackson':'private-events-jackson',
     'catering-shrewsbury':'catering-shrewsbury', 'catering-tomsriver':'catering-toms-river', 'catering-jackson':'catering-jackson',
@@ -1230,7 +1254,9 @@ class Component extends DCLogic {
     testimonials:{t:'Reviews & Testimonials', d:'See what guests say about Mangia Brick Oven Pizza \u2014 fresh New York-style pizza, friendly service and Italian classics across three NJ locations.'},
     careers:{t:'Careers \u2014 Join the Mangia Family', d:'Now hiring at Mangia Brick Oven Pizza. Apply to join our family-run team in Toms River, Jackson or Shrewsbury, NJ.'},
     contact:{t:'Contact Us', d:'Get in touch with Mangia Brick Oven Pizza. Contact our Toms River, Jackson or Shrewsbury, NJ location for orders, catering and private events.'},
-    thankyou:{t:'Thank You', d:'Thanks for reaching out to Mangia Brick Oven Pizza. We\u2019ll be in touch soon.'}
+    thankyou:{t:'Thank You', d:'Thanks for reaching out to Mangia Brick Oven Pizza. We\u2019ll be in touch soon.'},
+    apply:{t:'Creator Program Application', d:'Apply to collaborate with Mangia Brick Oven Pizza. Share your content, get featured and earn perks as part of the Mangia creator program.'},
+    'thankyou-app':{t:'Finish Setting Up Your Account', d:'Application received \u2014 finish creating your Mangia creator account.'}
   }; }
   applySEO(page){
     const brand='Mangia Brick Oven Pizza'; const base=this.SEO_BASE();
@@ -1501,6 +1527,7 @@ class Component extends DCLogic {
       {label:'Private Events', key:'events', page:'events', links:eventLinks},
       {label:'Testimonials', key:'testimonials', page:'testimonials'},
       {label:'Careers', key:'careers', page:'careers'},
+      {label:'Influencer Signup', key:'apply', page:'apply'},
       {label:'Contact', key:'contact', page:'contact', links:contactLinks}
     ];
     return top.map(t=>({
@@ -1524,6 +1551,7 @@ class Component extends DCLogic {
       {key:'events', label:'Private Events', page:'events', kids:L.map(l=>k(l.name,'events-'+l.key))},
       {key:'testimonials', label:'Testimonials', page:'testimonials', kids:[]},
       {key:'careers', label:'Careers', page:'careers', kids:[]},
+      {key:'apply', label:'Influencer Signup', page:'apply', kids:[]},
       {key:'contact', label:'Contact', page:'contact', kids:L.map(l=>k(l.name,'contact-'+l.key))}
     ];
     return groups.map(g=>({
@@ -1613,6 +1641,8 @@ class Component extends DCLogic {
     if(page==='careers') return this.pgCareers();
     if(page==='contact') return this.pgContact();
     if(page==='thankyou') return this.pgThankYou();
+    if(page==='thankyou-app') return this.pgThankYouApp();
+    if(page==='apply') return this.pgApply();
     if(page.indexOf('loc-')===0) return this.pgLocation(this.locByKey(page.slice(4)));
     if(page.indexOf('events-')===0) return this.pgEventLoc(this.locByKey(page.slice(7)));
     if(page.indexOf('catering-')===0) return this.pgCateringLoc(this.locByKey(page.slice(9)));
@@ -1752,9 +1782,41 @@ class Component extends DCLogic {
 
   pgThankYou(){
     const note=this.state.thankNote||'Thanks for reaching out \u2014 the Mangia team will follow up with you shortly.';
-    return [
+    const out=[
       this.S('thankYou',{ eyebrow:'Message Received', line1:'Thank', line2:'You!', sub:note,
         ctas:[ this.mkCta('Back To Home','primary',{go:'home'}), this.mkCta('View Menus','light',{go:'menus'}), this.mkCta('Order Online','ghost',{order:true}) ] })
+    ];
+    return out;
+  }
+
+  // Dedicated creator-application confirmation page (own URL for tracking).
+  pgThankYouApp(){
+    return [
+      this.S('heroSimple',{ eyebrow:'Application Received', line1:'Finish Setting Up', line2:'Your Account', sub:'You\u2019re almost there! Complete the quick step below to finish creating your Mangia creator account.' }),
+      this.S('embed',{ frameId:'cwc-success-frame', src:this.cwcSuccessSrc(), height:600, title:'Finish creating your creator account', allow:'clipboard-write' })
+    ];
+  }
+
+  // Detects the CollabWithCreators handoff on the Thank-You URL.
+  cwcArrived(){ try{ const s=new URLSearchParams(location.search); return !!(s.get('cwc_status')||s.get('cwc_ref')||s.get('email')||s.get('ref')); }catch(e){ return false; } }
+  // Builds the success iframe src from the live Thank-You URL params.
+  cwcSuccessSrc(){
+    let qp;
+    try{
+      const s=new URLSearchParams(location.search);
+      qp=(s.get('cwc_ref')||s.get('ref')||s.get('email')) ? s : new URLSearchParams((location.hash||'').replace(/^#/,''));
+    }catch(e){ qp=new URLSearchParams(); }
+    const out=new URLSearchParams();
+    out.set('ref', qp.get('cwc_ref')||qp.get('ref')||'mangia-pizza');
+    const email=(qp.get('email')||'').trim();
+    if(email) out.set('email', email);
+    return 'https://collabwithcreators.com/apply/success?'+out.toString();
+  }
+
+  pgApply(){
+    return [
+      this.S('heroSimple',{ eyebrow:'Mangia Creator Program', line1:'Create With', line2:'Mangia', sub:'Love Mangia? Team up with us \u2014 share your content, get featured and earn perks. Fill out the quick application below to get started.' }),
+      this.S('embed',{ frameId:'cwc-apply-frame', src:'https://collabwithcreators.com/apply?ref=mangia-pizza&redirectUrl='+encodeURIComponent('https://www.mangiabrickovenpizza.com/thank-you-application'), height:1200, title:'Mangia Pizza creator application', allow:'' })
     ];
   }
 
@@ -1870,7 +1932,7 @@ class Component extends DCLogic {
     const footerLinks=[
       this.navLink('Menus','menus'), this.navLink('Private Events','events'),
       this.navLink('Catering','catering'), this.navLink('Testimonials','testimonials'),
-      this.navLink('Careers','careers'), this.navLink('Contact','contact')
+      this.navLink('Careers','careers'), this.navLink('Influencer Signup','apply'), this.navLink('Contact','contact')
     ];
     return {
       rootRef:this.rootRef,
