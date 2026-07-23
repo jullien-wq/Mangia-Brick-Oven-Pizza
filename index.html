@@ -1248,7 +1248,7 @@ class Component extends DCLogic {
   /* ===== SEO: per-page <title> + meta description (edit copy here) ===== */
   SEO_BASE(){ return {
     home:{t:'Family-Run NY-Style Pizzeria in NJ', d:'Mangia Brick Oven Pizza is a family-run, New York-style pizzeria and Italian restaurant with three NJ locations \u2014 Toms River, Jackson and Shrewsbury. Order online, view menus, catering and private events.'},
-    locations:{t:'Our Locations \u2014 Toms River, Jackson & Shrewsbury, NJ', d:'Find your nearest Mangia Brick Oven Pizza. Three family-run New Jersey locations with online ordering, menus, catering and private events.'},
+    locations:{t:'Locations: Toms River, Jackson & Shrewsbury', d:'Find your nearest Mangia Brick Oven Pizza. Three family-run New Jersey locations with online ordering, menus, catering and private events.'},
     menus:{t:'Menus \u2014 Dining, Takeout & Catering', d:'Browse Mangia Brick Oven Pizza menus by location: dining, takeout, catering and party packages for Toms River, Jackson and Shrewsbury, NJ.'},
     events:{t:'Private Events & Party Packages in NJ', d:'Host your private event at Mangia Brick Oven Pizza. Birthdays, showers, corporate parties and more at our Toms River, Jackson and Shrewsbury, NJ locations.'},
     catering:{t:'Pizza & Italian Catering in New Jersey', d:'Cater your next gathering with Mangia Brick Oven Pizza \u2014 fresh pizza, Italian favorites, trays and party packages across Toms River, Jackson and Shrewsbury, NJ.'},
@@ -1263,7 +1263,7 @@ class Component extends DCLogic {
     const brand='Mangia Brick Oven Pizza'; const base=this.SEO_BASE();
     let t='', d='';
     if(base[page]){ t=base[page].t; d=base[page].d; }
-    else if(page.indexOf('loc-')===0){ const l=this.locByKey(page.slice(4)); if(l){ t='Mangia Brick Oven Pizza in '+l.name+', NJ'; d='Fresh New York-style pizza and Italian classics at Mangia '+l.name+', NJ ('+l.address+'). Order online, view menus, catering and private events.'; } }
+    else if(page.indexOf('loc-')===0){ const l=this.locByKey(page.slice(4)); if(l){ t='NY-Style Pizza in '+l.name+', NJ'; d='Fresh New York-style pizza and Italian classics at Mangia '+l.name+', NJ ('+l.address+'). Order online, view menus, catering and private events.'; } }
     else if(page.indexOf('events-')===0){ const l=this.locByKey(page.slice(7)); if(l){ t='Private Events in '+l.name+', NJ'; d='Host your private party at Mangia '+l.name+', NJ. '+l.capacity+' \u2014 birthdays, showers, corporate events, holidays and more.'; } }
     else if(page.indexOf('catering-')===0){ const l=this.locByKey(page.slice(9)); if(l){ t='Catering in '+l.name+', NJ'; d='Pizza and Italian catering from Mangia '+l.name+', NJ. Trays, party packages and crowd-pleasers for offices, parties and gatherings.'; } }
     else if(page.indexOf('contact-')===0){ const l=this.locByKey(page.slice(8)); if(l){ t='Contact Mangia '+l.name+', NJ'; d='Contact Mangia Brick Oven Pizza in '+l.name+', NJ \u2014 '+l.address+' \u00b7 '+l.phone+'.'; } }
