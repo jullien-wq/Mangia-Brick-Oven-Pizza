@@ -1,3 +1,15 @@
+# Legacy URLs (old Wix-era links still found by crawlers/ads) — 301 to the
+# current pages so search engines consolidate them instead of seeing
+# homepage duplicates.
+/tomsriver-offer                      /2-for-40-toms-river          301
+/tomsriver-menu                       /menus                        301
+/shrewsburyoffer                      /shrewsbury                   301
+/copy-of-shrewsbury-offer             /shrewsbury                   301
+/copy-of-shrewsbury-holiday-catering  /catering-shrewsbury          301
+/private-event-toms-river             /private-events-toms-river    301
+/private-event-shrewsbury             /private-events-shrewsbury    301
+/catering-offer                       /catering                     301
+
 # Cloudflare Pages SPA routing — serve index.html for any clean URL.
 # Real files (assets, support.js, sitemap, etc.) are served first; only
 # unmatched paths like /shrewsbury fall through to the app, which routes them.

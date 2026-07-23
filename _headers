@@ -1,0 +1,8 @@
+# Cloudflare Pages custom headers
+# HSTS: tell browsers to always use HTTPS for this site (fixes "No HSTS support").
+# The other headers are safe hardening defaults for a static site.
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
