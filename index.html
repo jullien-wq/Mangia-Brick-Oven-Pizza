@@ -1124,9 +1124,9 @@ class Component extends DCLogic {
 
   /* ---- MENU FILES per location (swap PDFs here) ---- */
   MENUS(){ return {
-    shrewsbury:[ {label:'Dinner Menu', file:'assets/menus/shrews-dinner.pdf'}, {label:'Take Out Menu', file:'assets/menus/shrews-takeout.pdf'}, {label:'Catering Menu', file:'assets/menus/shrews-catering-aug2026.pdf'} ],
-    tomsriver:[ {label:'Dining Menu', file:'assets/menus/toms-dining.pdf'}, {label:'Take Out Menu', file:'assets/menus/toms-takeout.pdf'}, {label:'Catering Menu', file:'assets/menus/toms-catering-aug2026.pdf'} ],
-    jackson:[ {label:'Dining Menu', file:'assets/menus/jackson-dining.pdf'}, {label:'Take Out Menu', file:'assets/menus/jackson-takeout.pdf'}, {label:'Catering Menu', file:'assets/menus/jackson-catering-aug2026.pdf'}, {label:'Party Package', file:'assets/menus/jackson-party.pdf'} ]
+    shrewsbury:[ {label:'Dinner Menu', file:'assets/menus/shrews-dinner.pdf'}, {label:'Take Out Menu', file:'assets/menus/shrews-takeout.pdf'}, {label:'Mix and Match Catering Menu', file:'assets/menus/shrews-catering-aug2026.pdf'} ],
+    tomsriver:[ {label:'Dining Menu', file:'assets/menus/toms-dining.pdf'}, {label:'Take Out Menu', file:'assets/menus/toms-takeout.pdf'}, {label:'Full Catering Menu', file:'assets/menus/toms-catering.pdf'}, {label:'Mix and Match Catering Menu', file:'assets/menus/toms-catering-aug2026.pdf'} ],
+    jackson:[ {label:'Dining Menu', file:'assets/menus/jackson-dining.pdf'}, {label:'Take Out Menu', file:'assets/menus/jackson-takeout.pdf'}, {label:'Full Catering Menu', file:'assets/menus/jackson-catering-2026.pdf'}, {label:'Mix and Match Catering Menu', file:'assets/menus/jackson-catering-aug2026.pdf'}, {label:'Party Package', file:'assets/menus/jackson-party.pdf'} ]
   }; }
 
   /* ---- TESTIMONIALS (from current site) ---- */
@@ -1752,7 +1752,7 @@ class Component extends DCLogic {
     const cap = loc.key==='jackson' ? 'Up to 75 guests' : 'Trays & party packages';
     return [
       this.S('heroImage',{ eyebrow:'Catering In '+loc.name+', NJ', title:'Mangia '+loc.name+' Catering', img:this._catImg(loc.key), sub:'Bring Mangia '+loc.name+' to your next gathering — fresh pizza, Italian favorites, trays and party packages for any crowd.', ctas:[ this.mkCta('Request Catering','primary',{go:'catering-'+loc.key,anchor:'cateringform'}), this.mkCta('Order Online','light',{href:loc.order}) ] }),
-      this.S('menuCards',{ eyebrow:loc.name+' Catering', title:loc.name+' Catering Menu', sub:'Tap to view the catering menu. Ready to plan? Request a quote below.', cols:'1fr', groups, bg:'#F2E7D3' }),
+      this.S('menuCards',{ eyebrow:loc.name+' Catering', title:loc.name+' Catering Menus', sub:'Tap to view a catering menu. Ready to plan? Request a quote below.', cols:'1fr', groups, bg:'#F2E7D3' }),
       this.S('occasions',{ eyebrow:'For Every Occasion', title:'We Cater It All', items:['Office Lunches','Family Parties','School Events','Holidays','Birthdays','Game Days','Corporate Events','Community Gatherings'] }),
       this.S('steps',{ eyebrow:'How It Works', title:'Catering Made Easy', bg:'#F2E7D3', flow:true, items:[ {n:'1',title:'View The Menu',text:'Browse '+loc.name+' trays and packages.'}, {n:'2',title:'Pick Your Spread',text:'Choose what works for your crowd.'}, {n:'3',title:'Submit A Request',text:'Send us your details and headcount.'}, {n:'4',title:'We Confirm',text:'The '+loc.name+' team follows up to lock it in.'} ] }),
       this.formSec({ id:'catering-'+loc.key, anchor:'cateringform', eyebrow:'Request Catering', title:'Cater With Mangia '+loc.name, sub:'Fill out the form and the Mangia '+loc.name+' team will follow up to confirm details.', hidden:loc.name+' Catering', bg:'#1A1411', titleColor:'#FFFCF8', subColor:'rgba(255,252,248,.82)',
