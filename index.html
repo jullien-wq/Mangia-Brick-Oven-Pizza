@@ -8,7 +8,7 @@
      Default tags below describe the site as a whole. Per-page titles and
      descriptions are swapped in by JS on navigation (see PAGE_SEO in the
      logic class). Update the domain in og:url / canonical if it changes. -->
-<title>Mangia Brick Oven Pizza | Family-Run NY-Style Pizzeria in NJ</title>
+<title>Mangia Brick Oven Pizza | Family-Run NY-Style Pizzeria in Toms River, Jackson &amp; Shrewsbury, NJ</title>
 <meta name="description" content="Mangia Brick Oven Pizza is a family-run, New York-style pizzeria and Italian restaurant with three New Jersey locations — Toms River, Jackson and Shrewsbury. Order online, view menus, cater your event, or book a private party.">
 <meta name="keywords" content="Mangia Brick Oven Pizza, pizza Toms River NJ, pizza Jackson NJ, pizza Shrewsbury NJ, New York style pizza New Jersey, Italian restaurant NJ, pizza catering NJ, private events pizzeria">
 <meta name="author" content="Mangia Brick Oven Pizza">
@@ -179,8 +179,7 @@ p,li{text-wrap:pretty}
           <div style="position:relative;max-width:1320px;margin:0 auto;display:grid;grid-template-columns:1.04fr .96fr;align-items:center;gap:40px;min-height:600px;padding:64px 40px" class="hero-grid">
             <div style="display:flex;flex-direction:column;justify-content:center;width:100%" class="hero-copy" data-reveal="off">
               <div style="display:inline-flex;align-items:center;gap:10px;font-family:Archivo;font-weight:800;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:#A50000;margin-bottom:20px"><span style="width:30px;height:2px;background:#A50000"></span>{{ sec.eyebrow }}</div>
-              <div style="margin:0;line-height:0"><img src="assets/brand/logo.png" alt="Mangia Brick Oven Pizza logo" style="width:min(100%,560px);height:auto;display:block;image-rendering:auto"/></div>
-              <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0">Mangia Brick Oven Pizza — Family-Run NY-Style Pizzeria in Toms River, Jackson &amp; Shrewsbury, NJ</h1>
+              <h1 style="margin:0;line-height:0"><img src="assets/brand/logo.png" alt="Mangia" style="width:min(100%,560px);height:auto;display:block;image-rendering:auto"/></h1>
               <p style="font-family:Archivo;font-weight:900;font-size:clamp(19px,1.8vw,26px);letter-spacing:.01em;text-transform:uppercase;margin:30px 0 8px">{{ sec.tagline }}</p>
               <p style="font-family:Archivo;font-weight:700;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:#7E6B5A;margin:0 0 32px">{{ sec.services }}</p>
               <div class="cta-row" style="display:flex;flex-wrap:wrap;align-items:center;gap:14px">
@@ -1125,9 +1124,9 @@ class Component extends DCLogic {
 
   /* ---- MENU FILES per location (swap PDFs here) ---- */
   MENUS(){ return {
-    shrewsbury:[ {label:'Dinner Menu', file:'assets/menus/shrews-dinner.pdf'}, {label:'Take Out Menu', file:'assets/menus/shrews-takeout.pdf'}, {label:'Catering Menu', file:'assets/menus/shrews-catering.pdf'} ],
-    tomsriver:[ {label:'Dining Menu', file:'assets/menus/toms-dining.pdf'}, {label:'Take Out Menu', file:'assets/menus/toms-takeout.pdf'}, {label:'Catering Menu', file:'assets/menus/toms-catering.pdf'} ],
-    jackson:[ {label:'Dining Menu', file:'assets/menus/jackson-dining.pdf'}, {label:'Take Out Menu', file:'assets/menus/jackson-takeout.pdf'}, {label:'Catering Menu', file:'assets/menus/jackson-catering-2026.pdf'}, {label:'Party Package', file:'assets/menus/jackson-party.pdf'} ]
+    shrewsbury:[ {label:'Dinner Menu', file:'assets/menus/shrews-dinner.pdf'}, {label:'Take Out Menu', file:'assets/menus/shrews-takeout.pdf'}, {label:'Mix and Match Catering Menu', file:'assets/menus/shrews-catering-aug2026.pdf'} ],
+    tomsriver:[ {label:'Dining Menu', file:'assets/menus/toms-dining.pdf'}, {label:'Take Out Menu', file:'assets/menus/toms-takeout.pdf'}, {label:'Full Catering Menu', file:'assets/menus/toms-catering.pdf'}, {label:'Mix and Match Catering Menu', file:'assets/menus/toms-catering-aug2026.pdf'} ],
+    jackson:[ {label:'Dining Menu', file:'assets/menus/jackson-dining.pdf'}, {label:'Take Out Menu', file:'assets/menus/jackson-takeout.pdf'}, {label:'Full Catering Menu', file:'assets/menus/jackson-catering-2026.pdf'}, {label:'Mix and Match Catering Menu', file:'assets/menus/jackson-catering-aug2026.pdf'}, {label:'Party Package', file:'assets/menus/jackson-party.pdf'} ]
   }; }
 
   /* ---- TESTIMONIALS (from current site) ---- */
@@ -1247,8 +1246,8 @@ class Component extends DCLogic {
 
   /* ===== SEO: per-page <title> + meta description (edit copy here) ===== */
   SEO_BASE(){ return {
-    home:{t:'Family-Run NY-Style Pizzeria in NJ', d:'Mangia Brick Oven Pizza is a family-run, New York-style pizzeria and Italian restaurant with three NJ locations \u2014 Toms River, Jackson and Shrewsbury. Order online, view menus, catering and private events.'},
-    locations:{t:'Locations: Toms River, Jackson & Shrewsbury', d:'Find your nearest Mangia Brick Oven Pizza. Three family-run New Jersey locations with online ordering, menus, catering and private events.'},
+    home:{t:'Family-Run NY-Style Pizzeria in Toms River, Jackson & Shrewsbury, NJ', d:'Mangia Brick Oven Pizza is a family-run, New York-style pizzeria and Italian restaurant with three NJ locations \u2014 Toms River, Jackson and Shrewsbury. Order online, view menus, catering and private events.'},
+    locations:{t:'Our Locations \u2014 Toms River, Jackson & Shrewsbury, NJ', d:'Find your nearest Mangia Brick Oven Pizza. Three family-run New Jersey locations with online ordering, menus, catering and private events.'},
     menus:{t:'Menus \u2014 Dining, Takeout & Catering', d:'Browse Mangia Brick Oven Pizza menus by location: dining, takeout, catering and party packages for Toms River, Jackson and Shrewsbury, NJ.'},
     events:{t:'Private Events & Party Packages in NJ', d:'Host your private event at Mangia Brick Oven Pizza. Birthdays, showers, corporate parties and more at our Toms River, Jackson and Shrewsbury, NJ locations.'},
     catering:{t:'Pizza & Italian Catering in New Jersey', d:'Cater your next gathering with Mangia Brick Oven Pizza \u2014 fresh pizza, Italian favorites, trays and party packages across Toms River, Jackson and Shrewsbury, NJ.'},
@@ -1263,7 +1262,7 @@ class Component extends DCLogic {
     const brand='Mangia Brick Oven Pizza'; const base=this.SEO_BASE();
     let t='', d='';
     if(base[page]){ t=base[page].t; d=base[page].d; }
-    else if(page.indexOf('loc-')===0){ const l=this.locByKey(page.slice(4)); if(l){ t='NY-Style Pizza in '+l.name+', NJ'; d='Fresh New York-style pizza and Italian classics at Mangia '+l.name+', NJ ('+l.address+'). Order online, view menus, catering and private events.'; } }
+    else if(page.indexOf('loc-')===0){ const l=this.locByKey(page.slice(4)); if(l){ t='Mangia Brick Oven Pizza in '+l.name+', NJ'; d='Fresh New York-style pizza and Italian classics at Mangia '+l.name+', NJ ('+l.address+'). Order online, view menus, catering and private events.'; } }
     else if(page.indexOf('events-')===0){ const l=this.locByKey(page.slice(7)); if(l){ t='Private Events in '+l.name+', NJ'; d='Host your private party at Mangia '+l.name+', NJ. '+l.capacity+' \u2014 birthdays, showers, corporate events, holidays and more.'; } }
     else if(page.indexOf('catering-')===0){ const l=this.locByKey(page.slice(9)); if(l){ t='Catering in '+l.name+', NJ'; d='Pizza and Italian catering from Mangia '+l.name+', NJ. Trays, party packages and crowd-pleasers for offices, parties and gatherings.'; } }
     else if(page.indexOf('contact-')===0){ const l=this.locByKey(page.slice(8)); if(l){ t='Contact Mangia '+l.name+', NJ'; d='Contact Mangia Brick Oven Pizza in '+l.name+', NJ \u2014 '+l.address+' \u00b7 '+l.phone+'.'; } }
@@ -1753,7 +1752,7 @@ class Component extends DCLogic {
     const cap = loc.key==='jackson' ? 'Up to 75 guests' : 'Trays & party packages';
     return [
       this.S('heroImage',{ eyebrow:'Catering In '+loc.name+', NJ', title:'Mangia '+loc.name+' Catering', img:this._catImg(loc.key), sub:'Bring Mangia '+loc.name+' to your next gathering — fresh pizza, Italian favorites, trays and party packages for any crowd.', ctas:[ this.mkCta('Request Catering','primary',{go:'catering-'+loc.key,anchor:'cateringform'}), this.mkCta('Order Online','light',{href:loc.order}) ] }),
-      this.S('menuCards',{ eyebrow:loc.name+' Catering', title:loc.name+' Catering Menu', sub:'Tap to view the catering menu. Ready to plan? Request a quote below.', cols:'1fr', groups, bg:'#F2E7D3' }),
+      this.S('menuCards',{ eyebrow:loc.name+' Catering', title:loc.name+' Catering Menus', sub:'Tap to view a catering menu. Ready to plan? Request a quote below.', cols:'1fr', groups, bg:'#F2E7D3' }),
       this.S('occasions',{ eyebrow:'For Every Occasion', title:'We Cater It All', items:['Office Lunches','Family Parties','School Events','Holidays','Birthdays','Game Days','Corporate Events','Community Gatherings'] }),
       this.S('steps',{ eyebrow:'How It Works', title:'Catering Made Easy', bg:'#F2E7D3', flow:true, items:[ {n:'1',title:'View The Menu',text:'Browse '+loc.name+' trays and packages.'}, {n:'2',title:'Pick Your Spread',text:'Choose what works for your crowd.'}, {n:'3',title:'Submit A Request',text:'Send us your details and headcount.'}, {n:'4',title:'We Confirm',text:'The '+loc.name+' team follows up to lock it in.'} ] }),
       this.formSec({ id:'catering-'+loc.key, anchor:'cateringform', eyebrow:'Request Catering', title:'Cater With Mangia '+loc.name, sub:'Fill out the form and the Mangia '+loc.name+' team will follow up to confirm details.', hidden:loc.name+' Catering', bg:'#1A1411', titleColor:'#FFFCF8', subColor:'rgba(255,252,248,.82)',
