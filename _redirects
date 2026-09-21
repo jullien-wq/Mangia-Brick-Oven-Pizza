@@ -1,4 +1,8 @@
-# Cloudflare Pages SPA routing — serve index.html for any clean URL.
-# Real files (assets, support.js, sitemap, etc.) are served first; only
-# unmatched paths like /shrewsbury fall through to the app, which routes them.
+# Cloudflare Pages routing for the Mangia SPA.
+# 1) Strip trailing slashes so /shrewsbury/ becomes /shrewsbury — otherwise the
+#    browser resolves relative asset/PDF links against the wrong folder.
+/:slug/ /:slug 301
+# 2) Serve index.html for any clean URL. Real files (assets, support.js,
+#    sitemap, etc.) are served first; only unmatched paths like /shrewsbury
+#    fall through to the app, which routes them.
 /*    /index.html   200
