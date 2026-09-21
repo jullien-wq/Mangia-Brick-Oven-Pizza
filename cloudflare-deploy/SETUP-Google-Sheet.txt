@@ -1,0 +1,137 @@
+MANGIA — FORM SUBMISSIONS INTO A GOOGLE SHEET
+=============================================
+Goal: every form on the website (Contact, Private Events, Catering, 2-for-$40
+Offers, Careers) drops into ONE Google Spreadsheet, with EACH form type on its
+OWN TAB. No "activation" email to click on the first submission.
+
+How this works in plain terms:
+  The website sends each submission to a small Google Apps Script that you own.
+  That script (a) writes a row to your spreadsheet and (b) emails the right
+  location inbox directly from your Google account. Because the script runs as
+  YOU, there is no third-party activation step — it just works.
+
+You only do this ONCE. Budget about 5 minutes.
+
+----------------------------------------------------------------------
+WHAT YOU'LL END UP WITH
+----------------------------------------------------------------------
+A spreadsheet with these tabs, created automatically as submissions arrive:
+  - All Submissions   (master log of everything, newest row on top)
+  - Contact
+  - Private Events
+  - Catering
+  - Offers
+  - Careers
+Each tab starts with these columns: Submitted | Form | Location | Form ID,
+followed by the actual fields from that form (First Name, Email, Phone, etc.).
+New columns are added automatically the first time a new field shows up — you
+never edit headers by hand. Header row is frozen and styled in Mangia red.
+
+======================================================================
+STEP 1 — CREATE THE SPREADSHEET
+======================================================================
+1. Go to https://sheets.google.com
+2. Click "Blank spreadsheet."
+3. Name it (top-left), e.g. "Mangia Website Leads."
+   Leave the empty Sheet1 tab alone — the script makes its own tabs.
+
+======================================================================
+STEP 2 — OPEN THE SCRIPT EDITOR
+======================================================================
+1. In that spreadsheet, click the "Extensions" menu.
+2. Click "Apps Script." A new tab opens with a code editor.
+3. Select everything already in the editor (Ctrl/Cmd+A) and delete it.
+
+======================================================================
+STEP 3 — PASTE THE SCRIPT
+======================================================================
+1. Open the file "google-sheet-script.gs" (provided with your project).
+2. Copy ALL of its contents.
+3. Paste into the empty Apps Script editor.
+4. Click the floppy-disk "Save project" icon (or Ctrl/Cmd+S).
+   You can rename the script project anything, e.g. "Mangia Forms."
+
+======================================================================
+STEP 4 — AUTHORIZE IT (one time)
+======================================================================
+The script needs permission to edit your sheet and to send email as you.
+1. In the toolbar, make sure the function dropdown shows "testInsert."
+2. Click "Run."
+3. A popup appears: "Authorization required" -> click "Review permissions."
+4. Choose your Google account.
+5. You may see "Google hasn't verified this app." This is normal for your own
+   script. Click "Advanced," then "Go to <your project name> (unsafe)."
+   (It is your own code — safe.)
+6. Click "Allow" to grant the spreadsheet and send-email permissions.
+7. The run finishes. Switch to your spreadsheet: a sample row should appear in
+   "All Submissions" and in a "Catering" tab. That confirms logging works.
+   (testInsert only writes to the sheet; it does not send an email.)
+
+======================================================================
+STEP 5 — DEPLOY AS A WEB APP
+======================================================================
+This gives the website a URL to send submissions to.
+1. Top-right of the Apps Script editor: click "Deploy" -> "New deployment."
+2. Click the gear icon next to "Select type" and choose "Web app."
+3. Fill in:
+     Description:      Mangia forms
+     Execute as:       Me (your email)
+     Who has access:   Anyone        <-- MUST be "Anyone," not "Anyone with Google account"
+4. Click "Deploy."
+5. If prompted again to authorize, repeat the allow steps.
+6. Copy the "Web app URL." It ends in /exec and looks like:
+     https://script.google.com/macros/s/AKfy....../exec
+
+======================================================================
+STEP 6 — CONNECT THE URL TO THE WEBSITE
+======================================================================
+NOTE: Your current site already has a working URL wired in, so if you are just
+re-using the same deployment you can skip this. Do this step only if you created
+a brand-new deployment (which produces a new URL).
+
+1. Open the website file (index.html in the deploy folder, or
+   "Mangia Website.dc.html" in the project).
+2. Find this line (use Ctrl/Cmd+F for SHEET_ENDPOINT):
+     SHEET_ENDPOINT(){ return '..........'; }
+3. Put your /exec URL between the single quotes.
+4. Save, then re-upload the site to Cloudflare Pages.
+
+======================================================================
+STEP 7 — TEST END TO END
+======================================================================
+1. Open your LIVE site (the Cloudflare URL — not a local file; the sheet only
+   fills when the site is served over https).
+2. Submit any form (e.g. a Contact form) with test data.
+3. Check the spreadsheet: a new row appears in "All Submissions" and in that
+   form's tab (e.g. "Contact"), within a few seconds.
+4. Check the destination inbox: an email arrives with the details and an
+   attachment (resume for Careers, or a "Mangia Lead" PDF otherwise). No
+   activation link — it simply arrives.
+
+======================================================================
+IF YOU EVER EDIT THE SCRIPT LATER
+======================================================================
+Changes don't go live until you RE-PUBLISH. To keep the SAME URL (so you don't
+have to touch the website):
+  Deploy -> Manage deployments -> click the pencil/Edit icon ->
+  Version: "New version" -> Deploy.
+Only "New deployment" creates a new URL; editing the existing one keeps it.
+
+======================================================================
+TROUBLESHOOTING
+======================================================================
+- No rows appear:
+    * You must test on the LIVE https site, not a downloaded file.
+    * In Apps Script: Deploy -> Manage deployments -> confirm "Who has access"
+      is "Anyone." If it says "Anyone with Google account," edit and change it.
+    * Re-run "testInsert" from the editor — if THAT doesn't add a row, the
+      script wasn't saved/authorized. Redo Steps 3-4.
+- Rows appear but no email:
+    * Open the editor, run "testInsert," and check Executions (left sidebar,
+      clock icon) for errors. Re-authorize if it asks.
+    * Gmail limits sending to ~100 emails/day on free accounts (~1,500 on
+      Google Workspace). Normal lead volume is far below this.
+- Wrong inbox: emails route by form -> Shrewsbury, Toms River, Jackson; Careers
+  and Catering route by the location chosen in the form's dropdown.
+
+That's it. One spreadsheet, one tab per form, no activation, with email backup.
