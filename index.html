@@ -1292,6 +1292,11 @@ class Component extends DCLogic {
     let page=null, anchor='';
     const hraw=(location.hash||'').replace(/^#/,'');
     if(this._clean){
+      // Normalize trailing slashes (/shrewsbury/ -> /shrewsbury) so the document
+      // base URL is the site root and relative asset/PDF links resolve correctly.
+      if(location.pathname.length>1 && /\/+$/.test(location.pathname)){
+        try{ history.replaceState(history.state, '', location.pathname.replace(/\/+$/,'') + location.search + location.hash); }catch(e){}
+      }
       page = this.pageFromSlug(location.pathname);
       if(page===null){
         const hp=hraw.split('@');
