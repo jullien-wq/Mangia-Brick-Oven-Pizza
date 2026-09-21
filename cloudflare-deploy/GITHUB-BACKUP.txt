@@ -1,0 +1,90 @@
+MANGIA — SECURE BACKUP ON GITHUB
+================================
+This explains how to store a private, optimized backup copy of the website in
+your own GitHub account. GitHub is a safe, free place to keep a versioned copy
+so you can always restore the site or roll back a change.
+
+WHAT YOU'RE BACKING UP
+----------------------
+The folder you were given (the deploy folder) is the COMPLETE site:
+  index.html              the whole website
+  support.js              runtime it needs
+  assets/                 all images + menu PDFs (now optimized/right-sized)
+  google-sheet-script.gs  the form-database script
+  README.txt              hosting notes
+  SETUP-Google-Sheet.txt  database setup steps
+Keep these together — that's the entire site in one folder.
+
+A NOTE ON "SECURE"
+------------------
+1. Make the repository PRIVATE (steps below). Private repos are visible only to
+   you and people you invite.
+2. There are no passwords or secret keys in these files. The Google Apps Script
+   address inside index.html is the same one your live website already exposes
+   to every visitor, so it is not a new secret — but keeping the repo private is
+   still good practice.
+3. Never paste your Google account password, FormSubmit keys, or any API tokens
+   into these files. They don't need them and shouldn't have them.
+
+OPTION A — UPLOAD THROUGH THE WEBSITE (easiest, no software)
+-----------------------------------------------------------
+1. Go to https://github.com and sign in (create a free account if needed).
+2. Click the "+" at the top-right -> "New repository."
+3. Repository name: e.g.  mangia-website-backup
+4. Set it to PRIVATE  (select the "Private" radio button).  <-- important
+5. Leave everything else default and click "Create repository."
+6. On the next page click the link "uploading an existing file"
+   (or go to Add file -> Upload files).
+7. Open the deploy folder on your computer, select ALL its contents
+   (index.html, support.js, the assets folder, the .txt/.gs files), and DRAG
+   them into the upload area. Make sure index.html ends up at the TOP LEVEL of
+   the repo, not inside an extra subfolder.
+8. In the "Commit changes" box type a note like "Initial backup" and click
+   "Commit changes." Your backup is now saved on GitHub.
+
+   Tip: GitHub's web uploader can be slow with many files. If it struggles,
+   first ZIP the folder and upload the single .zip instead (you lose per-file
+   browsing but still have a safe copy). Option B avoids this entirely.
+
+OPTION B — UPLOAD WITH GIT (better for future updates)
+------------------------------------------------------
+Requires Git installed (https://git-scm.com/downloads).
+1. Create the PRIVATE repo on GitHub as in Option A, steps 1-5, but do NOT
+   upload anything yet. Copy the repo URL it shows (ends in .git).
+2. On your computer, open Terminal (Mac) or Git Bash (Windows) and run, one
+   line at a time, replacing the folder path and URL:
+
+     cd "path/to/your/deploy-folder"
+     git init
+     git add .
+     git commit -m "Initial backup"
+     git branch -M main
+     git remote add origin https://github.com/YOUR-USERNAME/mangia-website-backup.git
+     git push -u origin main
+
+   If asked to sign in, GitHub will open a browser window to authorize.
+3. Done. To save future changes later, from the same folder run:
+     git add .
+     git commit -m "describe what changed"
+     git push
+
+KEEPING THE BACKUP CURRENT
+--------------------------
+Whenever I send you an updated deploy folder, replace the files in your local
+folder with the new ones and either:
+  - Option A: re-upload via Add file -> Upload files, or
+  - Option B: run the three "future changes" git commands above.
+Each push keeps a full history, so you can always look back at older versions.
+
+OPTIONAL — DEPLOY DIRECTLY FROM GITHUB
+--------------------------------------
+Because this repo is the whole site, you can later connect it to Cloudflare
+Pages (Workers & Pages -> Create -> Pages -> Connect to Git) so that every push
+auto-publishes the live site. Build command: none. Output directory: /  (root).
+This is optional — your current drag-and-drop deploy keeps working as is.
+
+RESTORING FROM BACKUP
+---------------------
+If you ever need the site back, just download the repo (green "Code" button ->
+Download ZIP), unzip it, and upload its contents to Cloudflare Pages exactly
+like a normal deploy. Nothing else to configure.
