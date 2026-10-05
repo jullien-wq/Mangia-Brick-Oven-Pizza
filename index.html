@@ -54,6 +54,15 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=214535598226406&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4BFD2Y01D4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4BFD2Y01D4');
+</script>
 
 <script src="./support.js"></script>
 </head>
@@ -1125,7 +1134,7 @@ class Component extends DCLogic {
   /* ---- MENU FILES per location (swap PDFs here) ---- */
   MENUS(){ return {
     shrewsbury:[ {label:'Dinner Menu', file:'assets/menus/shrews-dinner.pdf'}, {label:'Take Out Menu', file:'assets/menus/shrews-takeout.pdf'}, {label:'Mix and Match Catering Menu', file:'assets/menus/shrews-catering-sep2026.pdf'} ],
-    tomsriver:[ {label:'Dining Menu', file:'assets/menus/toms-dining.pdf'}, {label:'Take Out Menu', file:'assets/menus/toms-takeout-sep2026.pdf'}, {label:'Full Catering Menu', file:'assets/menus/toms-catering.pdf'}, {label:'Mix and Match Catering Menu', file:'assets/menus/toms-catering-aug2026.pdf'} ],
+    tomsriver:[ {label:'Dining Menu', file:'assets/menus/toms-dining.pdf'}, {label:'Take Out Menu', file:'assets/menus/toms-takeout-v9.pdf'}, {label:'Full Catering Menu', file:'assets/menus/toms-catering.pdf'}, {label:'Mix and Match Catering Menu', file:'assets/menus/toms-catering-aug2026.pdf'} ],
     jackson:[ {label:'Dining Menu', file:'assets/menus/jackson-dining.pdf'}, {label:'Take Out Menu', file:'assets/menus/jackson-takeout-sep2026.pdf'}, {label:'Full Catering Menu', file:'assets/menus/jackson-catering-2026.pdf'}, {label:'Mix and Match Catering Menu', file:'assets/menus/jackson-catering-aug2026.pdf'}, {label:'Party Package', file:'assets/menus/jackson-party.pdf'} ]
   }; }
 
@@ -1336,6 +1345,8 @@ class Component extends DCLogic {
   openOrder(){ this.setState({orderOpen:true, menuOpen:false}); }
   closeOrder(){ this.setState({orderOpen:false}); }
   openPdf(file,title){
+    // Live site: open the PDF directly in a new tab (native viewer = crisp pinch/scroll zoom).
+    if(this.cleanUrls()){ var abs=new URL(file, location.origin+'/').href; var w=window.open(abs,'_blank','noopener'); if(w||true){ this.setState({menuOpen:false}); return; } }
     this.setState({menuOpen:false, pdf:{open:true,loading:true,url:'',title:title||'Menu',error:false}});
     var self=this;
     fetch(file).then(function(r){ if(!r.ok) throw new Error(r.status); return r.blob(); }).then(function(b){
